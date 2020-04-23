@@ -25,51 +25,31 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <RelativeLayout
-                    android:id="@+id/draw50"
-                    android:layout_width="394.0dp"
-                    android:layout_height="43.5dp"
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Hello World"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/search_btn1"
+                    android:text="음악/가수 검색하기"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="380.0dp"
+                    android:layout_height="60dp"
                     android:layout_marginTop="50dp"
+                    android:padding="10dp"
                     android:background="@drawable/draw50"
+                    android:drawableLeft="@drawable/search"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
+                </Button>
 
-                    <ImageView
-                        android:id="@+id/draw48"
-                        android:layout_width="17.0dp"
-                        android:layout_height="8.0dp"
-                        android:layout_marginStart="30.8dp"
-                        android:layout_marginTop="29.8dp"
-                        android:contentDescription="@string/text34"
-                        android:rotation="45"
-                        android:src="@drawable/draw48"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
 
-                    <ImageView
-                        android:id="@+id/draw49"
-                        android:layout_width="30.0dp"
-                        android:layout_height="30.0dp"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="3dp"
-                        android:contentDescription="@string/text34"
-                        android:src="@drawable/draw49"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/text34"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="63dp"
-                    android:layout_marginTop="49.5dp"
-                    android:gravity="start|top"
-                    android:text="@string/text34"
-                    android:textColor="@color/color_ff000000"
-                    android:textSize="30sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
 
             <RelativeLayout
