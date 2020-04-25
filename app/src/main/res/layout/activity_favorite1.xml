@@ -27,7 +27,7 @@
 
                 <Button
                     android:id="@+id/search_btn1"
-                    android:text="음악/가수 검색하기"
+                    android:text="임영웅 소개"
                     android:textColor="#000000"
                     android:textSize="30dp"
                     android:layout_centerHorizontal="true"
@@ -66,14 +66,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageButton
-                    android:id="@+id/arrow_btn"
-                    android:layout_width="150.4dp"
-                    android:layout_height="300.7dp"
-                    android:layout_marginStart="290dp"
-                    android:layout_marginTop="110.9dp"
+                <ImageView
+                    android:id="@+id/draw41"
+                    android:layout_width="57.4dp"
+                    android:layout_height="181.7dp"
+                    android:layout_marginStart="327dp"
+                    android:layout_marginTop="160.9dp"
                     android:contentDescription="@string/text29"
-                    android:background="@drawable/arrow"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,29 +89,14 @@
 
                 <ImageButton
                     android:id="@+id/favorite_btn1"
-                    android:layout_width="255.5dp"
+                    android:layout_width="250.5dp"
                     android:layout_height="344.5dp"
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="87.5dp"
                     android:contentDescription="@string/text29"
-                    android:background="@drawable/draw42"
                     android:src="@drawable/invalid_name"
-                    android:scaleType="fitStart"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageButton
-                    android:id="@+id/favorite_btn2"
-                    android:layout_width="255.5dp"
-                    android:layout_height="344.5dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="87.5dp"
-                    android:visibility="gone"
-                    android:contentDescription="@string/text29"
-                    android:background="@drawable/draw42"
-                    android:src="@drawable/boy"
-                    android:scaleType="centerCrop"
-                    android:padding="0dp"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
@@ -223,127 +207,5 @@
         </RelativeLayout>
     </ScrollView>
 
-    <RelativeLayout
-        android:id="@+id/draw55"
-        android:layout_width="394.0dp"
-        android:layout_height="126.0dp"
-        android:layout_marginTop="589dp"
-        android:background="@drawable/draw55"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/draw54"
-            android:layout_width="394.0dp"
-            android:layout_height="109.5dp"
-            android:layout_marginTop="5.5dp"
-            android:src="@drawable/draw54"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/text35"/>
-
-        <RelativeLayout
-            android:id="@+id/draw53"
-            android:layout_width="394.0dp"
-            android:layout_height="109.5dp"
-            android:layout_marginTop="15.5dp"
-            android:background="@drawable/draw53"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <RelativeLayout
-                android:id="@+id/draw52"
-                android:layout_width="250.5dp"
-                android:layout_height="61.5dp"
-                android:layout_marginStart="126.5dp"
-                android:layout_marginTop="45dp"
-                android:background="@drawable/draw52"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <RelativeLayout
-                    android:id="@+id/draw36"
-                    android:layout_width="214.0dp"
-                    android:layout_height="54.5dp"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="4.5dp"
-                    android:background="@drawable/draw36"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/text3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="77.5dp"
-                        android:layout_marginTop="3.5dp"
-                        android:gravity="start|top"
-                        android:text="@string/text3"
-                        android:textColor="@color/color_fff63e4b"
-                        android:textSize="30sp"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <RelativeLayout
-                        android:id="@+id/draw35"
-                        android:layout_width="187.5dp"
-                        android:layout_height="44.0dp"
-                        android:layout_marginStart="14dp"
-                        android:layout_marginTop="5.5dp"
-                        android:background="@drawable/draw35"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
-
-                        <TextView
-                            android:id="@+id/text1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="2.5dp"
-                            android:layout_marginTop="5dp"
-                            android:gravity="start|top"
-                            android:text="@string/text1"
-                            android:textColor="@color/color_ff000000"
-                            android:textSize="20sp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/text2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="144.5dp"
-                            android:layout_marginTop="5dp"
-                            android:gravity="start|top"
-                            android:text="@string/text2"
-                            android:textColor="@color/color_ff090909"
-                            android:textSize="20sp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-                    </RelativeLayout>
-                </RelativeLayout>
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/text35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="126.5dp"
-                android:layout_marginTop="1.5dp"
-                android:gravity="start|top"
-                android:text="@string/text35"
-                android:textColor="@color/color_ff000000"
-                android:textSize="32.5sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/image13"
-                android:layout_width="109.0dp"
-                android:layout_height="109.5dp"
-                android:contentDescription="@string/text35"
-                android:src="@drawable/image2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </RelativeLayout>
     </RelativeLayout>
-</RelativeLayout>
