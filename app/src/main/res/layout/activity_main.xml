@@ -18,25 +18,25 @@
             android:layout_height="wrap_content">
 
             <RelativeLayout
-                android:id="@+id/draw51"
+                android:id="@+id/Search_layer"
                 android:layout_width="394.0dp"
                 android:layout_height="515.0dp"
-                android:background="@drawable/draw51"
+                android:background="@drawable/Search_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <Button
                     android:id="@+id/search_btn1"
-                    android:text="음악/가수 검색하기"
+                    android:text="@string/search_text"
                     android:textColor="#000000"
-                    android:textSize="30dp"
+                    android:textSize="30sp"
                     android:layout_centerHorizontal="true"
                     android:layout_width="380.0dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="50dp"
                     android:padding="10dp"
-                    android:background="@drawable/draw50"
-                    android:drawableLeft="@drawable/search"
+                    android:background="@drawable/search_btn1"
+                    android:drawableStart="@drawable/search"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
                 </Button>
@@ -45,22 +45,22 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/draw43"
+                android:id="@+id/Favorite_S_layer"
                 android:layout_width="394.0dp"
                 android:layout_height="485.0dp"
                 android:layout_marginTop="124.5dp"
-                android:background="@drawable/draw43"
+                android:background="@drawable/Favorite_S_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/text29"
+                    android:id="@+id/favorite_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="7.5dp"
                     android:gravity="start|top"
-                    android:text="@string/text29"
+                    android:text="@string/favorite_text"
                     android:textColor="@color/color_ff000000"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +72,7 @@
                     android:layout_height="300.7dp"
                     android:layout_marginStart="290dp"
                     android:layout_marginTop="110.9dp"
-                    android:contentDescription="@string/text29"
+                    android:contentDescription="@string/favorite_text"
                     android:background="@drawable/arrow"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -83,7 +83,7 @@
                     android:layout_height="344.5dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="100.5dp"
-                    android:contentDescription="@string/text29"
+                    android:contentDescription="@string/favorite_text"
                     android:src="@drawable/draw42"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -94,7 +94,7 @@
                     android:layout_height="344.5dp"
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="87.5dp"
-                    android:contentDescription="@string/text29"
+                    android:contentDescription="@string/favorite_text"
                     android:background="@drawable/draw42"
                     android:src="@drawable/invalid_name"
                     android:scaleType="fitStart"
@@ -108,7 +108,7 @@
                     android:layout_marginStart="28dp"
                     android:layout_marginTop="87.5dp"
                     android:visibility="gone"
-                    android:contentDescription="@string/text29"
+                    android:contentDescription="@string/favorite_text"
                     android:background="@drawable/draw42"
                     android:src="@drawable/boy"
                     android:scaleType="centerCrop"
@@ -117,33 +117,33 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
             <RelativeLayout
-                android:id="@+id/draw47"
+                android:id="@+id/Popular_chart_layer"
                 android:layout_width="394.0dp"
                 android:layout_height="1366dp"
                 android:layout_marginTop="600dp"
-                android:background="@drawable/draw47"
+                android:background="@drawable/Popular_chart_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
-                    android:id="@+id/text30"
+                    android:id="@+id/Popular_chart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="25dp"
                     android:gravity="start|top"
-                    android:text="@string/text30"
+                    android:text="@string/popular_chart"
                     android:textColor="@color/color_ff000000"
                     android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RelativeLayout
-                    android:id="@+id/draw46"
+                    android:id="@+id/Popular_chart_list"
                     android:layout_width="394.0dp"
                     android:layout_height="126.0dp"
                     android:layout_marginTop="90.5dp"
-                    android:background="@drawable/draw46"
+                    android:background="@drawable/Popular_chart_list"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -154,20 +154,20 @@
                         android:layout_marginStart="119.5dp"
                         android:layout_marginTop="50dp"
                         android:gravity="start|top"
-                        android:text="@string/text31"
+                        android:text="@string/nct127"
                         android:textColor="@color/color_ff000000"
                         android:textSize="30sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/text32"
+                        android:id="@+id/Rank_song"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="114dp"
                         android:layout_marginTop="4dp"
                         android:gravity="start|top"
-                        android:text="@string/text32"
+                        android:text="@string/rank_song"
                         android:textColor="@color/color_ff000000"
                         android:textSize="32.5sp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +181,7 @@
                         android:layout_marginTop="105.6dp"
                         android:src="@drawable/draw45"
                         android:background="@color/color_ffffffff"
-                        android:contentDescription="@string/text30"
+                        android:contentDescription="@string/popular_chart"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -195,23 +195,23 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <RelativeLayout
-                            android:id="@+id/draw44"
+                            android:id="@+id/Rank"
                             android:layout_width="75.0dp"
                             android:layout_height="75.0dp"
                             android:layout_marginStart="18dp"
                             android:layout_marginTop="18.5dp"
-                            android:background="@drawable/draw44"
+                            android:background="@drawable/Rank"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
-                                android:id="@+id/text33"
+                                android:id="@+id/Rank_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="23dp"
                                 android:layout_marginTop="0.5dp"
                                 android:gravity="start|top"
-                                android:text="@string/text33"
+                                android:text="@string/rank_1"
                                 android:textColor="@color/color_ffffffff"
                                 android:textSize="50sp"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -224,50 +224,50 @@
     </ScrollView>
 
     <RelativeLayout
-        android:id="@+id/draw55"
+        android:id="@+id/Player_layer"
         android:layout_width="394.0dp"
         android:layout_height="126.0dp"
         android:layout_marginTop="589dp"
-        android:background="@drawable/draw55"
+        android:background="@drawable/Player_layer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/draw54"
+            android:id="@+id/Player_shadow"
             android:layout_width="394.0dp"
             android:layout_height="109.5dp"
             android:layout_marginTop="5.5dp"
-            android:src="@drawable/draw54"
+            android:src="@drawable/Player_shadow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/text35"/>
+            android:contentDescription="@string/Play_S_name"/>
 
         <RelativeLayout
-            android:id="@+id/draw53"
+            android:id="@+id/Player"
             android:layout_width="394.0dp"
             android:layout_height="109.5dp"
             android:layout_marginTop="15.5dp"
-            android:background="@drawable/draw53"
+            android:background="@drawable/Player"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <RelativeLayout
-                android:id="@+id/draw52"
+                android:id="@+id/Player_ctrl_layer"
                 android:layout_width="250.5dp"
                 android:layout_height="61.5dp"
                 android:layout_marginStart="126.5dp"
                 android:layout_marginTop="45dp"
-                android:background="@drawable/draw52"
+                android:background="@drawable/Player_ctrl_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RelativeLayout
-                    android:id="@+id/draw36"
+                    android:id="@+id/Player_ctrl"
                     android:layout_width="214.0dp"
                     android:layout_height="54.5dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="4.5dp"
-                    android:background="@drawable/draw36"
+                    android:background="@drawable/Player_ctrl"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -285,12 +285,12 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <RelativeLayout
-                        android:id="@+id/draw35"
+                        android:id="@+id/Playlist_ctrl"
                         android:layout_width="187.5dp"
                         android:layout_height="44.0dp"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="5.5dp"
-                        android:background="@drawable/draw35"
+                        android:background="@drawable/Playlist_ctrl"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -324,13 +324,13 @@
             </RelativeLayout>
 
             <TextView
-                android:id="@+id/text35"
+                android:id="@+id/Play_S_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="126.5dp"
                 android:layout_marginTop="1.5dp"
                 android:gravity="start|top"
-                android:text="@string/text35"
+                android:text="@string/Play_S_name"
                 android:textColor="@color/color_ff000000"
                 android:textSize="32.5sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -340,7 +340,7 @@
                 android:id="@+id/image13"
                 android:layout_width="109.0dp"
                 android:layout_height="109.5dp"
-                android:contentDescription="@string/text35"
+                android:contentDescription="@string/Play_S_name"
                 android:src="@drawable/image2"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

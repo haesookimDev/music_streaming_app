@@ -30,7 +30,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="50dp"
             android:padding="10dp"
-            android:background="@drawable/draw50"
+            android:background="@drawable/search_btn1"
             android:layout_centerHorizontal="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -38,10 +38,10 @@
                 android:id="@+id/mini_search_btn"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/draw50"
+                android:background="@drawable/search_btn1"
                 android:text="검색"
                 android:textColor="@color/color_ff000000"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="290dp"/>
