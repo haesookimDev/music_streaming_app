@@ -16,7 +16,7 @@
             android:id="@+id/draw28"
             android:layout_width="394.0dp"
             android:layout_height="1720.5dp"
-            android:background="@color/color_ffffffff"
+            android:background="@color/color_fffe8d01"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -31,10 +31,10 @@
                     android:id="@+id/artist_page"
                     android:layout_width="394.0dp"
                     android:layout_height="644.5dp"
-                    android:background="@drawable/boy2"
+                    android:background="@drawable/boy2_artist"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginTop="45dp"/>
+                    android:layout_marginTop="65dp"/>
                 <RelativeLayout
                     android:id="@+id/artist_name"
                     android:layout_width="197.0dp"
@@ -99,71 +99,10 @@
                 android:id="@+id/draw20"
                 android:layout_width="394.0dp"
                 android:layout_height="1720.5dp"
-                android:background="@drawable/draw20"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="757.5dp">
-                <TextView
-                    android:id="@+id/text7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text7"
-                    android:gravity="center_horizontal|top"
-                    android:textColor="@color/color_ff000000"
-                    android:textSize="27.5sp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="4.5dp"
-                    android:layout_marginTop="149dp"/>
-                <RelativeLayout
-                    android:id="@+id/draw16"
-                    android:layout_width="370.5dp"
-                    android:layout_height="379.0dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="4.5dp"
-                    android:layout_marginTop="35.5dp">
-                    <TextView
-                        android:id="@+id/text6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text6"
-                        android:gravity="start|top"
-                        android:textColor="@color/color_ff121314"
-                        android:textSize="30sp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="25.5dp"
-                        android:layout_marginTop="8.5dp"/>
-                    <ImageView
-                        android:id="@+id/draw14"
-                        android:layout_width="194.6dp"
-                        android:layout_height="48.5dp"
-                        android:src="@drawable/draw14"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
-                    <RelativeLayout
-                        android:id="@+id/draw15"
-                        android:layout_width="370.5dp"
-                        android:layout_height="330.5dp"
-                        android:background="@drawable/draw15"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginTop="48.5dp">
-                        <TextView
-                            android:id="@+id/text8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/text8"
-                            android:gravity="center_horizontal|top"
-                            android:textColor="@color/color_ff121314"
-                            android:textSize="20sp"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="139dp"/>
-                    </RelativeLayout>
-                </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/draw19"
                     android:layout_width="370.5dp"
@@ -175,25 +114,90 @@
                     <ImageView
                         android:id="@+id/draw17"
                         android:layout_width="194.6dp"
-                        android:layout_height="48.5dp"
-                        android:src="@drawable/draw17"
+                        android:layout_height="60.5dp"
+                        android:src="@drawable/folder2"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"/>
                     <ImageView
                         android:id="@+id/draw18"
-                        android:layout_width="370.5dp"
-                        android:layout_height="330.5dp"
-                        android:src="@drawable/draw18"
+                        android:layout_width="450dp"
+                        android:layout_height="300.5dp"
+                        android:src="@drawable/folder2_1"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginTop="48.5dp"/>
+                        android:layout_marginTop="35.5dp"/>
                 </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/draw16"
+                    android:layout_width="370.5dp"
+                    android:layout_height="379.0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="4.5dp"
+                    android:layout_marginTop="35.5dp">
+
+                    <ImageView
+                        android:id="@+id/draw14"
+                        android:layout_width="194.6dp"
+                        android:layout_height="60.5dp"
+                        android:src="@drawable/folder1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="가수 소개"
+                        android:gravity="center"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="30dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="25.5dp"
+                        android:layout_marginTop="15dp"/>
+                    <RelativeLayout
+                        android:id="@+id/draw15"
+                        android:layout_width="370.5dp"
+                        android:layout_height="330.5dp"
+                        android:background="@drawable/folder1_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="48.5dp">
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/artist_page_inf1"
+                            android:gravity="center_horizontal|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="27.5sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="4.5dp"
+                            android:layout_marginTop="50dp"/>
+                        <TextView
+                            android:id="@+id/text8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/artist_page_inf2"
+                            android:gravity="center_horizontal|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="100dp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
             </RelativeLayout>
             <RelativeLayout
                 android:id="@+id/draw13"
                 android:layout_width="394.0dp"
                 android:layout_height="1720.5dp"
-                android:background="@drawable/draw13"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="1207.5dp">
@@ -229,7 +233,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/text2"
                             android:gravity="start|top"
-                            android:textColor="@color/color_ff020202"
+                            android:textColor="@color/color_ff000000"
                             android:textSize="25sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -258,6 +262,70 @@
                         android:layout_marginStart="123dp"
                         android:layout_marginTop="23.5dp"/>
                 </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/draw12"
+                    android:layout_width="370.5dp"
+                    android:layout_height="550.0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="19.5dp"
+                    android:layout_marginTop="25.5dp">
+                    <ImageView
+                        android:id="@+id/draw10"
+                        android:layout_width="194.6dp"
+                        android:layout_height="60.5dp"
+                        android:src="@drawable/folder2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <ImageView
+                        android:id="@+id/draw11"
+                        android:layout_width="450dp"
+                        android:layout_height="300.5dp"
+                        android:src="@drawable/folder2_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="30.5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/draw9"
+                    android:layout_width="370.5dp"
+                    android:layout_height="550.0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8.5dp"
+                    android:layout_marginTop="30.5dp">
+
+                    <ImageView
+                        android:id="@+id/draw7"
+                        android:layout_width="194.6dp"
+                        android:layout_height="60.5dp"
+                        android:src="@drawable/folder1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="인기곡"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="30sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="51dp"
+                        android:layout_marginTop="12dp"/>
+                    <ImageView
+                        android:id="@+id/draw22"
+                        android:layout_width="370.5dp"
+                        android:layout_height="330.5dp"
+                        android:background="@drawable/folder1_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="48.5dp" />
+                </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/draw6"
                     android:layout_width="394.0dp"
@@ -290,7 +358,7 @@
                             android:layout_height="wrap_content"
                             android:text="@string/text4"
                             android:gravity="start|top"
-                            android:textColor="@color/color_ff020202"
+                            android:textColor="@color/color_ff000000"
                             android:textSize="25sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -319,66 +387,7 @@
                         android:layout_marginStart="123.5dp"
                         android:layout_marginTop="39.5dp"/>
                 </RelativeLayout>
-                <RelativeLayout
-                    android:id="@+id/draw9"
-                    android:layout_width="370.5dp"
-                    android:layout_height="382.0dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="8.5dp"
-                    android:layout_marginTop="30.5dp">
-                    <TextView
-                        android:id="@+id/text1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text1"
-                        android:gravity="start|top"
-                        android:textColor="@color/color_ff121314"
-                        android:textSize="30sp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="51dp"
-                        android:layout_marginTop="12dp"/>
-                    <ImageView
-                        android:id="@+id/draw7"
-                        android:layout_width="194.6dp"
-                        android:layout_height="48.9dp"
-                        android:src="@drawable/draw7"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
-                    <ImageView
-                        android:id="@+id/draw8"
-                        android:layout_width="370.5dp"
-                        android:layout_height="333.1dp"
-                        android:src="@drawable/draw8"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginTop="48.9dp"/>
-                </RelativeLayout>
-                <RelativeLayout
-                    android:id="@+id/draw12"
-                    android:layout_width="370.5dp"
-                    android:layout_height="382.0dp"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="23.5dp"
-                    android:layout_marginTop="20.5dp">
-                    <ImageView
-                        android:id="@+id/draw10"
-                        android:layout_width="194.6dp"
-                        android:layout_height="48.9dp"
-                        android:src="@drawable/draw10"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"/>
-                    <ImageView
-                        android:id="@+id/draw11"
-                        android:layout_width="370.5dp"
-                        android:layout_height="333.1dp"
-                        android:src="@drawable/draw11"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginTop="48.9dp"/>
-                </RelativeLayout>
+
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
