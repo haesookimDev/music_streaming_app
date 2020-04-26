@@ -98,7 +98,7 @@
             <RelativeLayout
                 android:id="@+id/draw20"
                 android:layout_width="394.0dp"
-                android:layout_height="453.0dp"
+                android:layout_height="1720.5dp"
                 android:background="@drawable/draw20"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -192,7 +192,7 @@
             <RelativeLayout
                 android:id="@+id/draw13"
                 android:layout_width="394.0dp"
-                android:layout_height="513.0dp"
+                android:layout_height="1720.5dp"
                 android:background="@drawable/draw13"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
