@@ -29,7 +29,7 @@
                     android:id="@+id/search_btn1"
                     android:text="@string/search_text"
                     android:textColor="#000000"
-                    android:textSize="30sp"
+                    android:textSize="30dp"
                     android:layout_centerHorizontal="true"
                     android:layout_width="380.0dp"
                     android:layout_height="60dp"
