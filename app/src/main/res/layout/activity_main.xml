@@ -21,7 +21,7 @@
                 android:id="@+id/search_layer"
                 android:layout_width="394.0dp"
                 android:layout_height="515.0dp"
-                android:background="@drawable/search_layer"
+                android:background="@drawable/search_lay"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -49,7 +49,7 @@
                 android:layout_width="394.0dp"
                 android:layout_height="485.0dp"
                 android:layout_marginTop="124.5dp"
-                android:background="@drawable/favorite_s_layer"
+                android:background="@drawable/favorite_ss_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -121,7 +121,7 @@
                 android:layout_width="394.0dp"
                 android:layout_height="1366dp"
                 android:layout_marginTop="600dp"
-                android:background="@drawable/Popular_chart_layer"
+                android:background="@drawable/popular_chart_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -143,7 +143,7 @@
                     android:layout_width="394.0dp"
                     android:layout_height="126.0dp"
                     android:layout_marginTop="90.5dp"
-                    android:background="@drawable/Popular_chart_list"
+                    android:background="@drawable/popular_chart_list"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -200,7 +200,7 @@
                             android:layout_height="75.0dp"
                             android:layout_marginStart="18dp"
                             android:layout_marginTop="18.5dp"
-                            android:background="@drawable/Rank"
+                            android:background="@drawable/rank"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -228,7 +228,7 @@
         android:layout_width="394.0dp"
         android:layout_height="126.0dp"
         android:layout_marginTop="589dp"
-        android:background="@drawable/Player_layer"
+        android:background="@drawable/player_layer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -237,7 +237,7 @@
             android:layout_width="394.0dp"
             android:layout_height="109.5dp"
             android:layout_marginTop="5.5dp"
-            android:src="@drawable/Player_shadow"
+            android:src="@drawable/player_shadow"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/Play_S_name"/>
@@ -247,7 +247,7 @@
             android:layout_width="394.0dp"
             android:layout_height="109.5dp"
             android:layout_marginTop="15.5dp"
-            android:background="@drawable/Player"
+            android:background="@drawable/player"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -257,7 +257,7 @@
                 android:layout_height="61.5dp"
                 android:layout_marginStart="126.5dp"
                 android:layout_marginTop="45dp"
-                android:background="@drawable/Player_ctrl_layer"
+                android:background="@drawable/player_ctrl_layer"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -267,7 +267,7 @@
                     android:layout_height="54.5dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="4.5dp"
-                    android:background="@drawable/Player_ctrl"
+                    android:background="@drawable/player_ctrl"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -290,7 +290,7 @@
                         android:layout_height="44.0dp"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="5.5dp"
-                        android:background="@drawable/Playlist_ctrl"
+                        android:background="@drawable/playlist_ctrl"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
