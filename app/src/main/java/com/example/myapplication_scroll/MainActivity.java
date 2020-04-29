@@ -45,6 +45,10 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent_favorite = new Intent(getApplicationContext(),Favorite1Activity.class);
                         startActivity(intent_favorite);
                         break;
+                    case R.id.favorite_btn2:
+                        Intent intent_favorite2 = new Intent(getApplicationContext(),Favorite2Activity.class);
+                        startActivity(intent_favorite2);
+                        break;
                     case R.id.arrow_btn:
                         i = 1-i;
                         if(i==0){
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_search.setOnClickListener(Listener);
         btn_favorite1.setOnClickListener(Listener);
+        btn_favorite2.setOnClickListener(Listener);
         btn_arrow.setOnClickListener(Listener);
     }
 }
