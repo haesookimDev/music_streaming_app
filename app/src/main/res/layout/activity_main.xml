@@ -125,16 +125,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
+                <Button
                     android:id="@+id/Popular_chart"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:paddingLeft="10dp"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="25dp"
-                    android:gravity="start|top"
+                    android:gravity=""
+                    android:background="@drawable/search_btn1"
                     android:text="@string/popular_chart"
                     android:textColor="@color/color_ff000000"
-                    android:textSize="30sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
