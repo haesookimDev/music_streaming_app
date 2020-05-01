@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_search;
+    Button btn_main_search;
     ImageButton btn_favorite1;
     ImageButton btn_favorite2;
     ImageButton  btn_arrow;
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void InitializeView() {
-        btn_search = (Button) findViewById(R.id.search_btn1);
+        btn_main_search = (Button) findViewById(R.id.main_search_btn1);
         btn_favorite1 = (ImageButton) findViewById(R.id.favorite_btn1);
         btn_favorite2 = (ImageButton) findViewById(R.id.favorite_btn2);
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.search_btn1:
+                    case R.id.main_search_btn1:
                         Intent intent_search = new Intent(getApplicationContext(),SearchActivity.class);
                         startActivity(intent_search);
                         break;
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        btn_search.setOnClickListener(Listener);
+        btn_main_search.setOnClickListener(Listener);
         btn_favorite1.setOnClickListener(Listener);
         btn_favorite2.setOnClickListener(Listener);
         btn_arrow.setOnClickListener(Listener);
