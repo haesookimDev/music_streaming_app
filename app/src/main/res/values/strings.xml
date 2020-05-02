@@ -17,7 +17,8 @@
     <string name="rank_1">1</string>
     <string name="search_text">음악/가수 검색하기</string>
     <string name="mini_search_text">검색</string>
-    <string name="mini_home_text">처음으로</string>
+    <string name="mini_home_text">&lt;홈으로</string>
+    <string name="yeong">임영웅</string>
     <string name="introduction_favorite1">임영웅 소개</string>
     <string name="artist_page_inf1">트로트계의 영웅 가수 임영웅!!! </string>
     <string name="text6">가수 소개&gt;</string>
@@ -31,8 +32,14 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="artist_page_boy1_inf2">NCT 127는 SM 엔터테인먼트에 소속된 NCT의 두 번째 서브 그룹으로 서울의 경도인 127을 통해 서울과 K-POP을 알리겠다는 포부를 담았다. 태용, 재현, 태일, 마크, 윈윈, 해찬, 유타, 도영, 쟈니, 정우로 구성되어 있다.</string>
     <string name="album_name1">NCT #127 Neo Zone - The 2nd Album</string>
     <string name="album_name2">NCT #127 CHERRY BOMB - The 3rd Mini Album</string>
+    <string name="album_name3">내일은 미스터트롯 트롯 에이드 베스트</string>
+    <string name="album_name4">내일은 미스터트롯 우승자 특전곡</string>
     <string name="nct_love_song">우산(Love Song)</string>
     <string name="nct_kick_it">영웅 (英雄; Kick It)</string>
     <string name="nct_127f">Elevator(127F)</string>
     <string name="nct_daydream">Day Dream(白日夢)</string>
+    <string name="yeong_wish">바램</string>
+    <string name="yeong_sixty_story">어느 60대 노부부이야기</string>
+    <string name="yeong_trust_me">이제 나만 믿어요</string>
+    <string name="yeong_magic_lily">상사화</string>
 </resources>
