@@ -1,8 +1,14 @@
 <resources>
     <string name="app_name">음악플레이어</string>
+    <string name="singer">가수></string>
+    <string name="song">곡></string>
+    <string name="album">앨범></string>
+    <string name="play">재생</string>
     <string name="text3">정지</string>
     <string name="text1">이전</string>
     <string name="text2">다음</string>
+    <string name="select_play">선택재생</string>
+    <string name="all_play">전체재생</string>
     <string name="Play_S_name">우산(Love Song)</string>
     <string name="favorite_text">내가 좋아하는 가수</string>
     <string name="popular_chart">인기차트&gt;</string>
@@ -23,4 +29,5 @@ SBS [판타스틱 듀오] 이수영 편 출연
 최종 미스터트롯 진(1위)</string>
     <string name="artist_page_boy1_inf1">To The World 여긴 NCT</string>
     <string name="artist_page_boy1_inf2">NCT 127는 SM 엔터테인먼트에 소속된 NCT의 두 번째 서브 그룹으로 서울의 경도인 127을 통해 서울과 K-POP을 알리겠다는 포부를 담았다. 태용, 재현, 태일, 마크, 윈윈, 해찬, 유타, 도영, 쟈니, 정우로 구성되어 있다.</string>
+    <string name="album_name1">NCT #127 Neo Zone - The 2nd Album</string>
 </resources>
