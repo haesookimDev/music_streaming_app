@@ -30,4 +30,9 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="artist_page_boy1_inf1">To The World 여긴 NCT</string>
     <string name="artist_page_boy1_inf2">NCT 127는 SM 엔터테인먼트에 소속된 NCT의 두 번째 서브 그룹으로 서울의 경도인 127을 통해 서울과 K-POP을 알리겠다는 포부를 담았다. 태용, 재현, 태일, 마크, 윈윈, 해찬, 유타, 도영, 쟈니, 정우로 구성되어 있다.</string>
     <string name="album_name1">NCT #127 Neo Zone - The 2nd Album</string>
+    <string name="album_name2">NCT #127 CHERRY BOMB - The 3rd Mini Album</string>
+    <string name="nct_love_song">우산(Love Song)</string>
+    <string name="nct_kick_it">영웅 (英雄; Kick It)</string>
+    <string name="nct_127f">Elevator(127F)</string>
+    <string name="nct_daydream">Day Dream(白日夢)</string>
 </resources>

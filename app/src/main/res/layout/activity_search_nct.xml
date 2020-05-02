@@ -145,14 +145,14 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/search_result1_song"
+                android:id="@+id/search_result1_song1"
                 android:layout_width="394.0dp"
                 android:layout_height="90.5dp"
                 android:layout_marginTop="445.5dp"
                 android:background="@drawable/search_result1_song">
 
                 <ImageView
-                    android:id="@+id/song_play"
+                    android:id="@+id/song_play1"
                     android:layout_width="75.0dp"
                     android:layout_height="75.0dp"
                     android:layout_marginStart="307.5dp"
@@ -161,15 +161,46 @@
                     android:src="@drawable/song_play" />
 
                 <RelativeLayout
-                    android:id="@+id/song_play_lay"
+                    android:id="@+id/song_lay1"
+                    android:layout_width="366.5dp"
+                    android:layout_height="90.5dp"
+                    android:background="@drawable/song_lay"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <TextView
+                        android:id="@+id/nct_kick_it"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nct_kick_it"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="29.5dp"/>
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="90.0dp"
+                        android:layout_height="90.3dp"
+                        android:src="@drawable/image1"
+                        android:contentDescription="@string/nct_kick_it" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/song_play_lay1"
                     android:layout_width="75.0dp"
                     android:layout_height="75.0dp"
                     android:layout_marginStart="302.5dp"
                     android:layout_marginTop="7.5dp"
                     android:background="@drawable/song_play_lay">
 
+                    <Button
+                        android:id="@+id/play_btn1"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"/>
+
                     <TextView
-                        android:id="@+id/play"
+                        android:id="@+id/play1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="13dp"
@@ -179,24 +210,213 @@
                         android:textColor="@color/color_ff020202"
                         android:textSize="25sp" />
                 </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/Play_S_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="100dp"
-                    android:layout_marginTop="29.5dp"
-                    android:gravity="start|top"
-                    android:text="@string/Play_S_name"
-                    android:textColor="@color/color_ff000000"
-                    android:textSize="25sp" />
-
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/search_result1_song4"
+                android:layout_width="394.0dp"
+                android:layout_height="90.5dp"
+                android:background="@drawable/search_result1_song"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="747dp">
                 <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="90.0dp"
-                    android:layout_height="90.3dp"
-                    android:contentDescription="@string/Play_S_name"
-                    android:src="@drawable/image1" />
+                    android:id="@+id/song_play4"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:src="@drawable/song_play"
+                    android:layout_marginStart="307.5dp"
+                    android:layout_marginTop="7.5dp"
+                    android:contentDescription="@string/play"/>
+                <RelativeLayout
+                    android:id="@+id/song_lay4"
+                    android:layout_width="367.5dp"
+                    android:layout_height="90.5dp"
+                    android:background="@drawable/song_lay">
+                    <TextView
+                        android:id="@+id/nct_127f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nct_127f"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="29.5dp"/>
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="90.0dp"
+                        android:layout_height="90.3dp"
+                        android:src="@drawable/image1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:contentDescription="@string/nct_127f" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/song_play_lay4"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:background="@drawable/song_play_lay"
+                    android:layout_marginStart="302.5dp"
+                    android:layout_marginTop="7.5dp">
+                    <Button
+                        android:id="@+id/play_btn4"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"/>
+                    <TextView
+                        android:id="@+id/play4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff020202"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="19dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/search_result1_song3"
+                android:layout_width="394.0dp"
+                android:layout_height="90.5dp"
+                android:background="@drawable/search_result1_song"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="646.5dp">
+                <ImageView
+                    android:id="@+id/song_play3"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:src="@drawable/song_play"
+                    android:layout_marginStart="307.5dp"
+                    android:layout_marginTop="7.5dp"
+                    android:contentDescription="@string/play"/>
+                <RelativeLayout
+                    android:id="@+id/song_lay3"
+                    android:layout_width="367.5dp"
+                    android:layout_height="90.5dp"
+                    android:background="@drawable/song_lay">
+                    <TextView
+                        android:id="@+id/nct_love_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nct_love_song"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="29.5dp"/>
+                    <ImageView
+                        android:id="@+id/image7"
+                        android:layout_width="90.0dp"
+                        android:layout_height="90.3dp"
+                        android:src="@drawable/image1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:contentDescription="@string/nct_love_song" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/song_play_lay3"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:background="@drawable/song_play_lay"
+                    android:layout_marginStart="302.5dp"
+                    android:layout_marginTop="7.5dp">
+                    <Button
+                        android:id="@+id/play_btn3"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"/>
+                    <TextView
+                        android:id="@+id/play3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff020202"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="19dp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/search_result1_song2"
+                android:layout_width="394.0dp"
+                android:layout_height="90.5dp"
+                android:background="@drawable/search_result1_song"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="546dp">
+                <ImageView
+                    android:id="@+id/song_play2"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:src="@drawable/song_play"
+                    android:layout_marginStart="307.5dp"
+                    android:layout_marginTop="7.5dp"
+                    android:contentDescription="@string/play" />
+                <RelativeLayout
+                    android:id="@+id/song_lay2"
+                    android:layout_width="367.5dp"
+                    android:layout_height="90.5dp"
+                    android:background="@drawable/song_lay">
+                    <TextView
+                        android:id="@+id/nct_daydream"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nct_daydream"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="100dp"
+                        android:layout_marginTop="29.5dp"/>
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="90.0dp"
+                        android:layout_height="90.3dp"
+                        android:src="@drawable/image1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:contentDescription="@string/nct_daydream" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/song_play_lay2"
+                    android:layout_width="75.0dp"
+                    android:layout_height="75.0dp"
+                    android:background="@drawable/song_play_lay"
+                    android:layout_marginStart="302.5dp"
+                    android:layout_marginTop="7.5dp">
+                    <Button
+                        android:id="@+id/play_btn2"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"/>
+                    <TextView
+                        android:id="@+id/play2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff020202"
+                        android:textSize="25sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="19dp"/>
+                </RelativeLayout>
             </RelativeLayout>
 
             <RelativeLayout
@@ -281,6 +501,33 @@
                     android:text="@string/album"
                     android:textColor="@color/color_ff121314"
                     android:textSize="30sp" />
+
+                <RelativeLayout
+                    android:id="@+id/album2"
+                    android:layout_width="373.0dp"
+                    android:layout_height="135.0dp"
+                    android:background="@drawable/album"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="201.5dp">
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_width="125.0dp"
+                        android:layout_height="124.3dp"
+                        android:src="@drawable/cherry"
+                        android:layout_marginTop="10.5dp"
+                        android:contentDescription="@string/album_name2" />
+                    <TextView
+                        android:id="@+id/album_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/album_name2"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff121314"
+                        android:textSize="30sp"
+                        android:layout_marginStart="135.5dp"
+                        android:layout_marginTop="19.5dp"/>
+                </RelativeLayout>
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
