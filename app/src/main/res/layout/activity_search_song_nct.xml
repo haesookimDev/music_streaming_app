@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/artboard"
+    android:layout_width="394.0dp"
+    android:layout_height="785.0dp"
+    android:background="@drawable/artboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/search_result1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_result1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/search_result1_1"
+                    android:layout_width="366.5dp"
+                    android:layout_height="785.0dp"
+                    android:layout_marginTop="130dp"
+                    android:background="@drawable/search_result1_1">
+
+                    <RelativeLayout
+                        android:id="@+id/search_result1_song_list"
+                        android:layout_width="366.0dp"
+                        android:layout_height="163.0dp"
+                        android:layout_marginTop="102dp"
+                        android:background="@drawable/search_result1_song_list">
+
+                        <TextView
+                            android:id="@+id/song"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="6.5dp"
+                            android:gravity="start|top"
+                            android:text="@string/song"
+                            android:textColor="@color/color_ff121314"
+                            android:textSize="30sp" />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/select_all_play_lay"
+                        android:layout_width="274.0dp"
+                        android:layout_height="63.0dp"
+                        android:layout_marginStart="14.5dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/select_all_play_lay">
+
+                        <Button
+                            android:id="@+id/select_play_lay"
+                            android:layout_width="121.0dp"
+                            android:layout_height="45.3dp"
+                            android:layout_marginStart="153dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/select_play"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            android:background="@drawable/select_play_lay">
+                        </Button>
+
+                        <Button
+                            android:id="@+id/all_play_lay"
+                            android:layout_width="120.6dp"
+                            android:layout_height="45.3dp"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:text="@string/all_play"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            android:background="@drawable/all_play_lay">
+                        </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/search_result1_song1"
+                    android:layout_width="394.0dp"
+                    android:layout_height="90.5dp"
+                    android:layout_marginTop="300dp"
+                    android:background="@drawable/search_result1_song">
+
+                    <ImageView
+                        android:id="@+id/song_play1"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="307.5dp"
+                        android:layout_marginTop="7.5dp"
+                        android:contentDescription="@string/play"
+                        android:src="@drawable/song_play" />
+
+                    <RelativeLayout
+                        android:id="@+id/song_lay1"
+                        android:layout_width="366.5dp"
+                        android:layout_height="90.5dp"
+                        android:background="@drawable/song_lay"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:id="@+id/nct_daydream"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nct_day_dream"
+                            android:gravity="start|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="29.5dp"/>
+                        <ImageView
+
+                            android:layout_width="90.0dp"
+                            android:layout_height="90.3dp"
+                            android:src="@drawable/image1"
+                            android:contentDescription="@string/nct_kick_it" />
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/song_play_lay1"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"
+                        android:text="@string/play"
+                        android:textSize="25dp"
+                        android:background="@drawable/song_play_lay">
+                    </Button>
+                    </RelativeLayout>
+                </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/mini_home_search_btn"
+                    android:layout_width="394.0dp"
+                    android:layout_height="115.0dp"
+                    android:layout_marginTop="16.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/mini_search_btn"
+                        android:layout_width="170.0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginTop="33.5dp"
+                        android:background="@drawable/mini_search_button"
+                        android:drawableStart="@drawable/search"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/mini_search_text"
+                        android:textColor="#000000"
+                        android:textSize="40sp" />
+
+                    <Button
+                        android:id="@+id/mini_home_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="33.5dp"
+                        android:background="@drawable/mini_home_button"
+                        android:gravity=""
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/mini_home_text"
+                        android:textColor="#000000"
+                        android:textSize="40sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/album_lay"
+                    android:layout_width="373.0dp"
+                    android:layout_height="300.0dp"
+                    android:layout_marginTop="450dp"
+                    android:background="@drawable/album_lay">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="23.5dp"
+                        android:gravity="start|top"
+                        android:text="@string/lyrics"
+                        android:textColor="@color/color_ff121314"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/search_result1_lyrics1"
+                    android:layout_width="394.0dp"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="525dp"
+                    android:background="@drawable/search_result1_song">
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginStart="70dp"
+                        android:text="@string/nct_day_dream_lyrics">
+                    </TextView>
+                    <ImageView
+                        android:id="@+id/lyrics_song_play1"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="307.5dp"
+                        android:layout_marginTop="7.5dp"
+                        android:contentDescription="@string/play"
+                        android:src="@drawable/song_play" />
+
+                    <RelativeLayout
+                        android:layout_width="366.5dp"
+                        android:layout_height="90.5dp"
+                        android:background="@drawable/song_lay"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+                        <TextView
+                            android:id="@+id/nct_kick_it"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nct_day_dream"
+                            android:gravity="start|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            android:layout_marginStart="100dp"
+                            android:layout_marginTop="29.5dp"/>
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="90.0dp"
+                            android:layout_height="90.3dp"
+                            android:src="@drawable/image1"
+                            android:contentDescription="@string/nct_kick_it" />
+                    </RelativeLayout>
+                    <Button
+                        android:id="@+id/song_play_lyrics_lay1"
+                        android:layout_width="75.0dp"
+                        android:layout_height="75.0dp"
+                        android:layout_marginStart="302.5dp"
+                        android:layout_marginTop="7.5dp"
+                        android:text="@string/play"
+                        android:textSize="25dp"
+                        android:background="@drawable/song_play_lay">
+                    </Button>
+                </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

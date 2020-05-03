@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">음악플레이어</string>
+    <string name="popular_chart_10">인기차트 톱 10</string>
+    <string name="nct_day_dream_lyrics">어디쯤 이런 바람이 불어온 건지 자꾸만 나를 한 걸음씩 떠밀어 어지러 수풀 사잇길 헤매는데 마침 익숙히 스친 멜로디 na na na na na na 고갤 돌린 순간 날 불러낸 듯한 ...</string>
+    <string name="trust_lyrics">
+    무얼 믿은 걸까 부족했던 내게서 나조차 못 믿던 내게 여태 머문 사람 무얼 봤던 걸까 가진 것도 없던 내게 무작정 내 손을 잡아 날 이끈 사람 최고였어 그대 눈 속에 비친 내 모습 이제는 내게서 그댈 비춰줄 궂은 비가 오면...</string>
+    <string name="nct_day_dream">Day Dream(白日夢)</string>
+    <string name="lyrics">가사&gt;</string>
+       <string name="app_name">음악플레이어</string>
     <string name="singer">가수></string>
     <string name="song">곡></string>
     <string name="album">앨범></string>
@@ -17,7 +23,7 @@
     <string name="rank_1">1</string>
     <string name="search_text">음악/가수 검색하기</string>
     <string name="mini_search_text">검색</string>
-    <string name="mini_home_text">&lt;홈으로</string>
+    <string name="mini_home_text">처음으로</string>
     <string name="yeong">임영웅</string>
     <string name="introduction_favorite1">임영웅 소개</string>
     <string name="artist_page_inf1">트로트계의 영웅 가수 임영웅!!! </string>
@@ -42,4 +48,44 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="yeong_sixty_story">어느 60대 노부부이야기</string>
     <string name="yeong_trust_me">이제 나만 믿어요</string>
     <string name="yeong_magic_lily">상사화</string>
+
+    <string name="album_name5">이제 나만 믿어요</string>
+    <string name="text5">가사</string>
+    <string name="trust">
+        무얼 믿은 걸까 부족했던 내게서
+        나조차 못 믿던 내게 여태 머문 사람
+        무얼 봤던 걸까 가진 것도 없던 내게
+        무작정 내 손을 잡아 날 이끈 사람
+        최고였어
+        그대 눈 속에 비친 내 모습
+        이제는 내게서 그댈 비춰줄게
+        궂은 비가 오면
+        세상 가장 큰 그대 우산이 될게
+        그댄 편히 걸어가요
+        걷다가 지치면
+        내가 그대를 안고 어디든 갈게
+        이제 나만 믿어요
+        나만 두고 가던
+        나만 스쳐 간 행운이 모여
+        그대가 되어서 내게 와준 거야
+        궂은 비가 오면
+        세상 가장 큰 그대 우산이 될게
+        그댄 편히 걸어가요
+        걷다가 지치면
+        내가 그대를 안고 어디든 갈게
+        이제 나만 믿어요
+        나의 마지막 주인공이 되어
+        다신 누구 앞에서도
+        그대는 고개 숙이지 마요
+        내가 보지 못했던 홀로 고단했던 시간
+        고맙고 미안해요 사랑해요
+        이 세상은
+        우리를 두고 오랜 장난을 했고
+        우린 속지 않은 거야
+        이제 울지 마요
+        좋을 땐 밤새도록 맘껏 웃어요
+        전부 그대 꺼니까
+        그대는 걱정 말아요
+        이제 나만 믿어요</string>
+
 </resources>

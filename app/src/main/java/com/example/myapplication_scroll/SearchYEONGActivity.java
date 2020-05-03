@@ -1,28 +1,18 @@
 package com.example.myapplication_scroll;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.RelativeLayout;
 
-public class SearchNCTActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SearchYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
-
-//    Button btn_play1;
-//    RelativeLayout songLay1;
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_search_nct);
+        setContentView(R.layout.activity_search_yeong);
 
         this.InitializeView();
         this.SetListener();
@@ -57,4 +47,3 @@ public class SearchNCTActivity extends AppCompatActivity {
     }
 
 }
-

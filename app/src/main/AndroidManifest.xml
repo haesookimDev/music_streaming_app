@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Favorite2Activity"/>
+        <activity android:name=".Popular_Song_Activity"></activity>
+        <activity android:name=".SearchSongYEONGActivity" />
+        <activity android:name=".SearchSongNCTActivity" />
+        <activity android:name=".Favorite2Activity" />
         <activity android:name=".Favorite1Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -19,7 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SearchActivity" />
-        <activity android:name=".SearchNCTActivity"/>
+        <activity android:name=".SearchNCTActivity" />
+        <activity android:name=".SearchYEONGActivity" />
     </application>
 
 </manifest>

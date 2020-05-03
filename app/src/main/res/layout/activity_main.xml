@@ -125,14 +125,13 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <Button
-                    android:id="@+id/Popular_chart"
-                    android:textSize="40dp"
-                    android:paddingLeft="10dp"
+                    android:id="@+id/popular_chart"
+                    android:textSize="40sp"
                     android:layout_width="200dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="25dp"
-                    android:gravity=""
+                    android:gravity="center"
                     android:background="@drawable/search_btn1"
                     android:text="@string/popular_chart"
                     android:textColor="@color/color_ff000000"

@@ -27,7 +27,7 @@
                 android:id="@+id/search_result1_1"
                 android:layout_width="366.5dp"
                 android:layout_height="1122.0dp"
-                android:layout_marginTop="112dp"
+                android:layout_marginTop="130dp"
                 android:background="@drawable/search_result1_1">
 
                 <RelativeLayout
@@ -431,7 +431,7 @@
                     android:id="@+id/mini_search_btn"
                     android:layout_width="170.0dp"
                     android:layout_height="60dp"
-                    android:layout_marginStart="220dp"
+                    android:layout_marginStart="230dp"
                     android:layout_marginTop="33.5dp"
                     android:background="@drawable/mini_search_button"
                     android:drawableStart="@drawable/search"
