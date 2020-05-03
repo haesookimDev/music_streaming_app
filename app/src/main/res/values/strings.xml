@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">음악플레이어</string>
+    <string name="popular_chart_10">인기차트 톱 10</string>
+    <string name="nct_day_dream_lyrics">어디쯤 이런 바람이 불어온 건지 자꾸만 나를 한 걸음씩 떠밀어 어지러 수풀 사잇길 헤매는데 마침 익숙히 스친 멜로디 na na na na na na 고갤 돌린 순간 날 불러낸 듯한 ...</string>
+    <string name="trust_lyrics">
+    무얼 믿은 걸까 부족했던 내게서 나조차 못 믿던 내게 여태 머문 사람 무얼 봤던 걸까 가진 것도 없던 내게 무작정 내 손을 잡아 날 이끈 사람 최고였어 그대 눈 속에 비친 내 모습 이제는 내게서 그댈 비춰줄 궂은 비가 오면...</string>
+    <string name="nct_day_dream">Day Dream(白日夢)</string>
+    <string name="lyrics">가사&gt;</string>
+       <string name="app_name">음악플레이어</string>
     <string name="singer">가수></string>
     <string name="song">곡></string>
     <string name="album">앨범></string>

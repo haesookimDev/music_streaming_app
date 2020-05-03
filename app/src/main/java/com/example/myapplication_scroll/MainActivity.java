@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    Button btn_popular_chart;
     Button btn_main_search;
     ImageButton btn_favorite1;
     ImageButton btn_favorite2;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btn_favorite1 = (ImageButton) findViewById(R.id.favorite_btn1);
         btn_favorite2 = (ImageButton) findViewById(R.id.favorite_btn2);
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
+        btn_popular_chart = (Button) findViewById(R.id.popular_chart);
     }
 
     public void SetListener() {
@@ -37,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
+                    case R.id.popular_chart:
+                        Intent intent_popular_chart = new Intent(getApplicationContext(),Popular_Song_Activity.class);
+                        startActivity(intent_popular_chart);
+                        break;
                     case R.id.main_search_btn1:
                         Intent intent_search = new Intent(getApplicationContext(),SearchActivity.class);
                         startActivity(intent_search);
@@ -59,10 +65,12 @@ public class MainActivity extends AppCompatActivity {
                             btn_favorite2.setVisibility(View.INVISIBLE);
                         }
                         break;
+                    default:
+                        break;
                 }
             }
         };
-
+        btn_popular_chart.setOnClickListener(Listener);
         btn_main_search.setOnClickListener(Listener);
         btn_favorite1.setOnClickListener(Listener);
         btn_favorite2.setOnClickListener(Listener);

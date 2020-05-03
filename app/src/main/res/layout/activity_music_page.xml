@@ -270,7 +270,7 @@
                         android:background="@drawable/mini_search_button"
                         android:drawableStart="@drawable/search"
                         android:paddingLeft="20dp"
-                        android:layout_marginStart="220dp"
+                        android:layout_marginStart="230dp"
                         android:layout_marginTop="33.5dp">
                     </Button>
                     <Button

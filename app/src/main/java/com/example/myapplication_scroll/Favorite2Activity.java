@@ -40,6 +40,8 @@ public class Favorite2Activity extends AppCompatActivity {
                         Intent intent_search = new Intent(getApplicationContext(),SearchActivity.class);
                         startActivity(intent_search);
                         break;
+                    default:
+                        break;
                 }
             }
         };

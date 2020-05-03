@@ -431,7 +431,7 @@
                     android:id="@+id/mini_search_btn"
                     android:layout_width="170.0dp"
                     android:layout_height="60dp"
-                    android:layout_marginStart="220dp"
+                    android:layout_marginStart="230dp"
                     android:layout_marginTop="33.5dp"
                     android:background="@drawable/mini_search_button"
                     android:drawableStart="@drawable/search"
