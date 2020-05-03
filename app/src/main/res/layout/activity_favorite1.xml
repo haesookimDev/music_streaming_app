@@ -231,6 +231,15 @@
                         android:src="@drawable/folder2_1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/draw22"
+                        android:layout_width="370.5dp"
+                        android:layout_height="330.5dp"
+                        android:layout_marginTop="48.5dp"
+                        android:background="@drawable/folder1_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -248,15 +257,6 @@
                         android:layout_height="60.5dp"
                         android:layout_marginTop="8.5dp"
                         android:src="@drawable/folder1"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <ImageView
-                        android:id="@+id/draw22"
-                        android:layout_width="370.5dp"
-                        android:layout_height="330.5dp"
-                        android:layout_marginTop="48.5dp"
-                        android:background="@drawable/folder1_1"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -330,7 +330,7 @@
                         android:layout_marginTop="23.5dp"/>
                 </RelativeLayout>
 
-                <RelativeLayout
+                <Button
                     android:id="@+id/artist_music1_back"
                     android:layout_width="394.0dp"
                     android:layout_height="106.5dp"
@@ -382,7 +382,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="123.5dp"
                         android:layout_marginTop="39.5dp"/>
-                </RelativeLayout>
+                </Button>
 
             </RelativeLayout>
         </RelativeLayout>
