@@ -16,34 +16,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/draw1"
-            android:layout_width="394.0dp"
-            android:layout_height="274.0dp"
-            android:src="@drawable/draw57"
+    <ImageView
+        android:id="@+id/draw1"
+        android:layout_width="394.0dp"
+        android:layout_height="274.0dp"
+        android:src="@drawable/draw57"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="508.5dp"/>
+    <RelativeLayout
+        android:id="@+id/draw3"
+        android:layout_width="380.0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@drawable/search_btn1"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:hint="검색어를 입력하세요."
+            android:textColorHint="@color/color_ff000000"
+            android:enabled="true">
+        </EditText>
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_btn1"
+            android:text="검색"
+            android:textColor="@color/color_ff000000"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="508.5dp"/>
-        <RelativeLayout
-            android:id="@+id/draw3"
-            android:layout_width="380.0dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="50dp"
-            android:padding="10dp"
-            android:background="@drawable/search_btn1"
-            android:layout_centerHorizontal="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-            <Button
-                android:id="@+id/mini_search_btn"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/search_btn1"
-                android:text="검색"
-                android:textColor="@color/color_ff000000"
-                android:textSize="30sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="290dp"/>
-        </RelativeLayout>
+            android:layout_marginStart="290dp"/>
+    </RelativeLayout>
 </RelativeLayout>
