@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".SearchActivity" />
         <activity android:name=".SearchNCTActivity"/>
+        <activity android:name=".SearchYEONGActivity"/>
     </application>
 
 </manifest>

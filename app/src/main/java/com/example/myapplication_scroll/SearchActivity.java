@@ -35,13 +35,14 @@ public class SearchActivity extends AppCompatActivity {
                 switch (view.getId()) {
                     case R.id.search_btn:
                         String value_search = text_search.getText().toString();
+
                         if(favorite1.equals(value_search)){
-                            Intent intent_favorite2 = new Intent(getApplicationContext(),Favorite2Activity.class);
-                            startActivity(intent_favorite2);
+                            Intent intent_Search_favorite1 = new Intent(getApplicationContext(),SearchNCTActivity.class);
+                            startActivity(intent_Search_favorite1);
                         }
                         if(favorite2.equals(value_search)){
-                            Intent intent_favorite1 = new Intent(getApplicationContext(),Favorite1Activity.class);
-                            startActivity(intent_favorite1);
+                            Intent intent_Search_favorite2 = new Intent(getApplicationContext(),SearchYEONGActivity.class);
+                            startActivity(intent_Search_favorite2);
                         }
                 }
             }
