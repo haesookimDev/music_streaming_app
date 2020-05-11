@@ -3,12 +3,10 @@ package com.example.myapplication_scroll;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_popular_chart;
@@ -48,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent_search);
                         break;
                     case R.id.favorite_btn1:
-                        Intent intent_favorite = new Intent(getApplicationContext(),Favorite1Activity.class);
+                        Intent intent_favorite = new Intent(getApplicationContext(), ArtistYEONGActivity.class);
                         startActivity(intent_favorite);
                         break;
                     case R.id.favorite_btn2:
-                        Intent intent_favorite2 = new Intent(getApplicationContext(),Favorite2Activity.class);
+                        Intent intent_favorite2 = new Intent(getApplicationContext(), ArtistNCTActivity.class);
                         startActivity(intent_favorite2);
                         break;
                     case R.id.arrow_btn:

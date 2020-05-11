@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Popular_Song_Activity"></activity>
+        <activity android:name=".AlbumNCTActivity"></activity>
+        <activity android:name=".AlbumYEONGActivity" />
+        <activity android:name=".Popular_Song_Activity" />
         <activity android:name=".SearchSongYEONGActivity" />
         <activity android:name=".SearchSongNCTActivity" />
-        <activity android:name=".Favorite2Activity" />
-        <activity android:name=".Favorite1Activity" />
+        <activity android:name=".ArtistNCTActivity" />
+        <activity android:name=".ArtistYEONGActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,7 @@
     무얼 믿은 걸까 부족했던 내게서 나조차 못 믿던 내게 여태 머문 사람 무얼 봤던 걸까 가진 것도 없던 내게 무작정 내 손을 잡아 날 이끈 사람 최고였어 그대 눈 속에 비친 내 모습 이제는 내게서 그댈 비춰줄 궂은 비가 오면...</string>
     <string name="nct_day_dream">Day Dream(白日夢)</string>
     <string name="lyrics">가사&gt;</string>
-       <string name="app_name">음악플레이어</string>
+    <string name="app_name">음악플레이어</string>
     <string name="singer">가수></string>
     <string name="song">곡></string>
     <string name="album">앨범></string>
@@ -44,6 +44,15 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="nct_kick_it">영웅 (英雄; Kick It)</string>
     <string name="nct_127f">Elevator(127F)</string>
     <string name="nct_daydream">Day Dream(白日夢)</string>
+    <string name="nct_boom">꿈(Boom)</string>
+    <string name="nct_pandora">"낮잠(Pandora's Box)"</string>
+    <string name="nct_interlude">Interlude: Neo Zone</string>
+    <string name="nct_mad">뿔(MAD DOG)</string>
+    <string name="nct_sit">Sit Down!</string>
+    <string name="nct_love_me">메아리(Love Me Now)</string>
+    <string name="nct_white">백야(White Night)</string>
+    <string name="nct_not_alone">Not Alone</string>
+    <string name="nct_dream">Dreams Come True</string>
     <string name="yeong_wish">바램</string>
     <string name="yeong_sixty_story">어느 60대 노부부이야기</string>
     <string name="yeong_trust_me">이제 나만 믿어요</string>
@@ -87,5 +96,6 @@ SBS [판타스틱 듀오] 이수영 편 출연
         전부 그대 꺼니까
         그대는 걱정 말아요
         이제 나만 믿어요</string>
+    <string name="representative">대표곡</string>
 
 </resources>

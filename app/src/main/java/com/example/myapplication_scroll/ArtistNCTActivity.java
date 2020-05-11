@@ -3,26 +3,23 @@ package com.example.myapplication_scroll;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
-public class Favorite1Activity extends AppCompatActivity {
+public class ArtistNCTActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favorite1);
+        setContentView(R.layout.activity_artist_nct);
 
         this.InitializeView();
         this.SetListener();
     }
+
     public void InitializeView() {
         btn_mini_home = (Button) findViewById(R.id.mini_home_btn);
         btn_mini_search = (Button) findViewById(R.id.mini_search_btn);
@@ -51,5 +48,4 @@ public class Favorite1Activity extends AppCompatActivity {
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_search.setOnClickListener(Listener);
     }
-
 }

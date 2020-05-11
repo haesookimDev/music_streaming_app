@@ -6,21 +6,20 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
-public class Favorite2Activity extends AppCompatActivity {
+public class ArtistYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favorite2);
+        setContentView(R.layout.activity_artist_yeong);
 
         this.InitializeView();
         this.SetListener();
     }
-
     public void InitializeView() {
         btn_mini_home = (Button) findViewById(R.id.mini_home_btn);
         btn_mini_search = (Button) findViewById(R.id.mini_search_btn);
@@ -49,4 +48,5 @@ public class Favorite2Activity extends AppCompatActivity {
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_search.setOnClickListener(Listener);
     }
+
 }
