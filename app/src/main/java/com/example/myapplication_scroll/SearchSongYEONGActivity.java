@@ -10,6 +10,9 @@ import android.widget.Button;
 public class SearchSongYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
+    Button btn_song1;
+    Button btn_lyrics_album1;
+    Button btn_lyrics_song1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,9 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
     public void InitializeView() {
         btn_mini_home = (Button) findViewById(R.id.mini_home_btn);
         btn_mini_search = (Button) findViewById(R.id.mini_search_btn);
+        btn_song1 = (Button) findViewById(R.id.yeong_song1);
+        btn_lyrics_album1 = (Button) findViewById(R.id.yeong_lyrics_album1);
+        btn_lyrics_song1 = (Button) findViewById(R.id.yeong_lyrics_song1);
 
     }
 
@@ -38,6 +44,18 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
                         Intent intent_search = new Intent(getApplicationContext(),SearchActivity.class);
                         startActivity(intent_search);
                         break;
+                    case R.id.yeong_song1:
+                        Intent intent_yeong_song1 = new Intent(getApplicationContext(),SongYEONGActivity.class);
+                        startActivity(intent_yeong_song1);
+                        break;
+                    case R.id.yeong_lyrics_album1:
+                        Intent intent_yeong_lyrics_album1 = new Intent(getApplicationContext(),AlbumYEONGActivity.class);
+                        startActivity(intent_yeong_lyrics_album1);
+                        break;
+                    case R.id.yeong_lyrics_song1:
+                        Intent intent_yeong_lyrics_song1 = new Intent(getApplicationContext(),SongYEONGActivity.class);
+                        startActivity(intent_yeong_lyrics_song1);
+                        break;
                     default:
                         break;
                 }
@@ -46,6 +64,9 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
 
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_search.setOnClickListener(Listener);
+        btn_song1.setOnClickListener(Listener);
+        btn_lyrics_album1.setOnClickListener(Listener);
+        btn_lyrics_song1.setOnClickListener(Listener);
     }
 
 }

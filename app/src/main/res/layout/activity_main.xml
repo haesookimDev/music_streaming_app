@@ -137,7 +137,7 @@
                     android:textColor="@color/color_ff000000"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
+//1등
                 <RelativeLayout
                     android:id="@+id/popular_chart_list"
                     android:layout_width="394.0dp"
@@ -148,7 +148,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <TextView
-                        android:id="@+id/text31"
+                        android:id="@+id/popular_chart_first_singer"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="119.5dp"
@@ -161,7 +161,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/Rank_song"
+                        android:id="@+id/popular_chart_first_song"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="114dp"
@@ -174,7 +174,6 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/draw45"
                         android:layout_width="283.0dp"
                         android:layout_height="10.0dp"
                         android:layout_marginStart="111dp"
@@ -186,7 +185,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <RelativeLayout
-                        android:id="@+id/image12"
+                        android:id="@+id/popular_chart_first_album"
                         android:layout_width="111.0dp"
                         android:layout_height="111.5dp"
                         android:layout_marginTop="4dp"
@@ -195,7 +194,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <RelativeLayout
-                            android:id="@+id/rank"
+                            android:id="@+id/popular_chart_first_rank_back"
                             android:layout_width="75.0dp"
                             android:layout_height="75.0dp"
                             android:layout_marginStart="18dp"
@@ -205,7 +204,250 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
-                                android:id="@+id/Rank_1"
+                                android:id="@+id/popular_chart_first_rank_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="23dp"
+                                android:layout_marginTop="0.5dp"
+                                android:gravity="start|top"
+                                android:text="@string/rank_1"
+                                android:textColor="@color/color_ffffffff"
+                                android:textSize="50sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+//2등
+                <RelativeLayout
+                    android:id="@+id/popular_chart_list2"
+                    android:layout_width="394.0dp"
+                    android:layout_height="126.0dp"
+                    android:layout_marginTop="215dp"
+                    android:background="@drawable/popular_chart_list"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/popular_chart_second_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="119.5dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="start|top"
+                        android:text="@string/nct127"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/popular_chart_second_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="114dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start|top"
+                        android:text="@string/rank_song"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="32.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="283.0dp"
+                        android:layout_height="10.0dp"
+                        android:layout_marginStart="111dp"
+                        android:layout_marginTop="105.6dp"
+                        android:src="@drawable/draw45"
+                        android:background="@color/color_ffffffff"
+                        android:contentDescription="@string/popular_chart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/popular_chart_second_album"
+                        android:layout_width="111.0dp"
+                        android:layout_height="111.5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/image1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:id="@+id/popular_chart_second_back"
+                            android:layout_width="75.0dp"
+                            android:layout_height="75.0dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="18.5dp"
+                            android:background="@drawable/rank"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/popular_chart_second_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="23dp"
+                                android:layout_marginTop="0.5dp"
+                                android:gravity="start|top"
+                                android:text="@string/rank_1"
+                                android:textColor="@color/color_ffffffff"
+                                android:textSize="50sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+//3등
+                <RelativeLayout
+                    android:id="@+id/popular_chart_list3"
+                    android:layout_width="394.0dp"
+                    android:layout_height="126.0dp"
+                    android:layout_marginTop="339.5dp"
+                    android:background="@drawable/popular_chart_list"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/popular_chart_third_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="119.5dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="start|top"
+                        android:text="@string/nct127"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/popular_chart_third_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="114dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start|top"
+                        android:text="@string/rank_song"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="32.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="283.0dp"
+                        android:layout_height="10.0dp"
+                        android:layout_marginStart="111dp"
+                        android:layout_marginTop="105.6dp"
+                        android:src="@drawable/draw45"
+                        android:background="@color/color_ffffffff"
+                        android:contentDescription="@string/popular_chart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/popular_chart_third_album"
+                        android:layout_width="111.0dp"
+                        android:layout_height="111.5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/image1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:id="@+id/popular_chart_third_back"
+                            android:layout_width="75.0dp"
+                            android:layout_height="75.0dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="18.5dp"
+                            android:background="@drawable/rank"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/popular_chart_third_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="23dp"
+                                android:layout_marginTop="0.5dp"
+                                android:gravity="start|top"
+                                android:text="@string/rank_1"
+                                android:textColor="@color/color_ffffffff"
+                                android:textSize="50sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+//4등
+                <RelativeLayout
+                    android:id="@+id/popular_chart_list4"
+                    android:layout_width="394.0dp"
+                    android:layout_height="126.0dp"
+                    android:layout_marginTop="464dp"
+                    android:background="@drawable/popular_chart_list"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/popular_chart_fourth_singer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="119.5dp"
+                        android:layout_marginTop="50dp"
+                        android:gravity="start|top"
+                        android:text="@string/nct127"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/popular_chart_fourth_song"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="114dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="start|top"
+                        android:text="@string/rank_song"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="32.5sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="283.0dp"
+                        android:layout_height="10.0dp"
+                        android:layout_marginStart="111dp"
+                        android:layout_marginTop="105.6dp"
+                        android:src="@drawable/draw45"
+                        android:background="@color/color_ffffffff"
+                        android:contentDescription="@string/popular_chart"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/popular_chart_fourth_album"
+                        android:layout_width="111.0dp"
+                        android:layout_height="111.5dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/image1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RelativeLayout
+                            android:id="@+id/popular_chart_fourth_back"
+                            android:layout_width="75.0dp"
+                            android:layout_height="75.0dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_marginTop="18.5dp"
+                            android:background="@drawable/rank"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/popular_chart_fourth_num"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="23dp"

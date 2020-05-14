@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/artboard"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/draw18"
+                android:layout_width="394.0dp"
+                android:layout_height="2780.5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <RelativeLayout
+                    android:id="@+id/draw6"
+                    android:layout_width="389.0dp"
+                    android:layout_height="600.0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="110dp">
+                    <ImageView
+                        android:id="@+id/draw7"
+                        android:layout_width="389.0dp"
+                        android:layout_height="600.0dp"
+                        android:src="@drawable/music_frame_shadow"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"/>
+                    <ImageView
+                        android:id="@+id/draw8"
+                        android:layout_width="389.0dp"
+                        android:layout_height="600.0dp"
+                        android:src="@drawable/music_frame"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="20dp"/>
+                    <ImageView
+                        android:id="@+id/draw9"
+                        android:layout_width="389.0dp"
+                        android:layout_height="609.0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="114dp"/>
+
+                    <ImageView
+                        android:id="@+id/draw5"
+                        android:layout_width="370.5dp"
+                        android:layout_height="540.1dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="3.5dp"
+                        android:layout_marginTop="52.9dp"/>
+                    <RelativeLayout
+                        android:id="@+id/draw1"
+                        android:layout_width="371.0dp"
+                        android:layout_height="192.5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="3.5dp"
+                        android:layout_marginTop="81dp">
+                        <TextView
+                            android:id="@+id/album_name4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/album_name1"
+                            android:gravity="start|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="9.5dp"
+                            android:layout_marginTop="107dp"/>
+                        <TextView
+                            android:id="@+id/yeaog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nct127"
+                            android:gravity="start|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="9.5dp"
+                            android:layout_marginTop="77.5dp"/>
+                        <TextView
+                            android:id="@+id/album_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/nct127_daydream"
+                            android:gravity="start|top"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="30sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="9.5dp"
+                            android:layout_marginTop="19.5dp"/>
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/draw4"
+                        android:layout_width="389.0dp"
+                        android:layout_height="259.5dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginTop="298.5dp">
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="232.0dp"
+                            android:layout_height="232.0dp"
+                            android:layout_marginStart="35.5dp"
+                            android:layout_marginTop="7.5dp"
+                            android:src="@drawable/boy1_kickit"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/circle"
+                            android:layout_width="75.0dp"
+                            android:layout_height="75.0dp"
+                            android:src="@drawable/song_play"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="312dp"
+                            android:layout_marginTop="149dp"/>
+
+                        <RelativeLayout
+                            android:id="@+id/red_circle"
+                            android:layout_width="75.0dp"
+                            android:layout_height="75.0dp"
+                            android:background="@drawable/song_play_lay"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="305dp"
+                            android:layout_marginTop="145dp">
+                            <TextView
+                                android:id="@+id/play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/play"
+                                android:gravity="start|top"
+                                android:textColor="@color/color_ff020202"
+                                android:textSize="25sp"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="19dp"/>
+                            <Button
+                                android:id="@+id/song_play"
+                                android:background="@drawable/play_button_layer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <!--여기까지가 위에 부분(스크롤 위)-->
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/draw13"
+                    android:layout_width="391.5dp"
+                    android:layout_height="2028.0dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_marginTop="752.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/draw10"
+                        android:layout_width="391.5dp"
+                        android:layout_height="1931.0dp"
+                        android:layout_marginTop="125dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/trust"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15.5dp"
+                            android:layout_marginTop="27.5dp"
+                            android:gravity="start|top"
+                            android:text="@string/daydream_lyrics"
+                            android:textColor="@color/color_ff020202"
+                            android:textSize="25sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lyrics"
+                    android:layout_width="394.0dp"
+                    android:layout_height="85dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="775.5dp">
+
+                    <ImageView
+                        android:id="@+id/yellow_rec"
+                        android:layout_width="370.5dp"
+                        android:layout_height="54.0dp"
+                        android:background="@drawable/music_frame_shadow"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="16.5dp" />
+                    <ImageView
+                        android:id="@+id/draw19"
+                        android:layout_width="370.5dp"
+                        android:layout_height="54.0dp"
+                        android:layout_marginStart="3.5dp"
+                        android:layout_marginTop="9.5dp"
+                        android:src="@drawable/music_frame"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text5"
+                        android:gravity="start|top"
+                        android:textColor="@color/color_ff121314"
+                        android:textSize="30sp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="155.5dp"
+                        android:layout_marginTop="11.5dp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mini_home_search_btn"
+                    android:layout_width="394.0dp"
+                    android:layout_height="115.0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16.5dp">
+                    <Button
+                        android:id="@+id/mini_search_btn"
+                        android:text="@string/mini_search_text"
+                        android:textColor="#000000"
+                        android:textSize="40dp"
+                        android:layout_width="170.0dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/mini_search_button"
+                        android:drawableStart="@drawable/search"
+                        android:paddingLeft="20dp"
+                        android:layout_marginStart="230dp"
+                        android:layout_marginTop="33.5dp">
+                    </Button>
+                    <Button
+                        android:id="@+id/mini_home_btn"
+                        android:text="@string/mini_home_text"
+                        android:gravity=""
+                        android:textColor="#000000"
+                        android:textSize="40dp"
+                        android:paddingLeft="5dp"
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/mini_home_button"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="33.5dp">
+                    </Button>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

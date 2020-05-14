@@ -10,7 +10,9 @@ import android.widget.Button;
 public class SearchSongNCTActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
-
+    Button btn_song1;
+    Button btn_lyrics_album1;
+    Button btn_lyrics_song1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,9 @@ public class SearchSongNCTActivity extends AppCompatActivity {
     public void InitializeView() {
         btn_mini_home = (Button) findViewById(R.id.mini_home_btn);
         btn_mini_search = (Button) findViewById(R.id.mini_search_btn);
-
+        btn_song1 = (Button) findViewById(R.id.nct127_song1);
+        btn_lyrics_album1 = (Button) findViewById(R.id.nct127_lyrics_album1);
+        btn_lyrics_song1 = (Button) findViewById(R.id.nct127_lyrics_song1);
     }
 
     public void SetListener() {
@@ -38,6 +42,18 @@ public class SearchSongNCTActivity extends AppCompatActivity {
                         Intent intent_search = new Intent(getApplicationContext(),SearchActivity.class);
                         startActivity(intent_search);
                         break;
+                    case R.id.nct127_song1:
+                        Intent intent_nct127_song1 = new Intent(getApplicationContext(),SongNCTActivity.class);
+                        startActivity(intent_nct127_song1);
+                        break;
+                    case R.id.nct127_lyrics_album1:
+                        Intent intent_nct127_lyrics_album1 = new Intent(getApplicationContext(),AlbumNCTActivity.class);
+                        startActivity(intent_nct127_lyrics_album1);
+                        break;
+                    case R.id.nct127_lyrics_song1:
+                        Intent intent_nct127_lyrics_song1 = new Intent(getApplicationContext(),SongNCTActivity.class);
+                        startActivity(intent_nct127_lyrics_song1);
+                        break;
                     default:
                         break;
                 }
@@ -46,6 +62,10 @@ public class SearchSongNCTActivity extends AppCompatActivity {
 
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_search.setOnClickListener(Listener);
+        btn_song1.setOnClickListener(Listener);
+        btn_lyrics_album1.setOnClickListener(Listener);
+        btn_lyrics_song1.setOnClickListener(Listener);
+
     }
 
 }

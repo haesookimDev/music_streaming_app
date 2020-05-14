@@ -179,10 +179,16 @@
                                     android:gravity=""
                                     android:text="10"
                                     android:textColor="@color/color_ffffffff"
-                                    android:textSize="50sp"
+                                    android:textSize="32sp"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -272,6 +278,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -360,6 +372,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -448,6 +466,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -536,6 +560,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -624,6 +654,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -712,6 +748,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -801,6 +843,12 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button
@@ -890,6 +938,11 @@
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
                         </RelativeLayout>
 
                         <Button
@@ -981,6 +1034,12 @@
                                     app:layout_constraintTop_toTopOf="parent"
                                     android:contentDescription="TODO"/>
                             </RelativeLayout>
+                            <Button
+                                android:id="@+id/popular_chart_music_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/button_no_color_layer"/>
+
                         </RelativeLayout>
 
                         <Button

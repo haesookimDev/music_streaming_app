@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlbumNCTActivity"></activity>
+        <activity android:name=".SongNCTActivity"></activity>
+        <activity android:name=".AlbumNCTActivity" />
         <activity android:name=".AlbumYEONGActivity" />
         <activity android:name=".Popular_Song_Activity" />
         <activity android:name=".SearchSongYEONGActivity" />
@@ -26,6 +27,7 @@
         <activity android:name=".SearchActivity" />
         <activity android:name=".SearchNCTActivity" />
         <activity android:name=".SearchYEONGActivity" />
+        <activity android:name=".SongYEONGActivity" />
     </application>
 
 </manifest>

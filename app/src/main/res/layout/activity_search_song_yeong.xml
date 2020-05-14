@@ -128,6 +128,11 @@
                             android:layout_height="90.3dp"
                             android:src="@drawable/trust_me"
                             android:contentDescription="@string/nct_kick_it" />
+                        <Button
+                            android:id="@+id/yeong_song1"
+                            android:layout_width="90.0dp"
+                            android:layout_height="90.3dp"
+                            android:background="@drawable/button_no_color_layer"/>
                     </RelativeLayout>
                     <Button
                         android:id="@+id/song_play_lay1"
@@ -211,6 +216,13 @@
                     android:layout_marginStart="70dp"
                     android:text="@string/trust_lyrics">
                 </TextView>
+                <Button
+                    android:id="@+id/yeong_lyrics_song1"
+                    android:layout_width="270dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="70dp"
+                    android:background="@drawable/button_no_color_layer"/>
                 <ImageView
                     android:id="@+id/lyrics_song_play1"
                     android:layout_width="75.0dp"
@@ -242,6 +254,11 @@
                         android:layout_height="90.3dp"
                         android:src="@drawable/trust_me"
                         android:contentDescription="@string/nct_kick_it" />
+                    <Button
+                        android:id="@+id/yeong_lyrics_album1"
+                        android:layout_width="90.0dp"
+                        android:layout_height="90.3dp"
+                        android:background="@drawable/button_no_color_layer"/>
                 </RelativeLayout>
                 <Button
                     android:id="@+id/song_play_lyrics_lay1"

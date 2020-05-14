@@ -1,20 +1,21 @@
 package com.example.myapplication_scroll;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AlbumNCTActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SongYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_album_nct);
+        setContentView(R.layout.activity_song_yeong);
         this.InitializeView();
         this.SetListener();
     }
