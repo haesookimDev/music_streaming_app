@@ -513,12 +513,13 @@
                         android:layout_height="125.4dp"
                         android:layout_marginTop="10dp"
                         android:contentDescription="@string/album_name4"
-                        android:src="@drawable/yeong_art" />
+                        android:src="@drawable/trust_me" />
+
                     <Button
                         android:id="@+id/yeong_album1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/button_no_color_layer"/>
+                        android:background="@drawable/button_no_color_layer" />
                 </RelativeLayout>
 
                 <TextView
