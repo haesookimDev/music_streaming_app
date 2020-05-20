@@ -163,4 +163,29 @@ Loving you feels like I’m dreaming
     </string>
     <string name="representative">대표곡</string>
     <string name="nct127_daydream">day dream</string>
+
+
+    <string name="strem_song">
+        너를 향해 기운 우산이
+이렇게 때마침
+참 작아서 다행이야
+hoo 이런 건
+예상하지 못한 상황이야
+어깨가 닿은 이 순간
+
+‘어디 들어갈 델 찾자’
+말하면서도 내 걸음은
+자꾸만 하염없이 느려져
+
+</string>
+    <string name="strem_list">재생목록</string>
+    <string name="time">3:35</string>
+    <string name="strem_stop">정지</string>
+    <string name="strem_play">재생</string>
+    <string name="strem_before">이전</string>
+    <string name="strem_nex">다음</string>
+    <string name="text8">NCT 127</string>
+    <string name="text9">우산(Love Song)</string>
 </resources>
+
+
