@@ -2,12 +2,12 @@
 <RelativeLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/artboard"
+    android:id="@+id/first_main"
     android:layout_width="394.0dp"
-    android:layout_height="782.5dp"
+    android:layout_height="2504.5dp"
     android:background="@drawable/artboard">
-    <RelativeLayout
-        android:id="@+id/strem_page_w"
+    <FrameLayout
+        android:id="@+id/stream_page_main_frame"
         android:layout_width="394.0dp"
         android:layout_height="782.5dp"
         android:background="@drawable/strem_page_w"
@@ -25,7 +25,7 @@
 
             <TextView
                 android:id="@+id/strem_song"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="27.5dp"
                 android:gravity="center_horizontal|top"
@@ -34,6 +34,11 @@
                 android:textSize="25sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <Button
+                android:id="@+id/stream_page_lyrics_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="button_no_color_layer"/>
         </RelativeLayout>
 
 
@@ -45,88 +50,44 @@
             android:background="@drawable/strem_page_up"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-
-
             <RelativeLayout
-                android:id="@+id/strem_next"
-                android:layout_width="175.0dp"
-                android:layout_height="43.5dp"
-                android:background="@drawable/strem_next"
-                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/mini_home_search_btn_main"
+                android:layout_width="394.0dp"
+                android:layout_height="115.0dp"
+                android:layout_marginTop="16.5dp"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="219dp"
-                android:layout_marginTop="50dp">
+                app:layout_constraintTop_toTopOf="parent">
 
-                <RelativeLayout
-                    android:id="@+id/strem_mid"
-                    android:layout_width="46.0dp"
-                    android:layout_height="36.5dp"
-                    android:background="@drawable/strem_mid"
-                    app:layout_constraintTop_toTopOf="parent"
+                <Button
+                    android:id="@+id/mini_playlist_btn"
+                    android:layout_width="200.0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="210dp"
+                    android:layout_marginTop="33.5dp"
+                    android:background="@drawable/mini_search_button"
+                    android:drawableStart="@drawable/mini_playlistbutton"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/strem_list"
+                    android:textColor="#000000"
+                    android:textSize="35sp" />
+
+                <Button
+                    android:id="@+id/mini_home_btn"
+                    android:layout_width="170dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="33.5dp"
+                    android:background="@drawable/mini_home_button"
+                    android:gravity=""
+                    android:paddingStart="5dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/mini_home_text"
+                    android:textColor="#000000"
+                    android:textSize="40sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="10.5dp"
-                    android:layout_marginTop="4dp">
-                    <ImageView
-                        android:id="@+id/strem_icon1"
-                        android:layout_width="39.8dp"
-                        android:layout_height="5.0dp"
-                        android:background="@color/color_fff64a56"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginTop="29.4dp"/>
-                    <ImageView
-                        android:id="@+id/strem_icon2"
-                        android:layout_width="39.8dp"
-                        android:layout_height="5.0dp"
-                        android:background="@color/color_fff64a56"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginTop="16.7dp"/>
-                    <ImageView
-                        android:id="@+id/strem_icon3"
-                        android:layout_width="39.8dp"
-                        android:layout_height="5.0dp"
-                        android:background="@color/color_fff64a56"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="2dp"
-                        android:layout_marginTop="4dp"/>
-
-                </RelativeLayout>
+                    app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
-
-            <TextView
-                android:id="@+id/strem_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/strem_list"
-                android:gravity="start|top"
-                android:textColor="@color/color_ff000000"
-                android:textSize="30sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="277dp"
-                android:layout_marginTop="48dp"/>
-
-
-            <Button
-                android:id="@+id/mini_home_btn"
-                android:text="@string/mini_home_text"
-                android:gravity=""
-                android:textColor="#000000"
-                android:textSize="40dp"
-                android:paddingLeft="5dp"
-                android:layout_width="170dp"
-                android:layout_height="60dp"
-                android:background="@drawable/mini_home_button"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="33.5dp">
-            </Button>
-
             <RelativeLayout
                 android:id="@+id/strem_mid_lay"
                 android:layout_width="384.5dp"
@@ -194,14 +155,24 @@
                 android:layout_marginTop="184dp">
 
                 <ImageView
-                    android:id="@+id/strem_album_um"
-                    android:layout_width="100.0dp"
+                    android:id="@+id/strem_album_um_shadow"
+                    android:layout_width="150.0dp"
                     android:layout_height="150.0dp"
-                    android:src="@drawable/strem_album_um"
+                    android:src="@drawable/stream_album_shadow"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="62dp"
-                    android:layout_marginTop="4dp"/>
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"/>
+
+                <ImageView
+                    android:id="@+id/strem_album_um"
+                    android:layout_width="150.0dp"
+                    android:layout_height="150.0dp"
+                    android:src="@drawable/boy1_kickit"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -232,18 +203,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="4.5dp">
-                    <TextView
-                        android:id="@+id/strem_stop"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/strem_stop"
-                        android:gravity="start|top"
-                        android:textColor="@color/color_fff63e4b"
-                        android:textSize="30sp"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="77.5dp"
-                        android:layout_marginTop="3.5dp"/>
+
                     <RelativeLayout
                         android:id="@+id/strem_ss_buttons"
                         android:layout_width="187.5dp"
@@ -253,23 +213,52 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="5.5dp">
-                        <TextView
+                        <Button
+                            android:id="@+id/stream_stop"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stream_stop"
+                            android:gravity="start|top"
+                            android:background=""
+                            android:textColor="@color/color_fff63e4b"
+                            android:textSize="30sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="0.5dp"/>
+                        <Button
+                            android:id="@+id/stream_play"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stream_play"
+                            android:gravity="start|top"
+                            android:background=""
+                            android:visibility="gone"
+                            android:textColor="@color/color_ff691bf3"
+                            android:textSize="30sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="0.5dp"/>
+                        <Button
                             android:id="@+id/strem_before"
-                            android:layout_width="wrap_content"
+                            android:layout_width="45dp"
                             android:layout_height="wrap_content"
                             android:text="@string/strem_before"
                             android:gravity="start|top"
+                            android:background=""
                             android:textColor="@color/color_ff000000"
                             android:textSize="20sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             android:layout_marginStart="2.5dp"
                             android:layout_marginTop="5dp"/>
-                        <TextView
+                        <Button
                             android:id="@+id/strem_nex"
-                            android:layout_width="wrap_content"
+                            android:layout_width="45dp"
                             android:layout_height="wrap_content"
                             android:text="@string/strem_nex"
+                            android:background=""
                             android:gravity="start|top"
                             android:textColor="@color/color_ff090909"
                             android:textSize="20sp"
@@ -291,7 +280,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="62.5dp"
-                android:layout_marginTop="98.5dp">
+                android:layout_marginTop="110dp">
                 <TextView
                     android:id="@+id/text8"
                     android:layout_width="wrap_content"
@@ -317,5 +306,5 @@
                     android:layout_marginStart="21.5dp"
                     android:layout_marginTop="6dp"/>
             </RelativeLayout>
-        </RelativeLayout>
-    </RelativeLayout>
+        </FrameLayout>
+</RelativeLayout>

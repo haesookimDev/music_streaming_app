@@ -57,8 +57,8 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="yeong_sixty_story">어느 60대 노부부이야기</string>
     <string name="yeong_trust_me">이제 나만 믿어요</string>
     <string name="yeong_magic_lily">상사화</string>
-
     <string name="album_name5">이제 나만 믿어요</string>
+    <string name="yeong_elevator">계단말고 엘리베이터</string>
     <string name="text5">가사</string>
     <string name="trust">
         무얼 믿은 걸까 부족했던 내게서
@@ -166,21 +166,102 @@ Loving you feels like I’m dreaming
 
 
     <string name="strem_song">
-        너를 향해 기운 우산이
-이렇게 때마침
-참 작아서 다행이야
-hoo 이런 건
-예상하지 못한 상황이야
-어깨가 닿은 이 순간
+        너를 향해 기운 우산이\n
+이렇게 때마침\n
+참 작아서 다행이야\n
+hoo 이런 건\n
+예상하지 못한 상황이야\n
+어깨가 닿은 이 순간\n
 
-‘어디 들어갈 델 찾자’
-말하면서도 내 걸음은
-자꾸만 하염없이 느려져
+‘어디 들어갈 델 찾자’\n
+말하면서도 내 걸음은\n
+자꾸만 하염없이 느려져\n
 
 </string>
+    <string name="lovesong_lyrics">너를 향해 기운 우산이\n
+이렇게 때마침\n
+참 작아서 다행이야\n
+hoo 이런 건\n
+예상하지 못한 상황이야\n
+어깨가 닿은 이 순간\n
+
+‘어디 들어갈 델 찾자’\n
+말하면서도 내 걸음은\n
+자꾸만 하염없이 느려져\n
+I can’t stop I can’t stop this feeling\n
+
+너의 숨소리도 들려\n
+이렇게 가까우니까\n
+이대로 투명해진 채\n
+시간이 멈췄으면 해 yeah\n
+
+비는 질색인데\n
+오늘 좀 좋아지려 해\n
+아니 아직 그칠 생각은 말고\n
+왼쪽 어깨는 흠뻑 적셔 놔도 돼\n
+빗속의 Love song\n
+Love song Love song yeah\n
+둘만의 섬을 만들어 ooh\n
+이렇게 Love this Love this Love this rain\n
+떨어지는 빗속에 all day\n
+
+오늘따라 더 익숙한 거리도 헤매고 싶어 난\n
+ooh ‘저번 그 예쁜 카페가 어디 더라’\n
+잘 기억나지 않아\n
+
+너의 눈에 내가 비쳐\n
+이렇게 가까우니까\n
+날 보며 웃음 지을 땐\n
+심장이 멎을 것 같아 yeah\n
+
+비는 질색인데\n
+오늘 좀 좋아지려 해\n
+아니 아직 그칠 생각은 말고\n
+왼쪽 어깨는 흠뻑 적셔 놔도 돼\n
+빗속의 Love song\n
+Love song Love song yeah\n
+둘만의 섬을 만들어 ooh\n
+이렇게 Love this Love this Love this rain\n
+떨어지는 빗속에 all day\n
+
+in this place\n
+just you and me\n
+outside all blurry\n
+my focus clear as day 2.0 2.0\n
+warm and cozy\n
+covering us from all the crazy\n
+
+rain don't stop 비 내려와\n
+둘이서 1인용 umbrella 아래\n
+내 하루는 so bright\n
+떠올라 넌 지지 않는 나의 빛\n
+
+doo-doo-doo- rain drop\n
+hop out my foreign car\n
+흠뻑 젖은 이 아스팔트 위에는\n
+한편의 scene을 만들어내지\n
+
+어느새 여기 내 안에 네가 겹쳐와\n
+내 맘속에 너는 저 촉촉한 비처럼\n
+스며들어와\n
+
+비는 질색인데\n
+오늘 좀 좋아지려 해\n
+아니 아직 그칠 생각은 말고\n
+왼쪽 어깨는 흠뻑 적셔 놔도 돼\n
+빗속의 Love song\n
+Love song Love song yeah\n
+둘만의 섬을 만들어 ooh\n
+이렇게 Love this Love this Love this rain\n
+떨어지는 빗속에 all day</string>
     <string name="strem_list">재생목록</string>
+    <string name="stream_main">재생창</string>
+    <string name="stream_nowplay">현재 재생곡</string>
     <string name="time">3:35</string>
-    <string name="strem_stop">정지</string>
+    <string name="repeat_play">반복재생</string>
+    <string name="delete">곡 삭제</string>
+    <string name="stream_stop">정지</string>
+    <string name="stream_play">재생</string>
     <string name="strem_play">재생</string>
     <string name="strem_before">이전</string>
     <string name="strem_nex">다음</string>

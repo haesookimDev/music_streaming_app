@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SongNCTActivity"></activity>
+        <activity android:name=".StreamingSongList"></activity>
+        <activity android:name=".StreamingMain" />
+        <activity android:name=".StreamingSongLyrics" />
+        <activity android:name=".SongNCTActivity" />
         <activity android:name=".AlbumNCTActivity" />
         <activity android:name=".AlbumYEONGActivity" />
         <activity android:name=".Popular_Song_Activity" />
