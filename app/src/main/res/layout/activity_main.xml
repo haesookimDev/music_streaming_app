@@ -492,6 +492,11 @@
             android:background="@drawable/player"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+            <Button
+                android:id="@+id/streaming_main_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_no_color_layer"/>
 
             <RelativeLayout
                 android:id="@+id/player_ctrl_layer"

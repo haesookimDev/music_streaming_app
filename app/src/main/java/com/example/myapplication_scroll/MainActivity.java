@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn_favorite1;
     ImageButton btn_favorite2;
     ImageButton  btn_arrow;
+    Button btn_streaming;
     int i = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btn_favorite2 = (ImageButton) findViewById(R.id.favorite_btn2);
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
         btn_popular_chart = (Button) findViewById(R.id.popular_chart);
+        btn_streaming  = (Button)findViewById(R.id.streaming_main_btn);
     }
 
     public void SetListener() {
@@ -63,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
                             btn_favorite2.setVisibility(View.INVISIBLE);
                         }
                         break;
+                    case R.id.streaming_main_btn:
+                        Intent intent_streaming_main = new Intent(getApplicationContext(), StreamingMain.class);
+                        startActivity(intent_streaming_main);
+                        break;
                     default:
                         break;
                 }
@@ -73,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
         btn_favorite1.setOnClickListener(Listener);
         btn_favorite2.setOnClickListener(Listener);
         btn_arrow.setOnClickListener(Listener);
+        btn_streaming.setOnClickListener(Listener);
     }
 }
 

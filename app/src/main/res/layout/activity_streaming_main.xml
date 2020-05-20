@@ -38,7 +38,7 @@
                 android:id="@+id/stream_page_lyrics_btn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="button_no_color_layer"/>
+                android:background="@drawable/button_no_color_layer"/>
         </RelativeLayout>
 
 
@@ -218,8 +218,8 @@
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:text="@string/stream_stop"
+                            android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
-                            android:background=""
                             android:textColor="@color/color_fff63e4b"
                             android:textSize="30sp"
                             app:layout_constraintTop_toTopOf="parent"
@@ -231,8 +231,8 @@
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:text="@string/stream_play"
+                            android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
-                            android:background=""
                             android:visibility="gone"
                             android:textColor="@color/color_ff691bf3"
                             android:textSize="30sp"
@@ -245,8 +245,8 @@
                             android:layout_width="45dp"
                             android:layout_height="wrap_content"
                             android:text="@string/strem_before"
+                            android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
-                            android:background=""
                             android:textColor="@color/color_ff000000"
                             android:textSize="20sp"
                             app:layout_constraintTop_toTopOf="parent"
@@ -258,7 +258,7 @@
                             android:layout_width="45dp"
                             android:layout_height="wrap_content"
                             android:text="@string/strem_nex"
-                            android:background=""
+                            android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
                             android:textColor="@color/color_ff090909"
                             android:textSize="20sp"
