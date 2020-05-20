@@ -24,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
-                android:id="@+id/mini_playlist_btn"
+                android:id="@+id/mini_play_btn"
                 android:layout_width="200.0dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="210dp"

@@ -172,6 +172,11 @@
                     android:background="@drawable/song_lay"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
+                    <Button
+                        android:id="@+id/song_list1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/nct_kick_it"
                         android:layout_width="wrap_content"
@@ -242,6 +247,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/nct_127f"
                         android:layout_width="wrap_content"
@@ -316,6 +326,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/nct_love_song"
                         android:layout_width="wrap_content"
@@ -390,6 +405,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/nct_daydream"
                         android:layout_width="wrap_content"

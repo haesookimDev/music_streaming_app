@@ -205,7 +205,7 @@
                     android:layout_marginTop="4.5dp">
 
                     <RelativeLayout
-                        android:id="@+id/strem_ss_buttons"
+                        android:id="@+id/stream_ss_buttons"
                         android:layout_width="187.5dp"
                         android:layout_height="44.0dp"
                         android:background="@drawable/strem_ss_buttons"
@@ -213,21 +213,21 @@
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="5.5dp">
+
                         <Button
-                            android:id="@+id/stream_stop"
+                            android:id="@+id/stream_play_stop1"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/stream_stop"
+                            android:layout_marginStart="70dp"
                             android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
+                            android:text="@string/stream_stop"
                             android:textColor="@color/color_fff63e4b"
                             android:textSize="30sp"
-                            app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:layout_marginStart="70dp"
-                            android:layout_marginTop="0.5dp"/>
+                            app:layout_constraintTop_toTopOf="parent" />
                         <Button
-                            android:id="@+id/stream_play"
+                            android:id="@+id/stream_play_stop2"
                             android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:text="@string/stream_play"
