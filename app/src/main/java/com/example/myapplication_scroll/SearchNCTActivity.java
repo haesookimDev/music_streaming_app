@@ -34,6 +34,10 @@ public class SearchNCTActivity extends AppCompatActivity {
     RelativeLayout songLay2;
     RelativeLayout songLay3;
     RelativeLayout songLay4;
+    int i_1 = 0;
+    int i_2 = 0;
+    int i_3 = 0;
+    int i_4 = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,23 +48,23 @@ public class SearchNCTActivity extends AppCompatActivity {
         this.SetListener();
     }
     public void InitializeView() {
-        btn_mini_home = (Button) findViewById(id.mini_home_btn);
-        btn_mini_search = (Button) findViewById(id.mini_search_btn);
-        btn_nct127 = (Button) findViewById(id.nct127_btn);
-        btn_song1 = (Button) findViewById(id.nct127_song1);
-        btn_song2 = (Button) findViewById(id.nct127_song2);
-        btn_song3 = (Button) findViewById(id.nct127_song3);
-        btn_song4 = (Button) findViewById(id.nct127_song4);
-        btn_album1 = (Button) findViewById(id.nct127_album1);
-        btn_album2 = (Button) findViewById(id.nct127_album2);
-        btn_songList1 = (Button) findViewById(id.song_list1);
+        btn_mini_home = findViewById(id.mini_home_btn);
+        btn_mini_search = findViewById(id.mini_search_btn);
+        btn_nct127 = findViewById(id.nct127_btn);
+        btn_song1 = findViewById(id.nct127_song1);
+        btn_song2 = findViewById(id.nct127_song2);
+        btn_song3 = findViewById(id.nct127_song3);
+        btn_song4 = findViewById(id.nct127_song4);
+        btn_album1 = findViewById(id.nct127_album1);
+        btn_album2 = findViewById(id.nct127_album2);
+        btn_songList1 = findViewById(id.song_list1);
         btn_songList2 = findViewById(id.song_list2);
         btn_songList3 = findViewById(id.song_list3);
         btn_songList4 = findViewById(id.song_list4);
-        songLay1 = (RelativeLayout) findViewById(id.song_lay1);
-        songLay2 = (RelativeLayout) findViewById(id.song_lay2);
-        songLay3 = (RelativeLayout) findViewById(id.song_lay3);
-        songLay4 = (RelativeLayout) findViewById(id.song_lay4);
+        songLay1 = findViewById(id.song_lay1);
+        songLay2 = findViewById(id.song_lay2);
+        songLay3 = findViewById(id.song_lay3);
+        songLay4 = findViewById(id.song_lay4);
     }
 
     public void SetListener() {
@@ -104,31 +108,34 @@ public class SearchNCTActivity extends AppCompatActivity {
                         Intent intent_nct127_album2 = new Intent(getApplicationContext(),AlbumNCTActivity.class);
                         startActivity(intent_nct127_album2);
                         break;
-                    case id.song_list1:
-                        if (songLay1.getSolidColor() == 0) {
+                    case R.id.song_list1:
+                        i_1 = 1- i_1;
+                        if (i_1 == 1) {
                             songLay1.setBackgroundResource(drawable.music_select);
                         } else {
                             songLay1.setBackgroundResource(drawable.song_lay);
                         }break;
-                    case id.song_list2:
-                        if (songLay2.getSolidColor() == 0) {
+                    case R.id.song_list2:
+                        i_2 = 1- i_2;
+                        if (i_2 == 1) {
                             songLay2.setBackgroundResource(drawable.music_select);
                         } else {
                             songLay2.setBackgroundResource(drawable.song_lay);
                         } break;
-                    case id.song_list3:
-                        if (songLay3.getSolidColor() == 0) {
+                    case R.id.song_list3:
+                        i_3 = 1- i_3;
+                        if (i_3 == 1) {
                             songLay3.setBackgroundResource(drawable.music_select);
                         } else {
                             songLay3.setBackgroundResource(drawable.song_lay);
                         }break;
-                    case id.song_list4:
-                        if (songLay4.getSolidColor() == 0) {
+                    case R.id.song_list4:
+                        i_4 = 1- i_4;
+                        if (i_4 == 1) {
                             songLay4.setBackgroundResource(drawable.music_select);
                         } else {
                             songLay4.setBackgroundResource(drawable.song_lay);
                         }break;
-
                     default:
                         break;
                 }
@@ -145,6 +152,9 @@ public class SearchNCTActivity extends AppCompatActivity {
         btn_album1.setOnClickListener(Listener);
         btn_album2.setOnClickListener(Listener);
         btn_songList1.setOnClickListener(Listener);
+        btn_songList2.setOnClickListener(Listener);
+        btn_songList3.setOnClickListener(Listener);
+        btn_songList4.setOnClickListener(Listener);
     }
 
 }
