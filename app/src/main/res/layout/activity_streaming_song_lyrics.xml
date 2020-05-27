@@ -31,7 +31,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="4100dp"/>
+                android:layout_marginTop="4150dp"/>
         </RelativeLayout>
     </ScrollView>
     <RelativeLayout
@@ -50,7 +50,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <Button
-                    android:id="@+id/mini_playlist_btn"
+                    android:id="@+id/mini_play_btn"
                     android:layout_width="200.0dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="210dp"

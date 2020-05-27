@@ -2,6 +2,7 @@ package com.example.myapplication_scroll;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,9 @@ public class StreamingMain extends Activity {
     Button btn_stream_play_stop1;
     SeekBar seekbar;
     MediaPlayer music;
-
+    String strColorplay="#ff691bf3";
+    String strColorstop="#fff63e4b";
+    Button btn_stream_lyrics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,7 +69,6 @@ public class StreamingMain extends Activity {
 
             music.stop();
             try {
-
                 music.prepare();
             } catch (IllegalStateException e) {
                 e.printStackTrace();
@@ -77,10 +79,12 @@ public class StreamingMain extends Activity {
             music.seekTo(0);
 
             btn_stream_play_stop1.setText(R.string.stream_play);
+            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
             seekbar.setProgress(0);
         }else{
             music.start();
             btn_stream_play_stop1.setText(R.string.stream_stop);
+            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorstop));
             Thread();
         }
     }
@@ -110,6 +114,7 @@ public class StreamingMain extends Activity {
     public void InitializeView() {
         btn_mini_playList = findViewById(R.id.mini_playlist_btn);
         btn_mini_home = findViewById(R.id.mini_home_btn);
+        btn_stream_lyrics = (Button)findViewById(R.id.stream_page_lyrics_btn);
     }
 
     public void SetListener() {
@@ -126,7 +131,10 @@ public class StreamingMain extends Activity {
                         startActivity(intent_mini_playlist_btn);
                         break;
 
-
+                    case R.id.stream_page_lyrics_btn:
+                        Intent intent_stream_lyrics = new Intent(getApplicationContext(), StreamingSongLyrics.class);
+                        startActivity(intent_stream_lyrics);
+                        break;
                     default:
                         break;
                 }
@@ -134,6 +142,7 @@ public class StreamingMain extends Activity {
         };
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_playList.setOnClickListener(Listener);
+        btn_stream_lyrics.setOnClickListener(Listener);
     }
 
 }
