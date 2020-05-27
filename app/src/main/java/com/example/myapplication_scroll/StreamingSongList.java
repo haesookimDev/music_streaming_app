@@ -1,26 +1,15 @@
 package com.example.myapplication_scroll;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
-import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -48,9 +37,9 @@ public class StreamingSongList extends AppCompatActivity {
         playlistInfoArrayList.add(new Playlist_Info(R.drawable.boy1_kickit, "영웅","NCT127"));
         playlistInfoArrayList.add(new Playlist_Info(R.drawable.boy1_cherry, "Cherry Bom","NCT127"));
 
-        MyAdapter myAdapter = new MyAdapter(playlistInfoArrayList);
+        Playlist_adapter playlistadapter = new Playlist_adapter(playlistInfoArrayList);
 
-        mRecyclerView.setAdapter(myAdapter);
+        mRecyclerView.setAdapter(playlistadapter);
 
     }
 

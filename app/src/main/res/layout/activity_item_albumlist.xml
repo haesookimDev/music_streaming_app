@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/album_song_lay1"
+    android:layout_width="394.0dp"
+    android:layout_height="95.0dp"
+    android:background="@drawable/album_song_lay"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <Button
+        android:id="@+id/song_play_lay1"
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:layout_marginStart="302.5dp"
+        android:layout_marginTop="7.5dp"
+        android:background="@drawable/song_play_lay"
+        android:text="@string/play"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:id="@+id/song_play1"
+        android:layout_width="371.5dp"
+        android:layout_height="95.0dp"
+        android:background="@drawable/song_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/songnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7.5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="start|top"
+            android:text="숫자"
+            android:textColor="@color/color_ff121314"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/songname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="31.5dp"
+            android:gravity="start|top"
+            android:text="곡 이름"
+            android:textColor="@color/color_ff000000"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="2.5dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/line"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,12 +1,16 @@
 package com.example.myapplication_scroll;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_popular_chart;
@@ -16,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     ImageButton  btn_arrow;
     Button btn_streaming;
     int i = 0;
+
+    RecyclerView mRecyclerView;
+    RecyclerView.LayoutManager mLayoutManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +31,20 @@ public class MainActivity extends AppCompatActivity {
 
         this.InitializeView();
         this.SetListener();
+
+        mRecyclerView = findViewById(R.id.main_popular_recyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
+
+        ArrayList<Mainpopularlist_Info> mainpopularlistInfoArrayList = new ArrayList<>();
+        mainpopularlistInfoArrayList.add(new Mainpopularlist_Info(R.drawable.boy1_kickit,"1", "영웅","NCT127"));
+        mainpopularlistInfoArrayList.add(new Mainpopularlist_Info(R.drawable.boy2_music1,"2", "이제 나만 믿어요","임영웅"));
+        mainpopularlistInfoArrayList.add(new Mainpopularlist_Info(R.drawable.boy2_music2,"3", "계단말고 엘리베이터","임영웅"));
+        mainpopularlistInfoArrayList.add(new Mainpopularlist_Info(R.drawable.boy1_kickit,"4", "day dream","NCT127"));
+        Mainpopularlist_adapter mainpopularlistadapter = new Mainpopularlist_adapter(mainpopularlistInfoArrayList);
+
+        mRecyclerView.setAdapter(mainpopularlistadapter);
     }
 
     public void InitializeView() {

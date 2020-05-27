@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".list_item" />
+        <activity android:name=".Mainpopularlist_item"></activity>
+        <activity android:name=".Albumlist_item" />
+        <activity android:name=".Playlist_item" />
         <activity android:name=".StreamingSongList" />
         <activity android:name=".StreamingMain" />
         <activity android:name=".StreamingSongLyrics" />

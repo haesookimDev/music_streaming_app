@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
+public class Playlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView ivPicture;
@@ -26,22 +26,22 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
     }
 
     private ArrayList<Playlist_Info> playlistInfoArrayList;
-    MyAdapter(ArrayList<Playlist_Info> playlistInfoArrayList){
+    Playlist_adapter(ArrayList<Playlist_Info> playlistInfoArrayList){
         this.playlistInfoArrayList = playlistInfoArrayList;
     }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_list_item, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_item_playlist, parent, false);
 
-        return new MyViewHolder(v);
+        return new Playlist_adapter.MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
-        MyViewHolder myViewHolder = (MyViewHolder) holder;
+        Playlist_adapter.MyViewHolder myViewHolder = (Playlist_adapter.MyViewHolder) holder;
 
         myViewHolder.ivPicture.setImageResource(playlistInfoArrayList.get(position).drawableId);
         myViewHolder.songname.setText(playlistInfoArrayList.get(position).song);
