@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/music_layout1"
+android:layout_width="382.5dp"
+android:layout_height="95.5dp"
+
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/album_image"
+        android:layout_width="90.0dp"
+        android:layout_height="90.0dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@drawable/button_no_color_layer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+    <TextView
+        android:layout_width="60.0dp"
+        android:layout_height="60.0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15.5dp"
+        android:background="@drawable/rank"
+        android:gravity="center"
+        android:text="수"
+        android:textColor="@color/color_ffffffff"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO"/>
+    <Button
+        android:id="@+id/popular_chart_music_1"
+        android:layout_width="90.0dp"
+        android:layout_height="90.0dp"
+        android:layout_marginTop="5.5dp"
+        android:background="@drawable/button_no_color_layer"/>
+
+    <TextView
+        android:id="@+id/singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97.5dp"
+        android:layout_marginTop="63.5dp"
+        android:gravity="start|top"
+        android:text="가수"
+        android:textColor="@color/color_ff000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97.5dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:gravity="start|top"
+        android:text="노래"
+        android:textColor="@color/color_ff000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/song_play_lay1"
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:layout_marginStart="302.5dp"
+        android:layout_marginTop="7.5dp"
+        android:text="@string/play"
+        android:textSize="25sp"
+        android:background="@drawable/song_play_lay">
+    </Button>
+
+    <ImageView
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:layout_marginStart="314dp"
+        android:layout_marginTop="13.5dp"
+        android:src="@drawable/song_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+
+</RelativeLayout>

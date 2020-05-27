@@ -40,7 +40,7 @@
                 android:id="@+id/streaming_list1_image"
                 android:layout_width="101.5dp"
                 android:layout_height="98.5dp"
-                android:src="@drawable/no_album"
+                android:src="@drawable/button_no_color_layer"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
             <TextView
