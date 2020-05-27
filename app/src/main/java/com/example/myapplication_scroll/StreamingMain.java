@@ -1,34 +1,114 @@
 package com.example.myapplication_scroll;
 
-import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.SeekBar;
 
-public class StreamingMain extends AppCompatActivity {
+import java.io.IOException;
+
+public class StreamingMain extends Activity {
+
     Button btn_mini_playList;
-    Button btn_stream_play_stop1;
-    Button btn_stream_play_stop2;
     Button btn_mini_home;
     int i = 0;
+
+    Button btn_stream_play_stop1;
+    SeekBar seekbar;
+    MediaPlayer music;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_streaming_main);
 
+
         this.InitializeView();
         this.SetListener();
+
+
+        music = MediaPlayer.create(this, R.raw.music);
+        music.setLooping(true);
+
+        btn_stream_play_stop1 = (Button) findViewById(R.id.stream_play_stop1);
+        seekbar = (SeekBar) findViewById(R.id.seekBar1);
+
+        seekbar.setMax(music.getDuration());
+
+        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress,
+                                          boolean fromUser) {
+
+                if(fromUser)
+                    music.seekTo(progress);
+            }
+        });
     }
+
+
+    public void button(View v){
+
+        if(music.isPlaying()){
+
+            music.stop();
+            try {
+
+                music.prepare();
+            } catch (IllegalStateException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            music.seekTo(0);
+
+            btn_stream_play_stop1.setText(R.string.stream_play);
+            seekbar.setProgress(0);
+        }else{
+            music.start();
+            btn_stream_play_stop1.setText(R.string.stream_stop);
+            Thread();
+        }
+    }
+
+    public void Thread(){
+        Runnable task = new Runnable(){
+            public void run(){
+
+                while(music.isPlaying()){
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    seekbar.setProgress(music.getCurrentPosition());
+                }
+            }
+        };
+        Thread thread = new Thread(task);
+        thread.start();
+    }
+
+
+
+
 
     public void InitializeView() {
         btn_mini_playList = findViewById(R.id.mini_playlist_btn);
-        btn_stream_play_stop1 = findViewById(R.id.stream_play_stop1);
-        btn_stream_play_stop2 = findViewById(R.id.stream_play_stop2);
         btn_mini_home = findViewById(R.id.mini_home_btn);
     }
 
@@ -38,32 +118,15 @@ public class StreamingMain extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.mini_home_btn:
-                        Intent intent_main = new Intent(getApplicationContext(),MainActivity.class);
+                        Intent intent_main = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent_main);
                         break;
                     case R.id.mini_playlist_btn:
-                        Intent intent_mini_playlist_btn = new Intent(getApplicationContext(),StreamingSongList.class);
+                        Intent intent_mini_playlist_btn = new Intent(getApplicationContext(), StreamingSongList.class);
                         startActivity(intent_mini_playlist_btn);
                         break;
-                    case R.id.stream_play_stop1:
-                        i = 1 - i;
-                        if(i == 0){
-                            btn_stream_play_stop1.setVisibility(View.VISIBLE);
-                            btn_stream_play_stop2.setVisibility(View.INVISIBLE);
-                        } else{
-                            btn_stream_play_stop2.setVisibility(View.VISIBLE);
-                            btn_stream_play_stop1.setVisibility(View.INVISIBLE);
-                        }
-                        break;
-                    case R.id.stream_play_stop2:
-                        i= 1 - i;
-                        if(i == 0){
-                            btn_stream_play_stop1.setVisibility(View.VISIBLE);
-                            btn_stream_play_stop2.setVisibility(View.INVISIBLE);
-                        } else{
-                            btn_stream_play_stop2.setVisibility(View.VISIBLE);
-                            btn_stream_play_stop1.setVisibility(View.INVISIBLE);
-                        } break;
+
+
                     default:
                         break;
                 }
@@ -71,8 +134,12 @@ public class StreamingMain extends AppCompatActivity {
         };
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_playList.setOnClickListener(Listener);
-        btn_stream_play_stop1.setOnClickListener(Listener);
-        btn_stream_play_stop2.setOnClickListener(Listener);
-
     }
+
 }
+
+
+
+
+
+
