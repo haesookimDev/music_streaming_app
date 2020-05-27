@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/artboard"
+    android:layout_width="394.0dp"
+    android:layout_height="109.5dp"
+    android:background="@drawable/button_no_color_layer">
+    <RelativeLayout
+        android:id="@+id/draw32"
+        android:layout_width="394.0dp"
+        android:layout_height="109.5dp"
+        android:background="@drawable/search_result1_song"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="0dp">
+
+
+        //색바뀌는 프레임
+        <RelativeLayout
+            android:id="@+id/streaming_list1"
+            android:layout_width="362.5dp"
+            android:layout_height="98.5dp"
+            android:background="@drawable/streaming_playlist_color_control"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="5.5dp">
+            <TextView
+                android:id="@+id/streaming_list1_singer"
+                android:layout_width="197.5dp"
+                android:layout_height="31.5dp"
+                android:text="가수이름"
+                android:textSize="25sp"
+                android:textColor="@color/color_ff000000"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="107.5dp"
+                android:layout_marginTop="51dp"/>
+            <ImageView
+                android:id="@+id/streaming_list1_image"
+                android:layout_width="101.5dp"
+                android:layout_height="98.5dp"
+                android:src="@drawable/no_album"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/streaming_list1_song_name"
+                android:layout_width="197.5dp"
+                android:layout_height="31.5dp"
+                android:text="노래 이름"
+                android:textSize="25sp"
+                android:textColor="@color/color_ff000000"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="107.5dp"
+                android:layout_marginTop="17dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/song_play1"
+            android:layout_width="75.0dp"
+            android:layout_height="75.0dp"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/play"
+            android:src="@drawable/song_play" />
+        <RelativeLayout
+            android:id="@+id/song_play_lay1"
+            android:layout_width="75.0dp"
+            android:layout_height="75.0dp"
+            android:layout_marginStart="307dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/song_play_lay">
+            <TextView
+                android:id="@+id/play1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="19dp"
+                android:gravity="start|top"
+                android:text="@string/play"
+                android:textColor="@color/color_ff020202"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/play_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_no_color_layer"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
