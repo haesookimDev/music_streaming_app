@@ -266,6 +266,12 @@ Love song Love song yeah\n
     <string name="strem_nex">다음</string>
     <string name="text8">NCT 127</string>
     <string name="text9">우산(Love Song)</string>
+    <string name="tutorialmain_s">아래 5가지 방법 중 원하는 것을 선택하세요.</string>
+    <string name="tutorialsub_s">음악 듣는 방법 따라해보기</string>
+    <string name="tuto_op1">재생목록 노래 삭제하기</string>
+    <string name="tuto_op2">곡 검색해서 노래 듣기</string>
+    <string name="tuto_op3">가수 검색해서 노래 듣기</string>
+    <string name="tuto_op4">인기차트에서 노래 듣기</string>
 </resources>
 
 

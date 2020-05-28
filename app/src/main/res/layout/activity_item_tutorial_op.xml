@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/tutorial_option1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350.0dp"
+    android:layout_height="107.0dp"
+    android:background="@drawable/tutorial_option_tool"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="15dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="75.0dp"
+        android:layout_height="75.0dp"
+        android:src="@drawable/button_no_color_layer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12.5dp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="옵션명"
+        android:gravity="start|top"
+        android:textColor="@color/color_ff000000"
+        android:textSize="22.5sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="38.5dp"/>
+</RelativeLayout>

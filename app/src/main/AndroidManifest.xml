@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Popularlist_item"></activity>
+        <activity android:name=".Tutorial_op_item"></activity>
+        <activity android:name=".TutorialMainActivity" />
+        <activity android:name=".Popularlist_item" />
         <activity android:name=".Mainpopularlist_item" />
         <activity android:name=".Albumlist_item" />
         <activity android:name=".Playlist_item" />

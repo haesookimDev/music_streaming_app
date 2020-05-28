@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn_favorite2;
     ImageButton  btn_arrow;
     Button btn_streaming;
+    Button tuto;
     int i = 0;
 
     RecyclerView mRecyclerView;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
         btn_popular_chart = (Button) findViewById(R.id.popular_chart);
         btn_streaming  = (Button)findViewById(R.id.streaming_main_btn);
+        tuto = (Button)findViewById(R.id.tuto_test_btn);
     }
 
     public void SetListener() {
@@ -76,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.favorite_btn2:
                         Intent intent_favorite2 = new Intent(getApplicationContext(), ArtistNCTActivity.class);
                         startActivity(intent_favorite2);
+                        break;
+                    case  R.id.tuto_test_btn:
+                        Intent tuto = new Intent(getApplicationContext(), TutorialMainActivity.class);
+                        startActivity(tuto);
                         break;
                     case R.id.arrow_btn:
                         i = 1-i;
@@ -102,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         btn_favorite2.setOnClickListener(Listener);
         btn_arrow.setOnClickListener(Listener);
         btn_streaming.setOnClickListener(Listener);
+        tuto.setOnClickListener(Listener);
     }
 }
 

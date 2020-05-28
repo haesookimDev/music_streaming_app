@@ -1,21 +1,19 @@
 package com.example.myapplication_scroll;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class StreamingSongList extends AppCompatActivity {
+public class TutorialMainActivity extends AppCompatActivity {
+
     Button btn_mini_home;
-    Button btn_mini_play;
 
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
@@ -23,29 +21,15 @@ public class StreamingSongList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_streaming_song_list);
-
+        setContentView(R.layout.activity_tutorial_main);
+        
+        this.MakeTheView();
         this.InitializeView();
         this.SetListener();
-
-        mRecyclerView = findViewById(R.id.recyclerView);
-        mRecyclerView.setHasFixedSize(true);
-        mLayoutManager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(mLayoutManager);
-
-        ArrayList<Playlist_Info> playlistInfoArrayList = new ArrayList<>();
-        playlistInfoArrayList.add(new Playlist_Info(R.drawable.boy1_kickit, "영웅","NCT127"));
-        playlistInfoArrayList.add(new Playlist_Info(R.drawable.boy1_cherry, "Cherry Bomb","NCT127"));
-
-        Playlist_adapter playlistadapter = new Playlist_adapter(playlistInfoArrayList);
-
-        mRecyclerView.setAdapter(playlistadapter);
-
     }
 
     public void InitializeView() {
         btn_mini_home = findViewById(R.id.mini_home_btn);
-        btn_mini_play = findViewById(R.id.mini_play_btn);
     }
 
     public void SetListener() {
@@ -57,18 +41,27 @@ public class StreamingSongList extends AppCompatActivity {
                         Intent intent_main = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent_main);
                         break;
-                    case R.id.mini_play_btn:
-                        Intent intent_play = new Intent(getApplicationContext(), StreamingMain.class);
-                        startActivity(intent_play);
-                        break;
                     default:
                         break;
                 }
             }
         };
+
         btn_mini_home.setOnClickListener(Listener);
-        btn_mini_play.setOnClickListener(Listener);
+    }
+    public void MakeTheView(){
+        mRecyclerView = findViewById(R.id.tutorial_recyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
+        ArrayList<Tutorial_op_Info> tutorial_InfoArrayList = new ArrayList<>();
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_popular, R.string.tuto_op1));
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_song, R.string.tuto_op2));
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_singer, R.string.tuto_op3));
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_delete, R.string.tuto_op4));
+        Tutorial_op_Adapter tutorial_adapter = new Tutorial_op_Adapter(tutorial_InfoArrayList);
 
+        mRecyclerView.setAdapter(tutorial_adapter);
     }
 }

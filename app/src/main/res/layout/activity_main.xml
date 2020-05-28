@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/artboard"
     android:layout_width="394.0dp"
-    android:layout_height="1366.0dp"
+    android:layout_height="1000.0dp"
     android:background="@drawable/artboard">
 
     <ScrollView
@@ -40,6 +40,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
                 </Button>
+
 
             </RelativeLayout>
 
@@ -118,7 +119,7 @@
             <RelativeLayout
                 android:id="@+id/popular_chart_layer"
                 android:layout_width="394.0dp"
-                android:layout_height="1366dp"
+                android:layout_height="1250dp"
                 android:layout_marginTop="600dp"
                 android:background="@drawable/popular_chart_layer"
                 app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +145,21 @@
                     android:layout_marginTop="95.5dp">
                 </androidx.recyclerview.widget.RecyclerView>
             </RelativeLayout>
+            <Button
+                android:id="@+id/tuto_test_btn"
+                android:text="노래듣기 사용 방법"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="380.0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="1300dp"
+                android:padding="10dp"
+                android:background="@drawable/tuto_btn_tool"
+                android:drawableStart="@drawable/tuto_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </Button>
         </RelativeLayout>
     </ScrollView>
 
