@@ -25,7 +25,7 @@
                 android:id="@+id/text50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tuto_op2_3"
+                android:text="@string/tuto_op3_3"
                 android:gravity="start|top"
                 android:textColor="@color/color_ff000000"
                 android:textSize="22.5sp"
@@ -54,7 +54,7 @@
                 android:enabled="true">
             </EditText>
             <Button
-                android:id="@+id/button_go_op2_4"
+                android:id="@+id/button_go_op3_4"
                 android:layout_width="70dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/search_btn1"

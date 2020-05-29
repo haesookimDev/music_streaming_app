@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Tutorial_op_4_2"></activity>
+        <activity android:name=".Tutorial_op_3_4" />
+        <activity android:name=".Tutorial_op_3_3" />
+        <activity android:name=".Tutorial_op_3_2" />
         <activity android:name=".Tutorial_op_2_4" />
         <activity android:name=".Tutorial_op_2_2" />
         <activity android:name=".Tutorial_op_2_3" />

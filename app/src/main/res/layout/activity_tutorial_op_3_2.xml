@@ -4,8 +4,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/artboard"
     android:layout_width="394.0dp"
-    android:layout_height="712.0dp"
-    android:background="@drawable/tuto_search">
+    android:layout_height="1664.0dp"
+    android:background="@drawable/tuto_main">
     <RelativeLayout
         android:id="@+id/draw73"
         android:layout_width="394.0dp"
@@ -16,7 +16,7 @@
         <RelativeLayout
             android:id="@+id/draw69"
             android:layout_width="394.0dp"
-            android:layout_height="200dp"
+            android:layout_height="200.5dp"
             android:background="@drawable/tuto_exp_tool"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,46 +25,30 @@
                 android:id="@+id/text50"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tuto_op2_3"
+                android:text="@string/tuto_op2_2"
                 android:gravity="start|top"
                 android:textColor="@color/color_ff000000"
                 android:textSize="22.5sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="50.5dp"
-                android:layout_marginTop="70dp"/>
+                android:layout_marginStart="130.5dp"
+                android:layout_marginTop="50dp"/>
         </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/draw3"
+        <TextView
+            android:id="@+id/main_search_btn1"
+            android:text="@string/search_text"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
             android:layout_width="390.0dp"
             android:layout_height="60dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="45dp"
             android:padding="10dp"
             android:background="@drawable/search_btn1"
-            android:layout_centerHorizontal="true"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
-            <EditText
-                android:id="@+id/search_text"
-                android:layout_width="270dp"
-                android:layout_height="100dp"
-                android:hint="검색어를 입력하세요."
-                android:textSize="15sp"
-                android:textColorHint="@color/color_ff000000"
-                android:enabled="true">
-            </EditText>
-            <Button
-                android:id="@+id/button_go_op2_4"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/search_btn1"
-                android:text="검색"
-                android:textColor="@color/color_ff000000"
-                android:textSize="30sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="290dp"/>
-        </RelativeLayout>
+            android:drawableStart="@drawable/search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </TextView>
         <ImageView
             android:id="@+id/image24"
             android:layout_width="100.0dp"
@@ -75,6 +59,14 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="72dp">
         </ImageView>
+        <Button
+            android:id="@+id/button_go_op3_3"
+            android:layout_width="390.0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_no_color_layer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </Button>
     </RelativeLayout>
-
 </RelativeLayout>

@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Tutorial_op_3_1 extends AppCompatActivity {
+public class Tutorial_op_3_2 extends AppCompatActivity {
 
-    Button btn_ok;
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutorial_op_3_1);
+        setContentView(R.layout.activity_tutorial_op_3_2);
 
         this.InitializeView();
         this.SetListener();
     }
     public void InitializeView() {
-        btn_ok = (Button) findViewById(R.id.tuto_ok_btn);
+        btn = (Button)findViewById(R.id.button_go_op3_3);
     }
 
     public void SetListener() {
@@ -28,15 +28,15 @@ public class Tutorial_op_3_1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.tuto_ok_btn:
-                        Intent intent_tuto_op3_2 = new Intent(getApplicationContext(),Tutorial_op_3_2.class);
-                        startActivity(intent_tuto_op3_2);
+                    case R.id.button_go_op3_3:
+                        Intent intent_tuto_op3_3 = new Intent(getApplicationContext(),Tutorial_op_3_3.class);
+                        startActivity(intent_tuto_op3_3);
                         break;
                     default:
                         break;
                 }
             }
         };
-        btn_ok.setOnClickListener(Listener);
+        btn.setOnClickListener(Listener);
     }
 }
