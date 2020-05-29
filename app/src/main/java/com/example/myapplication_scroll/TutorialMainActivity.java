@@ -57,8 +57,8 @@ public class TutorialMainActivity extends AppCompatActivity {
 
         ArrayList<Tutorial_op_Info> tutorial_InfoArrayList = new ArrayList<>();
         tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_popular, R.string.tuto_op1));
-        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_song, R.string.tuto_op2));
-        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_singer, R.string.tuto_op3));
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_singer, R.string.tuto_op2));
+        tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_song, R.string.tuto_op3));
         tutorial_InfoArrayList.add(new Tutorial_op_Info(R.drawable.tuto_delete, R.string.tuto_op4));
         Tutorial_op_Adapter tutorial_adapter = new Tutorial_op_Adapter(tutorial_InfoArrayList);
 
