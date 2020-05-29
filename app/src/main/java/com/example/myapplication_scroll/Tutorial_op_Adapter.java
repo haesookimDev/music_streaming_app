@@ -1,10 +1,15 @@
 package com.example.myapplication_scroll;
 
+import android.graphics.Color;
+import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -12,11 +17,12 @@ import java.util.ArrayList;
 
 public class Tutorial_op_Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView image;
         TextView optionname;
 
-        MyViewHolder(View view){
+        public MyViewHolder(View view){
             super(view);
             image = view.findViewById(R.id.image);
             optionname = view.findViewById(R.id.text);
@@ -43,10 +49,14 @@ public class Tutorial_op_Adapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
         myViewHolder.image.setImageResource(tutorial_op_InfoArrayList.get(position).tuto_op_image);
         myViewHolder.optionname.setText(tutorial_op_InfoArrayList.get(position).option_name);
+
     }
 
     @Override
     public int getItemCount() {
+
         return tutorial_op_InfoArrayList.size();
     }
+
+
 }
