@@ -23,7 +23,7 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="290.5dp">
             <Button
-                android:id="@+id/draw9"
+                android:id="@+id/tuto_ok_btn"
                 android:layout_width="100.0dp"
                 android:layout_height="53.0dp"
                 android:text="@string/tuto_ok"

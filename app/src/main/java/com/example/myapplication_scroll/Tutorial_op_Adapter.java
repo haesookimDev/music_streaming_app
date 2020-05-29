@@ -39,15 +39,15 @@ public class Tutorial_op_Adapter extends RecyclerView.Adapter<RecyclerView.ViewH
                             v.getContext().startActivity(firstOp);
                             break;
                         case 1:
-                            Intent secondOp = new Intent(v.getContext(),MainActivity.class);
+                            Intent secondOp = new Intent(v.getContext(),Tutorial_op_2_1.class);
                             v.getContext().startActivity(secondOp);
                             break;
                         case 2:
-                            Intent thirdOp = new Intent(v.getContext(),ArtistYEONGActivity.class);
+                            Intent thirdOp = new Intent(v.getContext(),Tutorial_op_3_1.class);
                             v.getContext().startActivity(thirdOp);
                             break;
                         case 3:
-                            Intent forthOp = new Intent(v.getContext(),ArtistNCTActivity.class);
+                            Intent forthOp = new Intent(v.getContext(),Tutorial_op_4_1.class);
                             v.getContext().startActivity(forthOp);
                             break;
                     }

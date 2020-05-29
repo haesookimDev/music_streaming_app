@@ -17,7 +17,7 @@
     <string name="all_play">전체재생</string>
     <string name="Play_S_name">우산(Love Song)</string>
     <string name="favorite_text">내가 좋아하는 가수</string>
-    <string name="popular_chart">인기차트&gt;</string>
+    <string name="popular_chart">인기차트</string>
     <string name="nct127">NCT127</string>
     <string name="rank_song">영웅 (英雄; Kick It)</string>
     <string name="rank_1">1</string>
@@ -274,6 +274,11 @@ Love song Love song yeah\n
     <string name="tuto_op1">인기차트에서 노래 듣기</string>
     <string name="tutorial_finger">화면에 나오는 위 모양의 손가락을 따라해주세요.</string>
     <string name="tuto_ok">확인</string>
+    <string name="tuto_op1_2_scroll">화면을 위로 올려주세요!</string>
+    <string name="tuto_op1_2_popular">인기차트 버튼을 눌러주세요!</string>
+    <string name="tuto_op1_3_play">원하는 곡의 재생 버튼을 눌러주세요!</string>
+    <string name="tuto_go_tutomain">튜토리얼 메인으로 이동하기</string>
+    <string name="tuto_op1_4">재생 목록에 추가되었으면 완료!</string>
 </resources>
 
 
