@@ -1,5 +1,6 @@
 package com.example.myapplication_scroll;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.util.Log;
 import android.util.SparseBooleanArray;
@@ -26,6 +27,33 @@ public class Tutorial_op_Adapter extends RecyclerView.Adapter<RecyclerView.ViewH
             super(view);
             image = view.findViewById(R.id.image);
             optionname = view.findViewById(R.id.text);
+
+            view.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+
+                    switch (position){
+                        case 0:
+                            Intent firstOp = new Intent(v.getContext(),SearchActivity.class);
+                            v.getContext().startActivity(firstOp);
+                            break;
+                        case 1:
+                            Intent secondOp = new Intent(v.getContext(),MainActivity.class);
+                            v.getContext().startActivity(secondOp);
+                            break;
+                        case 2:
+                            Intent thirdOp = new Intent(v.getContext(),ArtistYEONGActivity.class);
+                            v.getContext().startActivity(thirdOp);
+                            break;
+                        case 3:
+                            Intent forthOp = new Intent(v.getContext(),ArtistNCTActivity.class);
+                            v.getContext().startActivity(forthOp);
+                            break;
+                    }
+
+                }
+            });
         }
     }
 

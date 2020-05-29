@@ -1,5 +1,7 @@
 package com.example.myapplication_scroll;
 
+import android.provider.ContactsContract;
+import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +14,11 @@ import java.util.ArrayList;
 
 public class Popularlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
+    private SparseBooleanArray mSelectedItems = new SparseBooleanArray(0);
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView album;
+        ImageView frame;
         TextView rank_num;
         TextView songname;
         TextView singername;
@@ -24,6 +29,22 @@ public class Popularlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewH
             rank_num = view.findViewById(R.id.rank);
             songname = view.findViewById(R.id.song);
             singername = view.findViewById(R.id.singer);
+            frame = view.findViewById(R.id.popular_musiclist_tool);
+
+            view.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+
+                    if (mSelectedItems.get(position, false)) {
+                        mSelectedItems.put(position, false);
+                        frame.setImageResource(R.drawable.popular_musiclist_color);
+                    } else {
+                        mSelectedItems.put(position, true);
+                        frame.setImageResource(R.drawable.popular_musiclist_color_change);
+                    }
+                }
+            });
         }
     }
 

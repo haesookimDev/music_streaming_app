@@ -4,13 +4,17 @@
 xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/music_layout1"
+android:id="@+id/music_layout"
 android:layout_width="382.5dp"
-android:layout_height="95.5dp"
-
+android:layout_height="100.5dp"
 app:layout_constraintStart_toStartOf="parent"
 app:layout_constraintTop_toTopOf="parent">
 
+    <ImageView
+        android:id="@+id/popular_musiclist_tool"
+        android:background="@drawable/popular_musiclist_color"
+        android:layout_width="372.5dp"
+        android:layout_height="100.5dp"/>
     <ImageView
         android:id="@+id/album_image"
         android:layout_width="90.0dp"
