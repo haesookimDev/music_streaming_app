@@ -7,20 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Tutorial_op_4_2 extends AppCompatActivity {
+public class Tutorial_op_4_6 extends AppCompatActivity {
 
     Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tutorial_op_4_2);
+        setContentView(R.layout.activity_tutorial_op_4_6);
 
         this.InitializeView();
         this.SetListener();
     }
     public void InitializeView() {
-        btn = (Button)findViewById(R.id.button_go_op4_3);
+        btn = (Button) findViewById(R.id.button_go_tuto);
     }
 
     public void SetListener() {
@@ -28,9 +28,9 @@ public class Tutorial_op_4_2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    case R.id.button_go_op4_3:
-                        Intent intent_tuto_op4_3 = new Intent(getApplicationContext(),Tutorial_op_4_3.class);
-                        startActivity(intent_tuto_op4_3);
+                    case R.id.button_go_tuto:
+                        Intent intent_tuto_go_main = new Intent(getApplicationContext(),TutorialMainActivity.class);
+                        startActivity(intent_tuto_go_main);
                         break;
                     default:
                         break;

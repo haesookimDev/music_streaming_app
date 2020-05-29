@@ -275,14 +275,19 @@ Love song Love song yeah\n
     <string name="tutorial_finger">화면에 나오는 위 모양의 손가락을 따라해주세요.</string>
     <string name="tuto_ok">확인</string>
     <string name="tuto_op1_2_scroll">화면을 위로 올려주세요!</string>
-    <string name="tuto_op1_2_popular">인기차트 버튼을 눌러주세요!</string>
-    <string name="tuto_op1_3_play">원하는 곡의 재생 버튼을 눌러주세요!</string>
+    <string name="tuto_op1_2_popular"><b>인기차트</b> 버튼을 눌러주세요!</string>
+    <string name="tuto_op1_3_play">원하는 곡의 <b>재생</b> 버튼을 눌러주세요!</string>
     <string name="tuto_go_tutomain">튜토리얼 메인으로 이동하기</string>
     <string name="tuto_op1_4">재생 목록에 추가되었으면 완료!</string>
-    <string name="tuto_op2_2">음악/가수 검색하기 버튼을 눌러주세요!</string>
+    <string name="tuto_op2_2"><b>음악/가수 검색하기</b> 버튼을 눌러주세요!</string>
     <string name="tuto_op2_3">검색바를 눌러 <b>임영웅</b>를 입력해주세요!</string>
-    <string name="tuto_op2_4">원하는 곡의 재생 버튼을 눌러주세요!</string>
+    <string name="tuto_op2_4">원하는 곡의 <b>재생</b> 버튼을 눌러주세요!</string>
     <string name="tuto_op3_3">검색바를 눌러 <b>이제나만믿어요</b>를 입력해주세요!</string>
+    <string name="tuto_op4_2"><b>재생바</b>를 눌러주세요!</string>
+    <string name="tuto_op4_3"><b>재생 목록</b> 버튼을 눌러주세요!</string>
+    <string name="tuto_op4_4"><b>곡 명</b>과 <b>가수 이름</b>이 적혀있는 곳을 눌러주세요!</string>
+    <string name="tuto_op4_5">선택한 노래의 바탕색이 변하면 <b>곡 삭제</b> 버튼을 눌러주세요!</string>
+    <string name="tuto_op4_6">재생목록에서 노래가 없으면 완료!</string>
 </resources>
 
 

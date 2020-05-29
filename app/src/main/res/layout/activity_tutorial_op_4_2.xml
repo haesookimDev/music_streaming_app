@@ -1,9 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Tutorial_op_4_2">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cracker9"
+    android:layout_width="394.0dp"
+    android:layout_height="1664.0dp">
+    <RelativeLayout
+        android:id="@+id/artboard"
+        android:layout_width="394.0dp"
+        android:layout_height="1664.0dp"
+        android:background="@drawable/tuto_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <RelativeLayout
+            android:id="@+id/draw102"
+            android:layout_width="394.0dp"
+            android:layout_height="1664.0dp"
+            android:background="@drawable/tuto_exp_pure_tool"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <RelativeLayout
+                android:id="@+id/draw94"
+                android:layout_width="394.0dp"
+                android:layout_height="206.5dp"
+                android:background="@drawable/tuto_exp_tool"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="448.5dp">
+                <TextView
+                    android:id="@+id/text66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuto_op4_2"
+                    android:gravity="start|top"
+                    android:textColor="@color/color_ff000000"
+                    android:textSize="22.5sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="138.5dp"
+                    android:layout_marginTop="50dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/player_layer"
+            android:layout_width="394.0dp"
+            android:layout_height="126.0dp"
+            android:layout_marginTop="589dp"
+            android:background="@drawable/player_layer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageView
+                android:id="@+id/player_shadow"
+                android:layout_width="394.0dp"
+                android:layout_height="109.5dp"
+                android:layout_marginTop="5.5dp"
+                android:src="@drawable/player_shadow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/Play_S_name"/>
+
+            <RelativeLayout
+                android:id="@+id/player"
+                android:layout_width="394.0dp"
+                android:layout_height="109.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@drawable/player"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/player_ctrl_layer"
+                    android:layout_width="250.5dp"
+                    android:layout_height="61.5dp"
+                    android:layout_marginStart="126.5dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/player_ctrl_layer"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/player_ctrl"
+                        android:layout_width="214.0dp"
+                        android:layout_height="54.5dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="4.5dp"
+                        android:background="@drawable/player_ctrl"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="77.5dp"
+                            android:layout_marginTop="3.5dp"
+                            android:gravity="start|top"
+                            android:text="@string/text3"
+                            android:textColor="@color/color_fff63e4b"
+                            android:textSize="30sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RelativeLayout
+                            android:id="@+id/playlist_ctrl"
+                            android:layout_width="187.5dp"
+                            android:layout_height="44.0dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="5.5dp"
+                            android:background="@drawable/playlist_ctrl"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/album_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="2.5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start|top"
+                                android:text="@string/text1"
+                                android:textColor="@color/color_ff000000"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="144.5dp"
+                                android:layout_marginTop="5dp"
+                                android:gravity="start|top"
+                                android:text="@string/text2"
+                                android:textColor="@color/color_ff090909"
+                                android:textSize="20sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/draw98"
+                        android:layout_width="300dp"
+                        android:layout_height="61.5dp"
+                        android:background="@drawable/tuto_exp_pure_tool"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginBottom="0dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/Play_S_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="126.5dp"
+                    android:layout_marginTop="1.5dp"
+                    android:gravity="start|top"
+                    android:text="@string/Play_S_name"
+                    android:textColor="@color/color_ff000000"
+                    android:textSize="32.5sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/image13"
+                    android:layout_width="109.0dp"
+                    android:layout_height="109.5dp"
+                    android:contentDescription="@string/Play_S_name"
+                    android:src="@drawable/trust_me"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/button_go_op4_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_no_color_layer"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/image31"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:src="@drawable/tuto_finger_touch_under"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="59dp"
+            android:layout_marginTop="530.5dp"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
