@@ -35,7 +35,7 @@ public class Tutorial_op_Adapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
                     switch (position){
                         case 0:
-                            Intent firstOp = new Intent(v.getContext(),SearchActivity.class);
+                            Intent firstOp = new Intent(v.getContext(),Tutorial_op_1_1.class);
                             v.getContext().startActivity(firstOp);
                             break;
                         case 1:
