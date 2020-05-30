@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton  btn_arrow;
     Button btn_streaming;
     Button tuto;
+
     int i = 0;
 
     RecyclerView mRecyclerView;
@@ -33,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         openDialog();
+
         this.InitializeView();
         this.SetListener();
 
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         btn_popular_chart = (Button) findViewById(R.id.popular_chart);
         btn_streaming  = (Button)findViewById(R.id.streaming_main_btn);
         tuto = (Button)findViewById(R.id.tuto_test_btn);
+
     }
 
     public void SetListener() {
@@ -84,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent_favorite2);
                         break;
                     case  R.id.tuto_test_btn:
-                        Intent tuto = new Intent(getApplicationContext(), TutorialMainActivity.class);
-                        startActivity(tuto);
+                        Intent intent_tuto = new Intent(getApplicationContext(), TutorialMainActivity.class);
+                        startActivity(intent_tuto);
                         break;
                     case R.id.arrow_btn:
                         i = 1-i;
@@ -114,26 +118,29 @@ public class MainActivity extends AppCompatActivity {
         btn_streaming.setOnClickListener(Listener);
         tuto.setOnClickListener(Listener);
     }
+
     public void openDialog(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this,R.style.MyAlertDialogStyle);
         alertDialogBuilder.setView(R.layout.activity_pop_up);
 
-        alertDialogBuilder.setPositiveButton("yes", new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setPositiveButton("방법 도전하기", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
-                Toast.makeText(MainActivity.this,"You clicked yes button",Toast.LENGTH_LONG).show();
+                Intent intent_tuto = new Intent(getApplicationContext(), TutorialMainActivity.class);
+                startActivity(intent_tuto);
             }
+
         });
 
-        alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton("닫기",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                finish();
             }
         });
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
     }
+
 }
 
