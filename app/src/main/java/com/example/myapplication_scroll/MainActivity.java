@@ -7,9 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -34,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+//        deleteDialogStatus(); //다이얼로그 한번만 보기 선택후 종료후 데이터 지워서 다시 팝업 실행
         openDialog();
 
         this.InitializeView();
@@ -121,7 +124,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDialog(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this,R.style.MyAlertDialogStyle);
-        alertDialogBuilder.setView(R.layout.activity_pop_up);
+        View mView = getLayoutInflater().inflate(R.layout.activity_pop_up, null);
+        CheckBox mCheckBox = mView.findViewById(R.id.checkBox);
+        alertDialogBuilder.setView(mView);
 
         alertDialogBuilder.setPositiveButton("방법 도전하기", new DialogInterface.OnClickListener() {
             @Override
@@ -140,6 +145,39 @@ public class MainActivity extends AppCompatActivity {
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
+        mCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(compoundButton.isChecked()){
+                    storeDialogStatus(true);
+                }else{
+                    storeDialogStatus(false);
+                }
+            }
+        });
+
+        if(getDialogStatus()){
+            alertDialog.hide();
+        }else{
+            alertDialog.show();
+        }
+    }
+    private void storeDialogStatus(boolean isChecked){
+        SharedPreferences mSharedPreferences = getSharedPreferences("CheckItem", MODE_PRIVATE);
+        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+        mEditor.putBoolean("item", isChecked);
+        mEditor.apply();
+    }
+
+    private boolean getDialogStatus(){
+        SharedPreferences mSharedPreferences = getSharedPreferences("CheckItem", MODE_PRIVATE);
+        return mSharedPreferences.getBoolean("item", false);
+    }
+    private void deleteDialogStatus(){
+        SharedPreferences mSharedPreferences = getSharedPreferences("CheckItem", MODE_PRIVATE);
+        SharedPreferences.Editor mEditor = mSharedPreferences.edit();
+        mEditor.clear();
+        mEditor.commit();
     }
 
 }

@@ -3,11 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="392dp"
-    android:layout_height="1200dp"
+    android:layout_width="300dp"
+    android:layout_height="700dp"
     tools:context=".PopUp">
     <RelativeLayout
-        android:layout_width="370dp"
-        android:layout_height="900dp"
-        android:background="@drawable/popup_tall"/>
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/popup"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="이 화면 그만 보기"
+        android:textSize="25sp"
+        android:buttonTint="@color/color_fff63e4b" />
 </RelativeLayout>
