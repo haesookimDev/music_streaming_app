@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+        MusicListDBManager musicDB = MusicListDBManager.getInstance(this);
 
         ArrayList<Mainpopularlist_Info> mainpopularlistInfoArrayList = new ArrayList<>();
         mainpopularlistInfoArrayList.add(new Mainpopularlist_Info(R.drawable.boy1_kickit,"1", "영웅","NCT127"));

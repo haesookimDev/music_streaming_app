@@ -3,9 +3,12 @@ package com.example.myapplication_scroll;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,11 +32,15 @@ public class SearchNCTActivity extends AppCompatActivity {
     Button btn_songList2;
     Button btn_songList3;
     Button btn_songList4;
+    Button btn_songAll;
+    Button btn_songSelect;
 //    Button btn_play1;
     RelativeLayout songLay1;
     RelativeLayout songLay2;
     RelativeLayout songLay3;
     RelativeLayout songLay4;
+    MusicListDBManager musicDBManager;
+
     int i_1 = 0;
     int i_2 = 0;
     int i_3 = 0;
@@ -43,6 +50,9 @@ public class SearchNCTActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_search_nct);
+
+        musicDBManager = MusicListDBManager.getInstance(this);
+
 
         this.InitializeView();
         this.SetListener();
@@ -61,6 +71,8 @@ public class SearchNCTActivity extends AppCompatActivity {
         btn_songList2 = findViewById(id.song_list2);
         btn_songList3 = findViewById(id.song_list3);
         btn_songList4 = findViewById(id.song_list4);
+        btn_songAll = findViewById(id.all_play_lay);
+        btn_songSelect = findViewById(id.select_play_lay);
         songLay1 = findViewById(id.song_lay1);
         songLay2 = findViewById(id.song_lay2);
         songLay3 = findViewById(id.song_lay3);
@@ -71,6 +83,7 @@ public class SearchNCTActivity extends AppCompatActivity {
         View.OnClickListener Listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                ContentValues addRowValue = new ContentValues();
                 switch (view.getId()) {
                     case id.mini_home_btn:
                         Intent intent_main = new Intent(getApplicationContext(),MainActivity.class);
@@ -136,6 +149,51 @@ public class SearchNCTActivity extends AppCompatActivity {
                         } else {
                             songLay4.setBackgroundResource(drawable.song_lay);
                         }break;
+                    case id.all_play_lay:
+
+                        addRowValue.put("singer", "NCT127");
+                        addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                        addRowValue.put("title", "영웅 (英雄; Kick It)");
+                        musicDBManager.insert(addRowValue);
+
+                        addRowValue.put("singer", "NCT127");
+                        addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                        addRowValue.put("title", "Day Dream(白日夢)");
+                        musicDBManager.insert(addRowValue);
+
+                        addRowValue.put("singer", "NCT127");
+                        addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                        addRowValue.put("title", "우산(Love Song)");
+                        musicDBManager.insert(addRowValue);
+
+                        addRowValue.put("singer", "NCT127");
+                        addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                        addRowValue.put("title", "Elevator(127F)");
+                        musicDBManager.insert(addRowValue);
+                        break;
+                    case id.select_play_lay:
+                        if (i_1 == 1){
+                            addRowValue.put("singer", "NCT127");
+                            addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                            addRowValue.put("title", "영웅 (英雄; Kick It)");
+                            musicDBManager.insert(addRowValue);
+                        } if (i_2 == 1){
+                            addRowValue.put("singer", "NCT127");
+                            addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                            addRowValue.put("title", "Day Dream(白日夢)");
+                            musicDBManager.insert(addRowValue);
+                        } if (i_3 == 1){
+                            addRowValue.put("singer", "NCT127");
+                            addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                            addRowValue.put("title", "우산(Love Song)");
+                            musicDBManager.insert(addRowValue);
+                        } if (i_4 == 1) {
+                            addRowValue.put("singer", "NCT127");
+                            addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
+                            addRowValue.put("title", "Elevator(127F)");
+                            musicDBManager.insert(addRowValue);
+                        }
+                        break;
                     default:
                         break;
                 }
@@ -155,6 +213,8 @@ public class SearchNCTActivity extends AppCompatActivity {
         btn_songList2.setOnClickListener(Listener);
         btn_songList3.setOnClickListener(Listener);
         btn_songList4.setOnClickListener(Listener);
+        btn_songSelect.setOnClickListener(Listener);
+        btn_songAll.setOnClickListener(Listener);
     }
 
 }
