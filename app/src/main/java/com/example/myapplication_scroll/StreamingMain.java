@@ -67,27 +67,16 @@ public class StreamingMain extends Activity {
 
         if(music.isPlaying()){
 
-            music.stop();
-            try {
-                music.prepare();
-            } catch (IllegalStateException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            music.seekTo(0);
+            music.pause();
 
             btn_stream_play_stop1.setText(R.string.stream_play);
-            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
-            seekbar.setProgress(0);
         }else{
             music.start();
             btn_stream_play_stop1.setText(R.string.stream_stop);
-            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorstop));
             Thread();
         }
     }
+
 
     public void Thread(){
         Runnable task = new Runnable(){

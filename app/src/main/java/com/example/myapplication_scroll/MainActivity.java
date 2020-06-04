@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btn_favorite2 = (ImageButton) findViewById(R.id.favorite_btn2);
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
         btn_popular_chart = (Button) findViewById(R.id.popular_chart);
-        btn_streaming  = (Button)findViewById(R.id.streaming_main_btn);
+        btn_streaming  = (Button)findViewById(R.id.Play_S_name);
         tuto = (Button)findViewById(R.id.tuto_test_btn);
 
     }
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                             btn_favorite2.setVisibility(View.INVISIBLE);
                         }
                         break;
-                    case R.id.streaming_main_btn:
+                    case R.id.Play_S_name:
                         Intent intent_streaming_main = new Intent(getApplicationContext(), StreamingMain.class);
                         startActivity(intent_streaming_main);
                         break;

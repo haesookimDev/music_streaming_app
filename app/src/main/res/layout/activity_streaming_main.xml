@@ -3,111 +3,117 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/first_main"
-    android:layout_width="394.0dp"
-    android:layout_height="2504.5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/artboard">
-    <FrameLayout
-        android:id="@+id/stream_page_main_frame"
-        android:layout_width="394.0dp"
-        android:layout_height="782.5dp"
-        android:background="@drawable/strem_page_w"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:fillViewport="true">
 
         <RelativeLayout
-            android:id="@+id/page_lay_w"
-            android:layout_width="394.0dp"
-            android:layout_height="332.5dp"
-            android:background="@drawable/page_lay_w"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="450dp">
-
-            <TextView
-                android:id="@+id/strem_song"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="27.5dp"
-                android:gravity="center_horizontal|top"
-                android:text="@string/strem_song"
-                android:textColor="@color/color_ff000000"
-                android:textSize="25sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <Button
-                android:id="@+id/stream_page_lyrics_btn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_no_color_layer"/>
-        </RelativeLayout>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 
-
-        <RelativeLayout
-            android:id="@+id/strem_page_up"
-            android:layout_width="394.0dp"
-            android:layout_height="450.0dp"
-            android:background="@drawable/strem_page_up"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
             <RelativeLayout
-                android:id="@+id/mini_home_search_btn_main"
+                android:id="@+id/page_lay_w"
                 android:layout_width="394.0dp"
-                android:layout_height="115.0dp"
-                android:layout_marginTop="16.5dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <Button
-                    android:id="@+id/mini_playlist_btn"
-                    android:layout_width="200.0dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="210dp"
-                    android:layout_marginTop="33.5dp"
-                    android:background="@drawable/mini_search_button"
-                    android:drawableStart="@drawable/mini_playlistbutton"
-                    android:paddingStart="20dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/strem_list"
-                    android:textColor="#000000"
-                    android:textSize="35sp" />
-
-                <Button
-                    android:id="@+id/mini_home_btn"
-                    android:layout_width="170dp"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="33.5dp"
-                    android:background="@drawable/mini_home_button"
-                    android:gravity=""
-                    android:paddingStart="5dp"
-                    android:paddingEnd="0dp"
-                    android:text="@string/mini_home_text"
-                    android:textColor="#000000"
-                    android:textSize="40sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/strem_mid_lay"
-                android:layout_width="384.5dp"
-                android:layout_height="106.0dp"
-                android:background="@drawable/strem_mid_lay"
+                android:layout_height="332.5dp"
+                android:background="@drawable/page_lay_w"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="9.5dp"
-                android:layout_marginTop="344dp">
+                android:layout_marginTop="450dp">
 
-
-                <SeekBar
-                    android:id="@+id/seekBar1"
+                <TextView
+                    android:id="@+id/strem_song"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="27.5dp"
+                    android:gravity="center_horizontal|top"
+                    android:text="@string/strem_song"
+                    android:textColor="@color/color_ff000000"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/stream_page_lyrics_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_no_color_layer"/>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/strem_page_up"
+                android:layout_width="394.0dp"
+                android:layout_height="450.0dp"
+                android:background="@drawable/strem_page_up"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <RelativeLayout
+                    android:id="@+id/mini_home_search_btn_main"
+                    android:layout_width="394.0dp"
+                    android:layout_height="115.0dp"
+                    android:layout_marginTop="16.5dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/mini_playlist_btn"
+                        android:layout_width="200.0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="210dp"
+                        android:layout_marginTop="33.5dp"
+                        android:background="@drawable/mini_search_button"
+                        android:drawableStart="@drawable/mini_playlistbutton"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/strem_list"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+                    <Button
+                        android:id="@+id/mini_home_btn"
+                        android:layout_width="170dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="33.5dp"
+                        android:background="@drawable/mini_home_button"
+                        android:gravity=""
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/mini_home_text"
+                        android:textColor="#000000"
+                        android:textSize="35sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/strem_mid_lay"
+                    android:layout_width="394.5dp"
+                    android:layout_height="106.0dp"
+                    android:background="@drawable/strem_mid_lay"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginStart="0dp"
-                    android:layout_marginTop="30dp"
-                    android:background="@color/color_f0f0f0" />
+                    android:layout_marginTop="344dp">
+
+
+                    <SeekBar
+                        android:id="@+id/seekBar1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/color_f0f0f0" />
 
                 </RelativeLayout>
             </RelativeLayout>
@@ -184,13 +190,13 @@
 
                         <Button
                             android:id="@+id/stream_play_stop1"
-                            android:layout_width="60dp"
+                            android:layout_width="59dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="70dp"
+                            android:layout_marginStart="66dp"
                             android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
                             android:text="@string/stream_play"
-                            android:textColor="@color/color_ff691bf3"
+                            android:textColor="@color/color_fff63e4b"
                             android:textSize="30sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -207,8 +213,9 @@
                             android:textSize="20sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:layout_marginStart="2.5dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="6dp"/>
+
                         <Button
                             android:id="@+id/strem_nex"
                             android:layout_width="45dp"
@@ -220,8 +227,8 @@
                             android:textSize="20sp"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            android:layout_marginStart="144.5dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginStart="141.5dp"
+                            android:layout_marginTop="6dp"/>
 
 
                     </RelativeLayout>
@@ -264,5 +271,7 @@
                     android:layout_marginStart="21.5dp"
                     android:layout_marginTop="6dp"/>
             </RelativeLayout>
-        </FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
+
