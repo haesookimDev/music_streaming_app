@@ -190,11 +190,7 @@
             android:background="@drawable/player"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-            <Button
-                android:id="@+id/streaming_main_btn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_no_color_layer"/>
+
 
             <RelativeLayout
                 android:id="@+id/player_ctrl_layer"
@@ -217,7 +213,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <Button
-                        android:id="@+id/stream_play_stop1"
+                        android:id="@+id/stream_play_stop"
                         android:layout_width="70dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="78.9dp"

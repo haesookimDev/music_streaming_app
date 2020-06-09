@@ -8,12 +8,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -31,6 +35,29 @@ public class MainActivity extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
+
+
+    Button btn_play;
+    Button btn_pre1;
+    Button btn_next1;
+
+
+    MediaPlayer mediaPlayer;
+    int[] array = {R.raw.nct_um,R.raw.yeong_be,R.raw.nct_hero,R.raw.yeong_st};
+    int index = 0;
+
+
+    ImageView img1;
+    int imgs[] = {R.drawable.image1,R.drawable.yeong2,R.drawable.nct1,R.drawable.yeong1};
+    int cnt = 0;
+
+
+    TextView tex;
+    int title[] = {R.string.nct_love_song,R.string.album_name5,R.string.nct_kick_it,R.string.yeong_elevator};
+    int text = 0;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +84,97 @@ public class MainActivity extends AppCompatActivity {
         Mainpopularlist_adapter mainpopularlistadapter = new Mainpopularlist_adapter(mainpopularlistInfoArrayList);
 
         mRecyclerView.setAdapter(mainpopularlistadapter);
+
+
+        //#------------------------------------------
+
+
+        btn_pre1 = (Button)findViewById(R.id.album_name1);
+        btn_next1 = (Button)findViewById(R.id.album_name2);
+        btn_play = (Button)findViewById(R.id.stream_play_stop);
+
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.nct_um);
+
+
+        btn_play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if(mediaPlayer.isPlaying()){
+                    mediaPlayer.stop();
+                    btn_play.setText("재생");
+
+                }else{
+                    //getApplicationContext() 현재 액티비티 정보얻어오기
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), array[index]);
+                    mediaPlayer.start();
+                    btn_play.setText("정지");
+                }
+            }
+        });
+
+
+
+        btn_next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer.isPlaying()){
+                    mediaPlayer.stop();
+                    //index+=1;
+                    if(index<array.length-1){
+                        mediaPlayer.setAudioSessionId(array[++index]);
+                    }
+                    if (cnt<imgs.length-1) {
+                        img1.setImageResource(imgs[++cnt]);
+                    }
+                    if (text<title.length-1) {
+                        tex.setText(title[++text]);
+                    }
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), array[index]);
+                    mediaPlayer.start();
+
+                }else{
+                    Toast.makeText(getApplicationContext(), "재생중이 아닙니다",Toast.LENGTH_LONG).show();
+                }
+
+            }
+
+        });
+
+        btn_pre1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer.isPlaying()){
+                    mediaPlayer.stop();
+                    //index-=1;
+                    if(index > 0){
+                        mediaPlayer.setAudioSessionId(array[--index]);
+                    }
+                    if (cnt > 0) {
+                        img1.setImageResource(imgs[--cnt]);
+                    }
+                    if (text > 0) {
+                        tex.setText(title[--text]);
+                    }
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), array[index]);
+                    mediaPlayer.start();
+                }else{
+                    Toast.makeText(getApplicationContext(), "재생중이 아닙니다",Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
+        img1 = (ImageView)findViewById(R.id.image13);
+        tex = (TextView)findViewById(R.id.Play_S_name);
+
+
     }
+
+
+
+
 
     public void InitializeView() {
         btn_main_search = (Button) findViewById(R.id.main_search_btn1);
@@ -182,4 +299,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-
