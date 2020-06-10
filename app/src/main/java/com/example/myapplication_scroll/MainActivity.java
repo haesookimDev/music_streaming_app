@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -37,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        deleteDialogStatus(); //다이얼로그 한번만 보기 선택후 종료후 데이터 지워서 다시 팝업 실행
+        deleteDialogStatus(); //다이얼로그 한번만 보기 선택후 종료후 데이터 지워서 다시 팝업 실행
         openDialog();
 
         this.InitializeView();
