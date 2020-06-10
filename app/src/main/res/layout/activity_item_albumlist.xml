@@ -17,6 +17,7 @@
         android:layout_marginTop="7.5dp"
         android:background="@drawable/song_play_lay"
         android:text="@string/play"
+        android:fontFamily="@font/bmeuljirottf"
         android:textSize="25sp"/>
 
     <RelativeLayout
@@ -35,6 +36,7 @@
             android:layout_marginTop="5dp"
             android:gravity="start|top"
             android:text="숫자"
+            android:fontFamily="@font/bmeuljirottf"
             android:textColor="@color/color_ff121314"
             android:textSize="25sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -48,6 +50,7 @@
             android:layout_marginTop="31.5dp"
             android:gravity="start|top"
             android:text="곡 이름"
+            android:fontFamily="@font/bmeuljirottf"
             android:textColor="@color/color_ff000000"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"

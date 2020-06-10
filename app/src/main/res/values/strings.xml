@@ -41,7 +41,7 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="album_name3">내일은 미스터트롯 트롯 에이드 베스트</string>
     <string name="album_name4">내일은 미스터트롯 우승자 특전곡</string>
     <string name="nct_love_song">  우산(Love Song)  </string>
-    <string name="nct_kick_it">영웅 (英雄; Kick It)</string>
+    <string name="nct_kick_it">영웅 (Kick It)</string>
     <string name="nct_127f">Elevator(127F)</string>
     <string name="nct_daydream">Day Dream(白日夢)</string>
     <string name="nct_boom">꿈(Boom)</string>
@@ -424,6 +424,15 @@ Love song Love song yeah\n
     <string name="tuto_op4_4"><b>곡 명</b>과 <b>가수 이름</b>이 적혀있는 곳을 눌러주세요!</string>
     <string name="tuto_op4_5">선택한 노래의 바탕색이 변하면 <b>곡 삭제</b> 버튼을 눌러주세요!</string>
     <string name="tuto_op4_6">재생목록에서 노래가 없으면 완료!</string>
+    <string name="title_activity_player_">Player_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
 
 

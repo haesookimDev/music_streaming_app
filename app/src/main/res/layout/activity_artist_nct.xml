@@ -52,7 +52,8 @@
                         android:layout_marginStart="2.5dp"
                         android:layout_marginTop="21dp"
                         android:gravity="center"
-                        android:text="NCT127"
+                        android:text="@string/nct127"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="#000000"
                         android:textSize="50dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -68,6 +69,7 @@
                     <Button
                         android:id="@+id/mini_search_btn"
                         android:text="@string/mini_search_text"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="#000000"
                         android:textSize="40dp"
                         android:layout_width="170.0dp"
@@ -81,6 +83,7 @@
                     <Button
                         android:id="@+id/mini_home_btn"
                         android:text="@string/mini_home_text"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity=""
                         android:textColor="#000000"
                         android:textSize="40dp"
@@ -165,6 +168,7 @@
                             android:layout_marginTop="50dp"
                             android:gravity="center_horizontal|center"
                             android:text="@string/artist_page_boy1_inf1"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:textColor="@color/color_ff000000"
                             android:textSize="27.5sp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -178,6 +182,7 @@
                             android:layout_marginTop="100dp"
                             android:gravity="center_horizontal|top"
                             android:text="@string/artist_page_boy1_inf2"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:textColor="@color/color_ff000000"
                             android:textSize="20sp"
                             app:layout_constraintStart_toStartOf="parent"
@@ -192,6 +197,7 @@
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:text="가수 소개"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff000000"
                         android:textSize="40dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -269,6 +275,7 @@
                         android:layout_marginTop="12dp"
                         android:gravity="start|top"
                         android:text="인기곡"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff000000"
                         android:textSize="40dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -307,7 +314,8 @@
 
                     <Button
                         android:id="@+id/artist_music1_play2"
-                        android:text="재생"
+                        android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textSize="30dp"
                         android:padding="10dp"
                         android:layout_width="wrap_content"
@@ -322,6 +330,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cherry Bomb"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -361,6 +370,7 @@
                     <Button
                         android:id="@+id/artist_music1_play"
                         android:text="재생"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textSize="30dp"
                         android:padding="10dp"
                         android:layout_width="wrap_content"
@@ -375,7 +385,8 @@
                         android:id="@+id/artist_music1_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="영웅"
+                        android:text="@string/nct_kick_it"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -388,4 +399,15 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="394.0dp"
+        android:layout_height="126.0dp"
+        android:layout_marginTop="590dp">
+        <fragment
+            android:id="@+id/my_fragment"
+            android:name="com.example.myapplication_scroll.Player_Activity"
+            android:layout_width="394.0dp"
+            android:layout_height="126.0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 </RelativeLayout>

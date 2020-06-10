@@ -210,14 +210,6 @@ public class StreamingMain extends Activity {
     }
 
 
-
-
-
-
-
-
-
-
     @SuppressLint("ResourceType")
     public void InitializeView() {
         btn_mini_playList = findViewById(R.id.mini_playlist_btn);

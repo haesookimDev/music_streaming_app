@@ -37,6 +37,7 @@
                 android:layout_width="197.5dp"
                 android:layout_height="31.5dp"
                 android:text="가수이름"
+                android:fontFamily="@font/bmeuljirottf"
                 android:textSize="25sp"
                 android:textColor="@color/color_ff000000"
                 app:layout_constraintTop_toTopOf="parent"
@@ -55,6 +56,7 @@
                 android:layout_width="197.5dp"
                 android:layout_height="31.5dp"
                 android:text="노래 이름"
+                android:fontFamily="@font/bmeuljirottf"
                 android:textSize="25sp"
                 android:textColor="@color/color_ff000000"
                 app:layout_constraintTop_toTopOf="parent"
@@ -85,6 +87,7 @@
                 android:layout_marginTop="19dp"
                 android:gravity="start|top"
                 android:text="@string/play"
+                android:fontFamily="@font/bmeuljirottf"
                 android:textColor="@color/color_ff020202"
                 android:textSize="25sp" />
             <Button
