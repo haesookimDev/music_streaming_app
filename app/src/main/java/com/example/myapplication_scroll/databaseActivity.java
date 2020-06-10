@@ -54,8 +54,9 @@ public class databaseActivity extends AppCompatActivity {
             public void onClick(View view) {
                 switch (view.getId()) {
                     case R.id.clearDB:
-                        musicDBManager.delete("_idPlayList", null);
+                        musicDBManager.deleteAll();
                         playlistInfoArrayList.clear();
+                        getMusicData();
                         Playlist_adapter playlistadapter = new Playlist_adapter(playlistInfoArrayList);
 
                         mRecyclerView.setAdapter(playlistadapter);
@@ -78,7 +79,7 @@ public class databaseActivity extends AppCompatActivity {
 
         if(cursor != null){
             while(cursor.moveToNext()){
-                Playlist_Info currentData = new Playlist_Info(R.drawable.boy1_kickit, cursor.getString(3), cursor.getString(1));
+                Playlist_Info currentData = new Playlist_Info(R.drawable.boy1_kickit, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
                 playlistInfoArrayList.add(currentData);
             }
         }

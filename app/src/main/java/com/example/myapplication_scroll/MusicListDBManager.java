@@ -19,7 +19,7 @@ public class MusicListDBManager {
         myContext = context;
         myDB = context.openOrCreateDatabase(DB_Music, Context.MODE_PRIVATE,null);
 
-        myDB.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_Music + "(_idPlayList INTEGER PRIMARY KEY AUTOINCREMENT, singer VARCHAR(45), album VARCHAR(100), title VARCHAR(45))");
+        myDB.execSQL("CREATE TABLE IF NOT EXISTS " + TABLE_Music + "(_idPlayList INTEGER PRIMARY KEY, singer VARCHAR(45), album VARCHAR(100), title VARCHAR(45))");
     }
 
     public static MusicListDBManager getInstance(Context context){
@@ -34,9 +34,12 @@ public class MusicListDBManager {
         return myDB.insert(TABLE_Music, null , addRowValue);
     }
 
-    public int delete(String whereClause,
-                      String [] whereArgs){
-        return myDB.delete(TABLE_Music, whereClause, whereArgs);
+    public void deleteAll() {
+        myDB.delete(TABLE_Music, null, null);
+    }
+
+    public boolean delete(long id){
+        return myDB.delete(TABLE_Music, "_idPlayList ="+id, null) > 0;
     }
 
     public Cursor query(String [] column,
