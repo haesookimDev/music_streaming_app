@@ -15,6 +15,7 @@ public class SearchActivity extends AppCompatActivity {
     String favorite1_song = "daydream";
     String favorite2 = "임영웅";
     String favorite2_song = "이제나만믿어요";
+    String test = "listTest";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,10 @@ public class SearchActivity extends AppCompatActivity {
                         if(favorite2_song.equals(value_search)){
                             Intent intent_Search_YEONG_song = new Intent(getApplicationContext(),SearchSongYEONGActivity.class);
                             startActivity(intent_Search_YEONG_song);
+                        }
+                        if (test.equals(value_search)){
+                            Intent intent_database = new Intent(getApplicationContext(), databaseActivity.class);
+                            startActivity(intent_database);
                         }
                         break;
                     default:

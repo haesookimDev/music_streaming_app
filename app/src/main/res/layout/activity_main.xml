@@ -190,11 +190,7 @@
             android:background="@drawable/player"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-            <Button
-                android:id="@+id/streaming_main_btn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/button_no_color_layer"/>
+
 
             <RelativeLayout
                 android:id="@+id/player_ctrl_layer"
@@ -216,18 +212,21 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <TextView
-                        android:id="@+id/text3"
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/stream_play_stop"
+                        android:layout_width="70dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="77.5dp"
+                        android:layout_marginStart="78.9dp"
                         android:layout_marginTop="3.5dp"
+                        android:background="@drawable/button_no_color_layer"
                         android:gravity="start|top"
-                        android:text="@string/text3"
+                        android:text="@string/stream_play"
                         android:textColor="@color/color_fff63e4b"
                         android:textSize="30sp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:onClick="button"/>
+
 
                     <RelativeLayout
                         android:id="@+id/playlist_ctrl"
@@ -239,12 +238,13 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                        <TextView
+                        <Button
                             android:id="@+id/album_name1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="50dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="2.5dp"
                             android:layout_marginTop="5dp"
+                            android:background="@drawable/button_no_color_layer"
                             android:gravity="start|top"
                             android:text="@string/text1"
                             android:textColor="@color/color_ff000000"
@@ -252,10 +252,11 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/text2"
+                        <Button
+                            android:id="@+id/album_name2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/button_no_color_layer"
                             android:layout_marginStart="144.5dp"
                             android:layout_marginTop="5dp"
                             android:gravity="start|top"
@@ -268,18 +269,16 @@
                 </RelativeLayout>
             </RelativeLayout>
 
-            <TextView
+            <Button
                 android:id="@+id/Play_S_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="250.5dp"
+                android:layout_height="51.5dp"
                 android:layout_marginStart="126.5dp"
-                android:layout_marginTop="1.5dp"
-                android:gravity="start|top"
+                android:layout_marginTop="1dp"
                 android:text="@string/Play_S_name"
-                android:textColor="@color/color_ff000000"
-                android:textSize="32.5sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:background="@drawable/playlist_ctrl"
+                android:textSize="22.5sp" />
+
 
             <ImageView
                 android:id="@+id/image13"

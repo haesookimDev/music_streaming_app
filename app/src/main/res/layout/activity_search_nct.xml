@@ -107,45 +107,26 @@
                     android:layout_marginStart="14.5dp"
                     android:layout_marginTop="12dp"
                     android:background="@drawable/select_all_play_lay">
-
-                    <RelativeLayout
+                    <Button
                         android:id="@+id/select_play_lay"
                         android:layout_width="121.0dp"
                         android:layout_height="45.3dp"
                         android:layout_marginStart="153dp"
                         android:layout_marginTop="3dp"
-                        android:background="@drawable/select_play_lay">
+                        android:background="@drawable/select_play_lay"
+                        android:text="@string/select_play"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"/>
 
-                        <TextView
-                            android:id="@+id/text8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="11.5dp"
-                            android:layout_marginTop="4.4dp"
-                            android:gravity="start|top"
-                            android:text="@string/select_play"
-                            android:textColor="@color/color_ff000000"
-                            android:textSize="25sp" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
+                    <Button
                         android:id="@+id/all_play_lay"
                         android:layout_width="120.6dp"
                         android:layout_height="45.3dp"
                         android:layout_marginTop="3dp"
-                        android:background="@drawable/all_play_lay">
-
-                        <TextView
-                            android:id="@+id/text9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="11.5dp"
-                            android:layout_marginTop="4.4dp"
-                            android:gravity="start|top"
-                            android:text="@string/all_play"
-                            android:textColor="@color/color_ff000000"
-                            android:textSize="25sp" />
-                    </RelativeLayout>
+                        android:background="@drawable/all_play_lay"
+                        android:text="@string/all_play"
+                        android:textColor="@color/color_ff000000"
+                        android:textSize="25sp"/>
                 </RelativeLayout>
             </RelativeLayout>
 
