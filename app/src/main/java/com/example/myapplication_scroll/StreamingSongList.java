@@ -76,10 +76,11 @@ public class StreamingSongList extends AppCompatActivity {
                                 musicDBManager.delete(n);
                             }
                         }
+                        for (int i = count-1; i >= 0; i--)
+                            playlistadapter.setMSelectedItem(i, false);
                         playlistInfoArrayList.clear();
                         getMusicData();
-                        Playlist_adapter playlistadapter = new Playlist_adapter(playlistInfoArrayList);
-
+                        playlistadapter.notifyDataSetChanged();
                         mRecyclerView.setAdapter(playlistadapter);
                         break;
                     default:
