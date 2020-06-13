@@ -4,25 +4,42 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class ArtistNCTActivity extends AppCompatActivity {
+    private static String TAG;
     Button btn_mini_home;
     Button btn_mini_search;
+    TextView textInfo;
+    TextView textName;
+    private ApiService service;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        TAG = "MainActivity";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist_nct);
 
+        service = RetrofitClient.getClient().create(ApiService.class);
+
         this.InitializeView();
         this.SetListener();
+        testData();
     }
 
     public void InitializeView() {
+        TAG = "MainActivity";
         btn_mini_home = (Button) findViewById(R.id.mini_home_btn);
         btn_mini_search = (Button) findViewById(R.id.mini_search_btn);
+        textInfo = findViewById(R.id.text8);
+        textName = findViewById(R.id.text11);
 
     }
 
@@ -47,5 +64,35 @@ public class ArtistNCTActivity extends AppCompatActivity {
 
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_search.setOnClickListener(Listener);
+    }
+
+    private void testData(){
+        service.getNCTData().enqueue(new Callback<SingerModel>() {
+            @Override
+            public void onResponse(Call<SingerModel> call, Response<SingerModel> response) {
+                if (response.isSuccessful()) {
+                    Log.d(TAG, "response is success");
+                    SingerModel singerModel = response.body();
+                    if (singerModel != null) {
+                        Log.d(TAG, singerModel.getIdSinger());
+                        Log.d(TAG, singerModel.getNameSinger());
+                        Log.d(TAG, singerModel.getInfoSinger());
+                        Log.d(TAG, singerModel.getFictureSinger());
+                        textName.setText(singerModel.getNameSinger());
+                        textInfo.setText(singerModel.getInfoSinger());
+                    } else {
+                        Log.d(TAG, "NameSinger is null");
+                    }
+                } else {
+                    int statusCode  = response.code();
+                    Log.d(TAG, String.valueOf(statusCode));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<SingerModel> call, Throwable t) {
+                Log.d(TAG, "error loading from API" + t);
+            }
+        });
     }
 }
