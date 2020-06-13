@@ -71,8 +71,8 @@ public class SearchNCTActivity extends AppCompatActivity {
         btn_songList2 = findViewById(id.song_list2);
         btn_songList3 = findViewById(id.song_list3);
         btn_songList4 = findViewById(id.song_list4);
-        btn_songAll = findViewById(id.all_play_lay);
-        btn_songSelect = findViewById(id.select_play_lay);
+        btn_songAll = findViewById(id.all_play);
+        btn_songSelect = findViewById(id.select_play);
         songLay1 = findViewById(id.song_lay1);
         songLay2 = findViewById(id.song_lay2);
         songLay3 = findViewById(id.song_lay3);
