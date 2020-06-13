@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tuto_op2_2"
+                android:fontFamily="@font/sd_l"
                 android:gravity="start|top"
                 android:textColor="@color/color_ff000000"
                 android:textSize="22.5sp"
@@ -59,6 +60,7 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="72dp">
         </ImageView>
+
         <Button
             android:id="@+id/button_go_op2_3"
             android:layout_width="390.0dp"
@@ -66,7 +68,6 @@
             android:layout_marginTop="45dp"
             android:background="@drawable/button_no_color_layer"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-        </Button>
+            app:layout_constraintTop_toTopOf="parent"/>
     </RelativeLayout>
 </RelativeLayout>

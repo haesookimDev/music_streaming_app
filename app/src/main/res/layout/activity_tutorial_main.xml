@@ -53,19 +53,20 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="33.5dp"
                     android:background="@drawable/mini_home_button"
-                    android:gravity=""
                     android:paddingLeft="5dp"
                     android:text="@string/mini_home_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="40sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"></Button>
+                    app:layout_constraintTop_toTopOf="parent"/>
             </RelativeLayout>
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tutorialsub_s"
+                android:fontFamily="@font/sd_l"
                 android:gravity="start|top"
                 android:textColor="@color/color_ffffffff"
                 android:textSize="25sp"
@@ -78,6 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tutorialmain_s"
+                android:fontFamily="@font/sd_b"
                 android:gravity="center"
                 android:textColor="@color/color_ff000000"
                 android:textSize="30sp"

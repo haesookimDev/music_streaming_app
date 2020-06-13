@@ -8,12 +8,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -31,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        deleteDialogStatus(); //다이얼로그 한번만 보기 선택후 종료후 데이터 지워서 다시 팝업 실행
+//        deleteDialogStatus(); //다이얼로그 한번만 보기 선택후 종료후 데이터 지워서 다시 팝업 실행
         openDialog();
 
         this.InitializeView();
@@ -58,16 +64,18 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mainpopularlistadapter);
     }
 
+
     public void InitializeView() {
         btn_main_search = (Button) findViewById(R.id.main_search_btn1);
         btn_favorite1 = (ImageButton) findViewById(R.id.favorite_btn1);
         btn_favorite2 = (ImageButton) findViewById(R.id.favorite_btn2);
         btn_arrow = (ImageButton) findViewById(R.id.arrow_btn);
         btn_popular_chart = (Button) findViewById(R.id.popular_chart);
-        btn_streaming  = (Button)findViewById(R.id.streaming_main_btn);
+        btn_streaming  = (Button)findViewById(R.id.Play_S_name);
         tuto = (Button)findViewById(R.id.tuto_test_btn);
 
     }
+
 
     public void SetListener() {
         View.OnClickListener Listener = new View.OnClickListener() {
@@ -104,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                             btn_favorite2.setVisibility(View.INVISIBLE);
                         }
                         break;
-                    case R.id.streaming_main_btn:
+                    case R.id.Play_S_name:
                         Intent intent_streaming_main = new Intent(getApplicationContext(), StreamingMain.class);
                         startActivity(intent_streaming_main);
                         break;
@@ -122,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
         tuto.setOnClickListener(Listener);
     }
 
+
     public void openDialog(){
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this,R.style.MyAlertDialogStyle);
         View mView = getLayoutInflater().inflate(R.layout.activity_pop_up, null);
@@ -137,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        alertDialogBuilder.setNegativeButton("닫기",new DialogInterface.OnClickListener() {
+        alertDialogBuilder.setNegativeButton("이 창 닫기 ",new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
             }
@@ -181,4 +190,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
-

@@ -17,6 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:text="이 화면 그만 보기"
+        android:fontFamily="@font/bmeuljirottf"
         android:textSize="25sp"
         android:buttonTint="@color/color_fff63e4b" />
 </RelativeLayout>

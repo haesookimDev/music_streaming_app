@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".databaseActivity"></activity>
+        <activity
+            android:name=".Player_Activity"
+            android:label="@string/title_activity_player_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".databaseActivity" />
         <activity android:name=".PopUp" />
         <activity android:name=".Tutorial_op_4_6" />
         <activity android:name=".Tutorial_op_4_5" />

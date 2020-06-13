@@ -33,6 +33,7 @@
                         <Button
                             android:id="@+id/mini_search_btn"
                             android:text="@string/mini_search_text"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:textColor="#000000"
                             android:textSize="40sp"
                             android:layout_width="170.0dp"
@@ -46,6 +47,7 @@
                         <Button
                             android:id="@+id/mini_home_btn"
                             android:text="@string/mini_home_text"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:gravity=""
                             android:textColor="#000000"
                             android:textSize="40sp"
@@ -84,44 +86,33 @@
                         android:id="@+id/select_all_play_lay"
                         android:layout_width="339.5dp"
                         android:layout_height="63.0dp"
-                        android:background="@drawable/select_all_play_lay"
                         android:layout_marginStart="27.5dp"
-                        android:layout_marginTop="123dp">
-                        <RelativeLayout
-                            android:id="@+id/select_play_lay"
+                        android:layout_marginTop="123dp"
+                        android:background="@drawable/select_all_play_lay">
+
+
+                        <Button
+                            android:id="@+id/select_play"
                             android:layout_width="121.0dp"
                             android:layout_height="45.3dp"
-                            android:background="@drawable/select_play_lay"
                             android:layout_marginStart="213.5dp"
-                            android:layout_marginTop="3dp">
-                            <TextView
-                                android:id="@+id/select_play"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/select_play"
-                                android:gravity="start|top"
-                                android:textColor="@color/color_ff000000"
-                                android:textSize="25sp"
-                                android:layout_marginStart="11.5dp"
-                                android:layout_marginTop="4.4dp"/>
-                        </RelativeLayout>
-                        <RelativeLayout
-                            android:id="@+id/all_play_lay"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/select_play_lay"
+                            android:text="@string/select_play"
+                            android:fontFamily="@font/bmeuljirottf"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp" />
+
+                        <Button
+                            android:id="@+id/all_play"
                             android:layout_width="120.6dp"
                             android:layout_height="45.3dp"
+                            android:layout_marginTop="3dp"
                             android:background="@drawable/all_play_lay"
-                            android:layout_marginTop="3dp">
-                            <TextView
-                                android:id="@+id/all_play"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/all_play"
-                                android:gravity="start|top"
-                                android:textColor="@color/color_ff000000"
-                                android:textSize="25sp"
-                                android:layout_marginStart="11.5dp"
-                                android:layout_marginTop="4.4dp"/>
-                        </RelativeLayout>
+                            android:text="@string/all_play"
+                            android:fontFamily="@font/bmeuljirottf"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="25sp" />
                     </RelativeLayout>
                 </RelativeLayout>
                 <RelativeLayout
@@ -137,6 +128,7 @@
                         android:layout_marginStart="302.5dp"
                         android:layout_marginTop="7.5dp"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textSize="25sp"
                         android:background="@drawable/song_play_lay">
                     </Button>
@@ -145,23 +137,6 @@
                         android:layout_width="371.5dp"
                         android:layout_height="95.0dp"
                         android:background="@drawable/song_play">
-                        <ImageView
-                            android:id="@+id/representative_lay"
-                            android:layout_width="69.5dp"
-                            android:layout_height="26.5dp"
-                            android:src="@drawable/representative_lay"
-                            android:layout_marginStart="44.5dp"
-                            android:layout_marginTop="5.5dp"/>
-                        <TextView
-                            android:id="@+id/representative"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/representative"
-                            android:gravity="start|top"
-                            android:textColor="@color/color_ffffffff"
-                            android:textSize="20sp"
-                            android:layout_marginStart="49dp"
-                            android:layout_marginTop="2.5dp"/>
                         <TextView
                             android:id="@+id/text4"
                             android:layout_width="wrap_content"
@@ -177,6 +152,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/yeong_trust_me"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:gravity="start|top"
                             android:textColor="@color/color_ff000000"
                             android:textSize="30sp"
@@ -204,6 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/album_name4"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:gravity="center_horizontal|top"
                     android:textColor="@color/color_ffffffff"
                     android:textSize="32.5sp"
@@ -217,4 +194,15 @@
                 android:layout_margin="800dp"/>
         </RelativeLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="394.0dp"
+        android:layout_height="126.0dp"
+        android:layout_marginTop="590dp">
+        <fragment
+            android:id="@+id/my_fragment"
+            android:name="com.example.myapplication_scroll.Player_Activity"
+            android:layout_width="394.0dp"
+            android:layout_height="126.0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 </RelativeLayout>

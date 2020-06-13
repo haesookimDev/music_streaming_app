@@ -40,8 +40,8 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="album_name2">NCT #127 CHERRY BOMB - The 3rd Mini Album</string>
     <string name="album_name3">내일은 미스터트롯 트롯 에이드 베스트</string>
     <string name="album_name4">내일은 미스터트롯 우승자 특전곡</string>
-    <string name="nct_love_song">우산(Love Song)</string>
-    <string name="nct_kick_it">영웅 (英雄; Kick It)</string>
+    <string name="nct_love_song">  우산(Love Song)  </string>
+    <string name="nct_kick_it">영웅 (Kick It)</string>
     <string name="nct_127f">Elevator(127F)</string>
     <string name="nct_daydream">Day Dream(白日夢)</string>
     <string name="nct_boom">꿈(Boom)</string>
@@ -61,40 +61,40 @@ SBS [판타스틱 듀오] 이수영 편 출연
     <string name="yeong_elevator">계단말고 엘리베이터</string>
     <string name="text5">가사</string>
     <string name="trust">
-        무얼 믿은 걸까 부족했던 내게서
-        나조차 못 믿던 내게 여태 머문 사람
-        무얼 봤던 걸까 가진 것도 없던 내게
-        무작정 내 손을 잡아 날 이끈 사람
-        최고였어
-        그대 눈 속에 비친 내 모습
-        이제는 내게서 그댈 비춰줄게
-        궂은 비가 오면
-        세상 가장 큰 그대 우산이 될게
-        그댄 편히 걸어가요
-        걷다가 지치면
-        내가 그대를 안고 어디든 갈게
-        이제 나만 믿어요
-        나만 두고 가던
-        나만 스쳐 간 행운이 모여
-        그대가 되어서 내게 와준 거야
-        궂은 비가 오면
-        세상 가장 큰 그대 우산이 될게
-        그댄 편히 걸어가요
-        걷다가 지치면
-        내가 그대를 안고 어디든 갈게
-        이제 나만 믿어요
-        나의 마지막 주인공이 되어
-        다신 누구 앞에서도
-        그대는 고개 숙이지 마요
-        내가 보지 못했던 홀로 고단했던 시간
-        고맙고 미안해요 사랑해요
-        이 세상은
-        우리를 두고 오랜 장난을 했고
-        우린 속지 않은 거야
-        이제 울지 마요
-        좋을 땐 밤새도록 맘껏 웃어요
-        전부 그대 꺼니까
-        그대는 걱정 말아요
+        무얼 믿은 걸까 부족했던 내게서\n
+        나조차 못 믿던 내게 여태 머문 사람\n
+        무얼 봤던 걸까 가진 것도 없던 내게\n
+        무작정 내 손을 잡아 날 이끈 사람\n
+        최고였어\n
+        그대 눈 속에 비친 내 모습\n
+        이제는 내게서 그댈 비춰줄게\n
+        궂은 비가 오면\n
+        세상 가장 큰 그대 우산이 될게\n
+        그댄 편히 걸어가요\n
+        걷다가 지치면\n
+        내가 그대를 안고 어디든 갈게\n
+        이제 나만 믿어요\n
+        나만 두고 가던\n
+        나만 스쳐 간 행운이 모여\n
+        그대가 되어서 내게 와준 거야\n
+        궂은 비가 오면\n
+        세상 가장 큰 그대 우산이 될게\n
+        그댄 편히 걸어가요\n
+        걷다가 지치면\n
+        내가 그대를 안고 어디든 갈게\n
+        이제 나만 믿어요\n
+        나의 마지막 주인공이 되어\n
+        다신 누구 앞에서도\n
+        그대는 고개 숙이지 마요\n
+        내가 보지 못했던 홀로 고단했던 시간\n
+        고맙고 미안해요 사랑해요\n
+        이 세상은\n
+        우리를 두고 오랜 장난을 했고\n
+        우린 속지 않은 거야\n
+        이제 울지 마요\n
+        좋을 땐 밤새도록 맘껏 웃어요\n
+        전부 그대 꺼니까\n
+        그대는 걱정 말아요\n
         이제 나만 믿어요</string>
     <string name="daydream_lyrics">
         어디쯤 이런 바람이
@@ -178,7 +178,8 @@ hoo 이런 건\n
 자꾸만 하염없이 느려져\n
 
     </string>
-    <string name="lovesong_lyrics">너를 향해 기운 우산이\n
+    <string name="lovesong_lyrics">
+        너를 향해 기운 우산이\n
 이렇게 때마침\n
 참 작아서 다행이야\n
 hoo 이런 건\n
@@ -254,6 +255,141 @@ Love song Love song yeah\n
 둘만의 섬을 만들어 ooh\n
 이렇게 Love this Love this Love this rain\n
 떨어지는 빗속에 all day</string>
+
+    <string name="nct_hero_li">
+    Let me introduce you to some\n
+    new thangs new thangs new thangs\n
+    bass kick swingin’ like\n
+    I’m Bruce Lee Bruce Lee Bruce Lee\n
+        shimmy shimmy shimmy\n
+        불이 붙네 불이 붙네\n
+        이 무대 위로 뜰 땐\n
+        난 앞으로 찔러 좌우 Bruce Lee\n
+        날아다녀 하루 종일 Bruce Lee\n
+                Comin’ up 지금 여기로\n
+        baby 이 느낌은 이해 못 해 머리론\n
+        fighting for all day\n
+        아무 생각 말고 너의 이야기대로 걸어\n
+
+        \n어두운 어제가 오늘을 삼켜 버리기 전에\n
+        내 목소린 더 퍼져야 해 소리치면 돼\n
+        내겐 no more trauma\n
+
+        \nBaby we go wild\n
+        one two seven squad\n
+        난 앞으로 질러 pow\n
+        좌우로 내질러 pow\n
+
+        \n난 앞으로 찔러 좌우\n
+        new thangs new thangs new thangs\n
+        우리가 어딜 가든 축제\n
+        들어 축배 like my birthday\n
+        모두 감아 차올리지 높이\n
+        Where ma roof at 지붕이 우주에\n
+        (na na na na na na)\n
+        난 앞으로 찔러 좌우 Bruce Lee\n
+        날아다녀 하루 종일 Bruce Lee\n
+        (na na na na na na)\n
+
+        \n(Ya!)\n
+        got that drip 흘러 넘쳐 Guts 잃어버린 겁\n
+        어디서든 make it poppin’\n
+        keep it movin’ like ‘Jeet Kune’\n
+        내 앞을 막을 땐\n
+        ‘Samuel Jackson’ 돼 wassup?\n
+        배배 꼬인 놈\n
+        Baby you just gotta watch\n
+
+        \n`Enter The Dragon` 난 영화같이\n
+        걸음걸이마저 Martial Arts\n
+        Looking that everybody looking at me\n
+        Cams Action Movie shh\n
+
+        \n쓰러뜨려 하나씩\n
+        (쉿) blows away\n
+        자비는 없지 ruthless\n
+        droppin’ the bomb on ma enemies\n
+        and I’m gonna kick it like Bruce Lee\n
+
+        \n수많은 날들의 같은 장면을 반복한 끝에\n
+        어제의 날 무너뜨리고 소리치면 돼\n
+        내겐 no more trauma\n
+
+        \nBaby we go wild\n
+        one two seven squad\n
+        We ain’t never gonna stop\n
+        끝이 안 보여도 가
+
+        \n난 앞으로 찔러 좌우\n
+        new thangs new thangs new thangs\n
+        (na na na na na na)\n
+        난 앞으로 찔러 좌우 Bruce Lee\n
+        날아다녀 하루 종일 Bruce Lee\n
+        (na na na na na na)\n
+
+        \nMy world 만들어가 yeah\n
+        상상조차 할 수 없었던\n
+        아주 극적인 장면 그 깊은 곳에\n
+        눈앞에 펼쳐질 새로운 세상들\n
+        손안에 잡힐 듯 내 안으로 들어와\n
+        어둠 끝에 다시 난 새로 태어나\n
+
+        \n난 앞으로 찔러 좌우\n
+        new thangs new thangs new thangs\n
+        우리가 어딜 가든 축제\n
+        들어 축배 like my birthday\n
+        (eh eh eh eh eh eh)\n
+
+        \nshimmy shimmy shimmy 불이 훅\n
+        shimmy shimmy shimmy 훅\n
+        높이 Where ma roof at\n
+        지붕이 우주에\n
+        (na na na na na na)\n
+        난 앞으로 찔러 좌우 Bruce Lee\n
+        날아다녀 하루 종일 Bruce Lee\n
+        (na na na na na na)\n
+        날아다녀 하루 종일 Bruce Lee\n
+    </string>
+
+    <string name="yeong_es">
+    터벅터벅 그 걸음으로\n
+    어느 세월에 내게 오나요\n
+    저 푸른 하늘 새들처럼\n
+    날개를 달고 와야죠\n
+    이리저리 돌아보면서\n
+    어느 천년에 내게 오나요\n
+    더 늦기 전에 돌아와요\n
+    빨리빨리 오세요\n
+
+    \n사랑아 멀어진 나의 사랑아\n
+    내 님아 보고픈 나의 사람아\n
+
+    \n어~허야 내가 내가 간다\n
+    그리운 내 님 곁으로\n
+    늦기 전에 더 늦기 전에\n
+    계단 말고 엘리베이터\n
+
+    \n터벅터벅 그 걸음으로\n
+    어느 세월에 내게 오나요\n
+    저 푸른 하늘 새들처럼\n
+    날개를 달고 와야죠\n
+    이리저리 돌아보면서\n
+    어느 천년에 내게 오나요\n
+    더 늦기 전에 돌아와요\n
+    빨리빨리 오세요\n
+
+    \n사랑아 멀어진 나의 사랑아\n
+    내 님아 보고픈 나의 사람아\n
+
+    \n어~허야 내가 내가 간다\n
+    그리운 내 님 곁으로\n
+    늦기 전에 더 늦기 전에\n
+    계단 말고 엘리베이터\n
+
+    \n계단 말고 엘리베이터\n
+    </string>
+
+
     <string name="strem_list">재생목록</string>
     <string name="stream_main">재생창</string>
     <string name="stream_nowplay">현재 재생곡</string>
@@ -288,6 +424,15 @@ Love song Love song yeah\n
     <string name="tuto_op4_4"><b>곡 명</b>과 <b>가수 이름</b>이 적혀있는 곳을 눌러주세요!</string>
     <string name="tuto_op4_5">선택한 노래의 바탕색이 변하면 <b>곡 삭제</b> 버튼을 눌러주세요!</string>
     <string name="tuto_op4_6">재생목록에서 노래가 없으면 완료!</string>
+    <string name="title_activity_player_">Player_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 </resources>
 
 

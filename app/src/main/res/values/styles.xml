@@ -14,16 +14,28 @@
     </style>
 
     <style name="buttonBarButtonStyle" parent="Widget.AppCompat.Button.Borderless.Colored">
+
     </style>
 
     <style name="buttonBarButtonStyle.Negative">
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/sd_l</item>
         <item name="android:textColor">@color/color_ff000000</item>
     </style>
 
     <style name="buttonBarButtonStyle.Positive">
         <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/bmeuljirottf</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/color_fff63e4b</item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

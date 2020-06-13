@@ -18,16 +18,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="349dp">
+
             <TextView
                 android:id="@+id/text6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/lovesong_lyrics"
                 android:gravity="center_horizontal|top"
+                android:text="@string/lovesong_lyrics"
+                android:fontFamily="@font/bmeuljirottf"
                 android:textColor="@color/color_ff000000"
                 android:textSize="22.5sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -60,6 +63,7 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="0dp"
                     android:text="@string/stream_main"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="35sp" />
 
@@ -70,12 +74,12 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="33.5dp"
                     android:background="@drawable/mini_home_button"
-                    android:gravity=""
                     android:paddingStart="5dp"
                     android:paddingEnd="0dp"
                     android:text="@string/mini_home_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
-                    android:textSize="40sp"
+                    android:textSize="35sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
@@ -104,6 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/stream_nowplay"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:gravity="start|top"
                     android:textColor="@color/color_ffffffff"
                     android:textSize="30sp"
@@ -116,6 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nct127"
+                android:fontFamily="@font/bmeuljirottf"
                 android:gravity="start|top"
                 android:textColor="@color/color_ff000000"
                 android:textSize="22.5sp"
@@ -128,6 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nct_love_song"
+                android:fontFamily="@font/bmeuljirottf"
                 android:gravity="start|top"
                 android:textColor="@color/color_ff000000"
                 android:textSize="30sp"

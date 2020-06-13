@@ -48,45 +48,14 @@
                             android:layout_marginTop="6.5dp"
                             android:gravity="start|top"
                             android:text="@string/song"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:textColor="@color/color_ff121314"
                             android:textSize="30sp" />
                     </RelativeLayout>
 
 
 
-                    <RelativeLayout
-                        android:id="@+id/select_all_play_lay"
-                        android:layout_width="274.0dp"
-                        android:layout_height="63.0dp"
-                        android:layout_marginStart="14.5dp"
-                        android:layout_marginTop="12dp"
-                        android:background="@drawable/select_all_play_lay">
 
-                        <Button
-                            android:id="@+id/select_play_lay"
-                            android:layout_width="121.0dp"
-                            android:layout_height="45.3dp"
-                            android:layout_marginStart="153dp"
-                            android:layout_marginTop="3dp"
-                            android:gravity="center"
-                            android:text="@string/select_play"
-                            android:textColor="@color/color_ff000000"
-                            android:textSize="25sp"
-                            android:background="@drawable/select_play_lay">
-                        </Button>
-
-                        <Button
-                            android:id="@+id/all_play_lay"
-                            android:layout_width="120.6dp"
-                            android:layout_height="45.3dp"
-                            android:layout_marginTop="3dp"
-                            android:gravity="center"
-                            android:text="@string/all_play"
-                            android:textColor="@color/color_ff000000"
-                            android:textSize="25sp"
-                            android:background="@drawable/all_play_lay">
-                        </Button>
-                    </RelativeLayout>
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -117,6 +86,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="@string/yeong_trust_me"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:gravity="start|top"
                             android:textColor="@color/color_ff000000"
                             android:textSize="25sp"
@@ -141,6 +111,7 @@
                         android:layout_marginStart="302.5dp"
                         android:layout_marginTop="7.5dp"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textSize="25dp"
                         android:background="@drawable/song_play_lay">
                     </Button>
@@ -165,6 +136,7 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="0dp"
                     android:text="@string/mini_search_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="40sp" />
 
@@ -179,6 +151,7 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="0dp"
                     android:text="@string/mini_home_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="40sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -199,6 +172,7 @@
                     android:layout_marginTop="23.5dp"
                     android:gravity="start|top"
                     android:text="@string/lyrics"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="@color/color_ff121314"
                     android:textSize="30sp" />
 
@@ -214,8 +188,8 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="100dp"
                     android:layout_marginStart="70dp"
-                    android:text="@string/trust_lyrics">
-                </TextView>
+                    android:text="@string/trust_lyrics"
+                    android:fontFamily="@font/bmeuljirottf"/>
                 <Button
                     android:id="@+id/yeong_lyrics_song1"
                     android:layout_width="270dp"
@@ -243,6 +217,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/yeong_trust_me"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -267,10 +242,22 @@
                     android:layout_marginStart="302.5dp"
                     android:layout_marginTop="7.5dp"
                     android:text="@string/play"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textSize="25dp"
                     android:background="@drawable/song_play_lay">
                 </Button>
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+    <RelativeLayout
+        android:layout_width="394.0dp"
+        android:layout_height="126.0dp"
+        android:layout_marginTop="590dp">
+        <fragment
+            android:id="@+id/my_fragment"
+            android:name="com.example.myapplication_scroll.Player_Activity"
+            android:layout_width="394.0dp"
+            android:layout_height="126.0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 </RelativeLayout>

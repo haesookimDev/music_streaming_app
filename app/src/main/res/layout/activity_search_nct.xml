@@ -45,6 +45,7 @@
                         android:layout_marginTop="6.5dp"
                         android:gravity="start|top"
                         android:text="@string/song"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff121314"
                         android:textSize="30sp" />
                 </RelativeLayout>
@@ -57,6 +58,7 @@
                     android:layout_marginTop="100dp"
                     android:gravity="start|top"
                     android:text="@string/singer"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="@color/color_ff121314"
                     android:textSize="30sp" />
 
@@ -82,6 +84,7 @@
                             android:layout_marginTop="34.5dp"
                             android:gravity="start|top"
                             android:text="@string/nct127"
+                            android:fontFamily="@font/bmeuljirottf"
                             android:textColor="@color/color_ff000000"
                             android:textSize="32.5sp" />
 
@@ -108,23 +111,25 @@
                     android:layout_marginTop="12dp"
                     android:background="@drawable/select_all_play_lay">
                     <Button
-                        android:id="@+id/select_play_lay"
+                        android:id="@+id/select_play"
                         android:layout_width="121.0dp"
                         android:layout_height="45.3dp"
                         android:layout_marginStart="153dp"
                         android:layout_marginTop="3dp"
                         android:background="@drawable/select_play_lay"
                         android:text="@string/select_play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"/>
 
                     <Button
-                        android:id="@+id/all_play_lay"
+                        android:id="@+id/all_play"
                         android:layout_width="120.6dp"
                         android:layout_height="45.3dp"
                         android:layout_marginTop="3dp"
                         android:background="@drawable/all_play_lay"
                         android:text="@string/all_play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"/>
                 </RelativeLayout>
@@ -163,6 +168,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nct_kick_it"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -203,6 +209,7 @@
                         android:layout_marginTop="19dp"
                         android:gravity="start|top"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff020202"
                         android:textSize="25sp" />
                 </RelativeLayout>
@@ -238,6 +245,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nct_127f"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -277,6 +285,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff020202"
                         android:textSize="25sp"
@@ -317,6 +326,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nct_love_song"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -356,6 +366,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff020202"
                         android:textSize="25sp"
@@ -396,6 +407,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/nct_daydream"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff000000"
                         android:textSize="25sp"
@@ -435,6 +447,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/play"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff020202"
                         android:textSize="25sp"
@@ -464,6 +477,7 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="0dp"
                     android:text="@string/mini_search_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="40sp" />
 
@@ -478,6 +492,7 @@
                     android:paddingStart="5dp"
                     android:paddingEnd="0dp"
                     android:text="@string/mini_home_text"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="#000000"
                     android:textSize="40sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -505,6 +520,7 @@
                         android:layout_marginTop="19.5dp"
                         android:gravity="start|top"
                         android:text="@string/album_name1"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:textColor="@color/color_ff121314"
                         android:textSize="30sp" />
 
@@ -530,6 +546,7 @@
                     android:layout_marginTop="23.5dp"
                     android:gravity="start|top"
                     android:text="@string/album"
+                    android:fontFamily="@font/bmeuljirottf"
                     android:textColor="@color/color_ff121314"
                     android:textSize="30sp" />
 
@@ -553,6 +570,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/album_name2"
+                        android:fontFamily="@font/bmeuljirottf"
                         android:gravity="start|top"
                         android:textColor="@color/color_ff121314"
                         android:textSize="30sp"
@@ -567,5 +585,15 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
-
+    <RelativeLayout
+        android:layout_width="394.0dp"
+        android:layout_height="126.0dp"
+        android:layout_marginTop="590dp">
+        <fragment
+            android:id="@+id/my_fragment"
+            android:name="com.example.myapplication_scroll.Player_Activity"
+            android:layout_width="394.0dp"
+            android:layout_height="126.0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
 </RelativeLayout>
