@@ -18,6 +18,8 @@ public class AlbumYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
     Button btn_mini_search;
     private ApiService service;
+    Button btn_select_play;
+    Button btn_all_play;
 
     TextView textAlbumName;
     TextView textSongT_me;

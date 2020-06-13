@@ -112,7 +112,7 @@
                     android:background="@drawable/select_all_play_lay">
 
                     <Button
-                        android:id="@+id/select_play_lay"
+                        android:id="@+id/select_play"
                         android:layout_width="121.0dp"
                         android:layout_height="45.3dp"
                         android:layout_marginStart="153dp"
@@ -126,7 +126,7 @@
                     </Button>
 
                     <Button
-                        android:id="@+id/all_play_lay"
+                        android:id="@+id/all_play"
                         android:layout_width="120.6dp"
                         android:layout_height="45.3dp"
                         android:layout_marginTop="3dp"
@@ -163,6 +163,11 @@
                     android:background="@drawable/song_lay"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent">
+                    <Button
+                        android:id="@+id/song_list1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/yeong_trust_me"
                         android:layout_width="wrap_content"
@@ -235,6 +240,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/yeong_wish"
                         android:layout_width="wrap_content"
@@ -311,6 +321,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/yeong_magic_lily"
                         android:layout_width="wrap_content"
@@ -387,6 +402,11 @@
                     android:layout_width="367.5dp"
                     android:layout_height="90.5dp"
                     android:background="@drawable/song_lay">
+                    <Button
+                        android:id="@+id/song_list2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_no_color_layer"/>
                     <TextView
                         android:id="@+id/yeong_sixty_story"
                         android:layout_width="wrap_content"
