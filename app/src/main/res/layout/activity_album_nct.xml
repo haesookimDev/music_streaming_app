@@ -94,7 +94,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/album_recyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="500dp"
+                    android:layout_height="1250dp"
                     android:layout_marginTop="239.5dp">
                 </androidx.recyclerview.widget.RecyclerView>
 

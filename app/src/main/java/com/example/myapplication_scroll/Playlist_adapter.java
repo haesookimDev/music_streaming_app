@@ -1,6 +1,5 @@
 package com.example.myapplication_scroll;
 
-import android.graphics.Color;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +14,13 @@ import java.util.ArrayList;
 public class Playlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
 
     private SparseBooleanArray mSelectedItems = new SparseBooleanArray(0);
+
+    public SparseBooleanArray getMSelectedItem() {
+        return mSelectedItems;
+    }
+    public void setMSelectedItem(int position, boolean mSelectedItem) {
+        this.mSelectedItems.put(position, mSelectedItem);
+    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView ivPicture;

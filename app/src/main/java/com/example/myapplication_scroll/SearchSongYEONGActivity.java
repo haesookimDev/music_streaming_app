@@ -2,10 +2,12 @@ package com.example.myapplication_scroll;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class SearchSongYEONGActivity extends AppCompatActivity {
     Button btn_mini_home;
@@ -13,6 +15,7 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
     Button btn_song1;
     Button btn_lyrics_album1;
     Button btn_lyrics_song1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,7 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
         btn_song1 = (Button) findViewById(R.id.yeong_song1);
         btn_lyrics_album1 = (Button) findViewById(R.id.yeong_lyrics_album1);
         btn_lyrics_song1 = (Button) findViewById(R.id.yeong_lyrics_song1);
+
 
     }
 
@@ -67,6 +71,7 @@ public class SearchSongYEONGActivity extends AppCompatActivity {
         btn_song1.setOnClickListener(Listener);
         btn_lyrics_album1.setOnClickListener(Listener);
         btn_lyrics_song1.setOnClickListener(Listener);
+
     }
 
 }

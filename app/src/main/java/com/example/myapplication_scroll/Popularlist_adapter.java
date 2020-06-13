@@ -16,6 +16,13 @@ public class Popularlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private SparseBooleanArray mSelectedItems = new SparseBooleanArray(0);
 
+    public SparseBooleanArray getMSelectedItem() {
+        return mSelectedItems;
+    }
+    public void setMSelectedItem(int position, boolean mSelectedItem) {
+        this.mSelectedItems.put(position, mSelectedItem);
+    }
+
     public class MyViewHolder extends RecyclerView.ViewHolder {
         ImageView album;
         ImageView frame;

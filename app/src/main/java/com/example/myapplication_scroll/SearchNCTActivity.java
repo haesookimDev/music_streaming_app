@@ -2,18 +2,11 @@ package com.example.myapplication_scroll;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.RelativeLayout;
 
 import static com.example.myapplication_scroll.R.*;
@@ -149,7 +142,7 @@ public class SearchNCTActivity extends AppCompatActivity {
                         } else {
                             songLay4.setBackgroundResource(drawable.song_lay);
                         }break;
-                    case id.all_play_lay:
+                    case id.all_play:
 
                         addRowValue.put("singer", "NCT127");
                         addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
@@ -171,7 +164,7 @@ public class SearchNCTActivity extends AppCompatActivity {
                         addRowValue.put("title", "Elevator(127F)");
                         musicDBManager.insert(addRowValue);
                         break;
-                    case id.select_play_lay:
+                    case id.select_play:
                         if (i_1 == 1){
                             addRowValue.put("singer", "NCT127");
                             addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
