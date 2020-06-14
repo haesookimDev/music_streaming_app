@@ -13,7 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,7 +51,7 @@ public class StreamingMain extends Activity {
 
     Button btn_pre;
     Button btn_next;
-
+    RelativeLayout btn_long_lyrics;
 
     MediaPlayer mediaPlayer;
 
@@ -79,6 +81,8 @@ public class StreamingMain extends Activity {
     TextView tex2;
     int text2 = 0;
 
+    private final long FINISH_INTERVAL_TIME = 2000;
+    private long backPressedTime = 0;
 
 
     @SuppressLint("WrongViewCast")
@@ -255,6 +259,7 @@ public class StreamingMain extends Activity {
         btn_stream_lyrics = findViewById(R.id.strem_song);
         btn_pre = findViewById(R.id.strem_before);
         btn_next = findViewById(R.id.strem_nex);
+        btn_long_lyrics = (RelativeLayout) findViewById(R.id.long_lyrics);
         TAG = "MainActivity";
 
     }
@@ -271,8 +276,7 @@ public class StreamingMain extends Activity {
                     startActivity(intent_mini_playlist_btn);
                     break;
                 case R.id.strem_song:
-                    Intent intent_stream_lyrics = new Intent(getApplicationContext(), StreamingSongLyrics.class);
-                    startActivity(intent_stream_lyrics);
+                    btn_long_lyrics.setVisibility(View.VISIBLE);
                     break;
                 default:
                     break;
@@ -282,7 +286,23 @@ public class StreamingMain extends Activity {
         btn_mini_playList.setOnClickListener(Listener);
         btn_stream_lyrics.setOnClickListener(Listener);
 
+    }
 
+
+    @Override
+    public void onBackPressed() {
+        long tempTime = System.currentTimeMillis();
+        long intervalTime = tempTime - backPressedTime;
+
+        if (0 <= intervalTime && FINISH_INTERVAL_TIME >= intervalTime)
+        {
+            super.onBackPressed();
+        }
+        else
+        {
+            backPressedTime = tempTime;
+            btn_long_lyrics.setVisibility(View.INVISIBLE);
+        }
     }
 
     public void getMusicData(){

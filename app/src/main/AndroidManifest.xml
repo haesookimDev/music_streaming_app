@@ -39,7 +39,6 @@
         <activity android:name=".Playlist_item" />
         <activity android:name=".StreamingSongList" />
         <activity android:name=".StreamingMain" />
-        <activity android:name=".StreamingSongLyrics" />
         <activity android:name=".SongNCTActivity" />
         <activity android:name=".AlbumNCTActivity" />
         <activity android:name=".AlbumYEONGActivity" />
