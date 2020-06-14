@@ -1,9 +1,11 @@
 package com.example.myapplication_scroll;
 
+import android.content.ContentValues;
 import android.util.SparseBooleanArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class Albumlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
+    MusicListDBManager musicDBManager;
 
     private SparseBooleanArray mSelectedItems = new SparseBooleanArray(0);
 
@@ -26,21 +29,22 @@ public class Albumlist_adapter extends RecyclerView.Adapter<RecyclerView.ViewHol
         TextView tracknum;
         TextView songname;
         RelativeLayout frame;
+        Button btn_play;
 
         MyViewHolder(View view){
             super(view);
             tracknum = view.findViewById(R.id.songnum);
             songname = view.findViewById(R.id.songname);
             frame = view.findViewById(R.id.song_play1);
+            btn_play = view.findViewById(R.id.song_play_lay1);
 
             view.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
-
                     if (mSelectedItems.get(position, false)) {
                         mSelectedItems.put(position, false);
-                        frame.setBackgroundResource(R.drawable.streaming_playlist_color_control);
+                        frame.setBackgroundResource(R.drawable.album_song_lay);
                     } else {
                         mSelectedItems.put(position, true);
                         frame.setBackgroundResource(R.drawable.streaming_playlist_color_control_change);

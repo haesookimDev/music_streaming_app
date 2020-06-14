@@ -91,8 +91,6 @@ public class StreamingSongList extends AppCompatActivity {
         btn_mini_home.setOnClickListener(Listener);
         btn_mini_play.setOnClickListener(Listener);
         btn_del_music.setOnClickListener(Listener);
-
-
     }
 
     public void getMusicData(){
