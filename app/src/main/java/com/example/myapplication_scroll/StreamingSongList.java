@@ -109,10 +109,10 @@ public class StreamingSongList extends AppCompatActivity {
                     Playlist_Info currentData = new Playlist_Info(R.drawable.boy2_music1, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
                     playlistInfoArrayList.add(currentData);
                 } else if (cursor.getString(3).equals("상사화")) {
-                    Playlist_Info currentData = new Playlist_Info(R.drawable.lovecall, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.lovecall_r, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
                     playlistInfoArrayList.add(currentData);
                 } else if ((cursor.getString(3).equals("바램"))|| (cursor.getString(3).equals("어느 60대 노부부이야기"))) {
-                    Playlist_Info currentData = new Playlist_Info(R.drawable.mr_trot, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.mr_trot_r, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
                     playlistInfoArrayList.add(currentData);
                 }
             }
