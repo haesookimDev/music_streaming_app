@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -39,7 +38,6 @@ public class StreamingMain extends Activity {
 
     Button btn_mini_playList;
     Button btn_mini_home;
-    int i = 0;
 
     Button btn_stream_play_stop1;
     SeekBar seekbar;
@@ -103,106 +101,97 @@ public class StreamingMain extends Activity {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), parse("https://music-db.s3-ap-northeast-2.amazonaws.com/music/Kick_It.mp3"));
 
 
-        btn_next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mediaPlayer.isPlaying()) {
-                    mediaPlayer.stop();
-                    mediaPlayer.reset();
-                    //index+=1;
-                    if (index < fileUri.size() - 1) {
-                        try {
-                            mediaPlayer.setDataSource(String.valueOf(parse(fileUri.get(++index))));
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+        btn_next.setOnClickListener(v -> {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.stop();
+                mediaPlayer.reset();
+                //index+=1;
+                if (index < fileUri.size() - 1) {
+                    try {
+                        mediaPlayer.setDataSource(String.valueOf(parse(fileUri.get(++index))));
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                    if (cnt < imgs1.size()- 1) {
-                        img1.setImageResource(imgs1.get(++cnt));
-                    }
-                    if (text < title1.size() - 1) {
-                        tex.setText(title1.get(++text));
-                    }
-                    if (text1 < singer1.size() - 1) {
-                        tex1.setText(singer1.get(++text1));
-                    }
-                    if (text2 < lyrics1.size() - 1) {
-                        tex2.setText(lyrics1.get(++text2));
-                    }
-
-                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
-                    mediaPlayer.start();
-
-                } else {
-                    LayoutInflater inflater = getLayoutInflater();
-                    View layout = inflater.inflate(R.layout.activity_toast,(ViewGroup)findViewById(R.id.toast_frame));
-                    TextView t_title = (TextView)layout.findViewById(R.id.text);
-                    t_title.setText("재생중이 아닙니다!");
-                    Toast toast = new Toast(getApplicationContext());
-                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
-                    toast.setDuration(Toast.LENGTH_LONG);
-                    toast.setView(layout);
-                    toast.show();
+                }
+                if (cnt < imgs1.size()- 1) {
+                    img1.setImageResource(imgs1.get(++cnt));
+                }
+                if (text < title1.size() - 1) {
+                    tex.setText(title1.get(++text));
+                }
+                if (text1 < singer1.size() - 1) {
+                    tex1.setText(singer1.get(++text1));
+                }
+                if (text2 < lyrics1.size() - 1) {
+                    tex2.setText(lyrics1.get(++text2));
                 }
 
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
+                mediaPlayer.start();
+
+            } else {
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
+                TextView t_title = layout.findViewById(R.id.text);
+                t_title.setText("재생중이 아닙니다!");
+                Toast toast = new Toast(getApplicationContext());
+                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
             }
 
         });
 
-        btn_pre.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btn_pre.setOnClickListener( v -> {
 
-                if (mediaPlayer.isPlaying()) {
-                    mediaPlayer.stop();
-                    mediaPlayer.reset();
-                    //index-=1;
-                    if (index > 0) {
-                        try {
-                            mediaPlayer.setDataSource(getApplicationContext(),parse(fileUri.get(--index)));
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.stop();
+                mediaPlayer.reset();
+                //index-=1;
+                if (index > 0) {
+                    try {
+                        mediaPlayer.setDataSource(getApplicationContext(),parse(fileUri.get(--index)));
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                    if (cnt > 0) {
-                        img1.setImageResource(imgs1.get(--cnt));
-                    }
-                    if (text > 0) {
-                        tex.setText(title1.get(--text));
-                    }
-                    if (text1 > 0) {
-                        tex1.setText(singer1.get(--text1));
-                    }
-                    if (text2 > 0) {
-                        tex2.setText(lyrics1.get(--text2));
-                    }
-                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
-                    mediaPlayer.start();
-                } else {
-                    LayoutInflater inflater = getLayoutInflater();
-                    View layout = inflater.inflate(R.layout.activity_toast,(ViewGroup)findViewById(R.id.toast_frame));
-                    TextView t_title = (TextView)layout.findViewById(R.id.text);
-                    t_title.setText("재생중이 아닙니다!");
-                    Toast toast = new Toast(getApplicationContext());
-                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
-                    toast.setDuration(Toast.LENGTH_LONG);
-                    toast.setView(layout);
-                    toast.show();
                 }
-
+                if (cnt > 0) {
+                    img1.setImageResource(imgs1.get(--cnt));
+                }
+                if (text > 0) {
+                    tex.setText(title1.get(--text));
+                }
+                if (text1 > 0) {
+                    tex1.setText(singer1.get(--text1));
+                }
+                if (text2 > 0) {
+                    tex2.setText(lyrics1.get(--text2));
+                }
+                mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
+                mediaPlayer.start();
+            } else {
+                LayoutInflater inflater = getLayoutInflater();
+                View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
+                TextView t_title = layout.findViewById(R.id.text);
+                t_title.setText("재생중이 아닙니다!");
+                Toast toast = new Toast(getApplicationContext());
+                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
             }
+
         });
-        img1 = (ImageView) findViewById(R.id.strem_album_um);
-        tex = (TextView) findViewById(R.id.text9);
-        tex1 = (TextView) findViewById(R.id.text8);
-        tex2 = (TextView) findViewById(R.id.strem_song);
-
-
+        img1 = findViewById(R.id.strem_album_um);
+        tex = findViewById(R.id.text9);
+        tex1 = findViewById(R.id.text8);
+        tex2 = findViewById(R.id.strem_song);
 
         mediaPlayer.setLooping(true);
 
-        btn_stream_play_stop1 = (Button) findViewById(R.id.stream_play_stop1);
-        seekbar = (SeekBar) findViewById(R.id.seekBar1);
+        btn_stream_play_stop1 = findViewById(R.id.stream_play_stop1);
+        seekbar = findViewById(R.id.seekBar1);
 
         seekbar.setMax(mediaPlayer.getDuration());
 
@@ -244,16 +233,14 @@ public class StreamingMain extends Activity {
 
 
     public void Thread() {
-        Runnable task = new Runnable() {
-            public void run() {
-                while (mediaPlayer.isPlaying()) {
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    seekbar.setProgress(mediaPlayer.getCurrentPosition());
+        Runnable task = () -> {
+            while (mediaPlayer.isPlaying()) {
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
+                seekbar.setProgress(mediaPlayer.getCurrentPosition());
             }
         };
         Thread thread = new Thread(task);
@@ -265,33 +252,30 @@ public class StreamingMain extends Activity {
     public void InitializeView() {
         btn_mini_playList = findViewById(R.id.mini_playlist_btn);
         btn_mini_home = findViewById(R.id.mini_home_btn);
-        btn_stream_lyrics = (Button)findViewById(R.id.strem_song);
-        btn_pre = (Button) findViewById(R.id.strem_before);
-        btn_next = (Button) findViewById(R.id.strem_nex);
+        btn_stream_lyrics = findViewById(R.id.strem_song);
+        btn_pre = findViewById(R.id.strem_before);
+        btn_next = findViewById(R.id.strem_nex);
         TAG = "MainActivity";
 
     }
 
     public void SetListener() {
-        View.OnClickListener Listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.mini_home_btn:
-                        Intent intent_main = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(intent_main);
-                        break;
-                    case R.id.mini_playlist_btn:
-                        Intent intent_mini_playlist_btn = new Intent(getApplicationContext(), StreamingSongList.class);
-                        startActivity(intent_mini_playlist_btn);
-                        break;
-                    case R.id.strem_song:
-                        Intent intent_stream_lyrics = new Intent(getApplicationContext(), StreamingSongLyrics.class);
-                        startActivity(intent_stream_lyrics);
-                        break;
-                    default:
-                        break;
-                }
+        View.OnClickListener Listener = view -> {
+            switch (view.getId()) {
+                case R.id.mini_home_btn:
+                    Intent intent_main = new Intent(getApplicationContext(), MainActivity.class);
+                    startActivity(intent_main);
+                    break;
+                case R.id.mini_playlist_btn:
+                    Intent intent_mini_playlist_btn = new Intent(getApplicationContext(), StreamingSongList.class);
+                    startActivity(intent_mini_playlist_btn);
+                    break;
+                case R.id.strem_song:
+                    Intent intent_stream_lyrics = new Intent(getApplicationContext(), StreamingSongLyrics.class);
+                    startActivity(intent_stream_lyrics);
+                    break;
+                default:
+                    break;
             }
         };
         btn_mini_home.setOnClickListener(Listener);
