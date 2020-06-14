@@ -9,7 +9,10 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -40,7 +43,6 @@ public class StreamingMain extends Activity {
 
     Button btn_stream_play_stop1;
     SeekBar seekbar;
-    MediaPlayer music;
     String strColorplay = "#ff691bf3";
     String strColorstop = "#fff63e4b";
     Button btn_stream_lyrics;
@@ -132,7 +134,15 @@ public class StreamingMain extends Activity {
                     mediaPlayer.start();
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "재생중이 아닙니다", Toast.LENGTH_LONG).show();
+                    LayoutInflater inflater = getLayoutInflater();
+                    View layout = inflater.inflate(R.layout.activity_toast,(ViewGroup)findViewById(R.id.toast_frame));
+                    TextView t_title = (TextView)layout.findViewById(R.id.text);
+                    t_title.setText("재생중이 아닙니다!");
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.setView(layout);
+                    toast.show();
                 }
 
             }
@@ -142,6 +152,7 @@ public class StreamingMain extends Activity {
         btn_pre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (mediaPlayer.isPlaying()) {
                     mediaPlayer.stop();
                     mediaPlayer.reset();
@@ -168,12 +179,19 @@ public class StreamingMain extends Activity {
                     mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
                     mediaPlayer.start();
                 } else {
-                    Toast.makeText(getApplicationContext(), "재생중이 아닙니다", Toast.LENGTH_LONG).show();
+                    LayoutInflater inflater = getLayoutInflater();
+                    View layout = inflater.inflate(R.layout.activity_toast,(ViewGroup)findViewById(R.id.toast_frame));
+                    TextView t_title = (TextView)layout.findViewById(R.id.text);
+                    t_title.setText("재생중이 아닙니다!");
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.setView(layout);
+                    toast.show();
                 }
 
             }
         });
-
         img1 = (ImageView) findViewById(R.id.strem_album_um);
         tex = (TextView) findViewById(R.id.text9);
         tex1 = (TextView) findViewById(R.id.text8);
@@ -213,14 +231,16 @@ public class StreamingMain extends Activity {
         if (mediaPlayer.isPlaying()) {
 
             mediaPlayer.pause();
-
             btn_stream_play_stop1.setText(R.string.stream_play);
+            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorstop));
         } else {
             mediaPlayer.start();
             btn_stream_play_stop1.setText(R.string.stream_stop);
+            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
             Thread();
         }
     }
+
 
 
     public void Thread() {

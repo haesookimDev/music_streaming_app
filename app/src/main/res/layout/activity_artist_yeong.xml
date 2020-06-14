@@ -398,15 +398,4 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
-    <RelativeLayout
-        android:layout_width="394.0dp"
-        android:layout_height="126.0dp"
-        android:layout_marginTop="590dp">
-        <fragment
-            android:id="@+id/my_fragment"
-            android:name="com.example.myapplication_scroll.Player_Activity"
-            android:layout_width="394.0dp"
-            android:layout_height="126.0dp"
-            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
-</RelativeLayout>

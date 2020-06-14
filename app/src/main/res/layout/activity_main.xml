@@ -170,12 +170,145 @@
     <RelativeLayout
         android:layout_width="394.0dp"
         android:layout_height="126.0dp"
-        android:layout_marginTop="590dp">
-        <fragment
-            android:id="@+id/my_fragment"
-            android:name="com.example.myapplication_scroll.Player_Activity"
+        android:layout_marginTop="590dp"
+        android:background="@drawable/button_no_color_layer">
+        <RelativeLayout
+            android:id="@+id/player_layer"
             android:layout_width="394.0dp"
             android:layout_height="126.0dp"
-            android:layout_alignParentBottom="true"/>
+            android:layout_marginTop="0dp"
+            android:background="@drawable/button_no_color_layer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/player_shadow"
+                android:layout_width="394.0dp"
+                android:layout_height="109.5dp"
+                android:layout_marginTop="5.5dp"
+                android:src="@drawable/player_shadow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/Play_S_name"/>
+
+            <RelativeLayout
+                android:id="@+id/player"
+                android:layout_width="394.0dp"
+                android:layout_height="109.5dp"
+                android:layout_marginTop="15.5dp"
+                android:background="@drawable/player"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/player_songname"
+                    android:layout_width="250.5dp"
+                    android:layout_height="51.5dp"
+                    android:layout_marginStart="126.5dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:textColor="@color/color_ff000000"
+                    android:text="@string/Play_S_name"
+                    android:fontFamily="@font/bmeuljirottf"
+                    android:background="@drawable/playlist_ctrl"
+                    android:textSize="25sp" />
+
+
+                <ImageView
+                    android:id="@+id/player_songimage"
+                    android:layout_width="109.0dp"
+                    android:layout_height="109.5dp"
+                    android:contentDescription="@string/Play_S_name"
+                    android:src="@drawable/boy1_kickit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/Play_S_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_no_color_layer"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/player_ctrl_layer"
+                android:layout_width="250.5dp"
+                android:layout_height="61.5dp"
+                android:layout_marginStart="126.5dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/player_ctrl_layer"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/player_ctrl"
+                    android:layout_width="214.0dp"
+                    android:layout_height="54.5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4.5dp"
+                    android:background="@drawable/player_ctrl"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <Button
+                        android:id="@+id/stream_play_stop"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="78.9dp"
+                        android:layout_marginTop="3.5dp"
+                        android:background="@drawable/button_no_color_layer"
+                        android:gravity="start|top"
+                        android:text="@string/stream_play"
+                        android:fontFamily="@font/bmeuljirottf"
+                        android:textColor="@color/color_fff63e4b"
+                        android:textSize="30sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:onClick="button"/>
+
+
+                    <RelativeLayout
+                        android:id="@+id/playlist_ctrl"
+                        android:layout_width="187.5dp"
+                        android:layout_height="44.0dp"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="5.5dp"
+                        android:background="@drawable/playlist_ctrl"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <Button
+                            android:id="@+id/album_name1"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/button_no_color_layer"
+                            android:gravity="start|top"
+                            android:text="@string/text1"
+                            android:fontFamily="@font/bmeuljirottf"
+                            android:textColor="@color/color_ff000000"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/album_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_no_color_layer"
+                            android:layout_marginStart="144.5dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start|top"
+                            android:text="@string/text2"
+                            android:fontFamily="@font/bmeuljirottf"
+                            android:textColor="@color/color_ff090909"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
     </RelativeLayout>
     </RelativeLayout>
