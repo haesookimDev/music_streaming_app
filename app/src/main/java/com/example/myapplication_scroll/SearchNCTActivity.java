@@ -146,12 +146,12 @@ public class SearchNCTActivity extends AppCompatActivity {
 
                         addRowValue.put("singer", "NCT127");
                         addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
-                        addRowValue.put("title", "영웅 (英雄; Kick It)");
+                        addRowValue.put("title", "영웅 (Kick It)");
                         musicDBManager.insert(addRowValue);
 
                         addRowValue.put("singer", "NCT127");
                         addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
-                        addRowValue.put("title", "Day Dream(白日夢)");
+                        addRowValue.put("title", "Day Dream");
                         musicDBManager.insert(addRowValue);
 
                         addRowValue.put("singer", "NCT127");
@@ -168,12 +168,12 @@ public class SearchNCTActivity extends AppCompatActivity {
                         if (i_1 == 1){
                             addRowValue.put("singer", "NCT127");
                             addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
-                            addRowValue.put("title", "영웅 (英雄; Kick It)");
+                            addRowValue.put("title", "영웅 (Kick It)");
                             musicDBManager.insert(addRowValue);
                         } if (i_2 == 1){
                             addRowValue.put("singer", "NCT127");
                             addRowValue.put("album", "NCT #127 Neo Zone - The 2nd Album");
-                            addRowValue.put("title", "Day Dream(白日夢)");
+                            addRowValue.put("title", "Day Dream");
                             musicDBManager.insert(addRowValue);
                         } if (i_3 == 1){
                             addRowValue.put("singer", "NCT127");

@@ -267,12 +267,12 @@
                     android:layout_height="wrap_content"
                     android:text= "@string/text9"
                     android:fontFamily="@font/bmeuljirottf"
-                    android:gravity="start|top"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
                     android:textColor="@color/color_ff000000"
                     android:textSize="27sp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:layout_marginStart="30.5dp"
                     android:layout_marginTop="7dp"/>
             </RelativeLayout>
         </RelativeLayout>

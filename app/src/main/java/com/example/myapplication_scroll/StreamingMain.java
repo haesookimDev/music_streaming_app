@@ -3,8 +3,10 @@ package com.example.myapplication_scroll;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Color;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,8 +17,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
+import static android.net.Uri.parse;
 
 public class StreamingMain extends Activity {
+    ArrayList<String> musicList;
+    MusicListDBManager musicDBManager;
+    ArrayList<Playlist_Info> playlistInfoArrayList = new ArrayList<>();
+    ArrayList<Albumlist_Info> albumlistInfoArrayList = new ArrayList<>();
+    private ApiService service;
+    private static String TAG;
 
     Button btn_mini_playList;
     Button btn_mini_home;
@@ -28,6 +44,7 @@ public class StreamingMain extends Activity {
     String strColorplay = "#ff691bf3";
     String strColorstop = "#fff63e4b";
     Button btn_stream_lyrics;
+    String url = "https://music-db.s3-ap-northeast-2.amazonaws.com/";
 
 
     Button btn_pre;
@@ -35,27 +52,31 @@ public class StreamingMain extends Activity {
 
 
     MediaPlayer mediaPlayer;
-    int[] array = {R.raw.nct_um, R.raw.yeong_be, R.raw.nct_hero, R.raw.yeong_st};
+
+    ArrayList<String> fileUri = new ArrayList<>();
+    ArrayList<Integer> imgs1 = new ArrayList<>();
+    ArrayList<String> title1 =  new ArrayList<>();
+    ArrayList<String> singer1 = new ArrayList<>();
+    ArrayList<String> lyrics1 = new ArrayList<>();
+
+
+
     int index = 0;
 
 
     ImageView img1;
-    int imgs[] = {R.drawable.image1, R.drawable.yeong2, R.drawable.nct1, R.drawable.yeong1};
     int cnt = 0;
 
 
     TextView tex;
-    int title[] = {R.string.nct_love_song, R.string.album_name5, R.string.nct_kick_it, R.string.yeong_elevator};
     int text = 0;
 
 
     TextView tex1;
-    int singer[] = {R.string.nct127, R.string.yeong, R.string.nct127, R.string.yeong};
     int text1 = 0;
 
 
     TextView tex2;
-    int lyrics[] = {R.string.strem_song, R.string.trust, R.string.nct_hero_li, R.string.yeong_es};
     int text2 = 0;
 
 
@@ -64,18 +85,20 @@ public class StreamingMain extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        service = RetrofitClient.getClient().create(ApiService.class);
         setContentView(R.layout.activity_streaming_main);
-
-
+        musicDBManager = MusicListDBManager.getInstance(this);
+        songNCTData();
+        getMusicData();
         this.InitializeView();
         this.SetListener();
+        MediaPlayer();
+        tex.setText(playlistInfoArrayList.get(text).song);
+        tex1.setText(playlistInfoArrayList.get(text1).singer);
+    }
 
-
-        btn_pre = (Button) findViewById(R.id.strem_before);
-        btn_next = (Button) findViewById(R.id.strem_nex);
-
-
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.nct_um);
+    public void MediaPlayer() {
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), parse("https://music-db.s3-ap-northeast-2.amazonaws.com/music/Kick_It.mp3"));
 
 
         btn_next.setOnClickListener(new View.OnClickListener() {
@@ -83,24 +106,29 @@ public class StreamingMain extends Activity {
             public void onClick(View v) {
                 if (mediaPlayer.isPlaying()) {
                     mediaPlayer.stop();
+                    mediaPlayer.reset();
                     //index+=1;
-                    if (index < array.length - 1) {
-                        mediaPlayer.setAudioSessionId(array[++index]);
+                    if (index < fileUri.size() - 1) {
+                        try {
+                            mediaPlayer.setDataSource(String.valueOf(parse(fileUri.get(++index))));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
-                    if (cnt < imgs.length - 1) {
-                        img1.setImageResource(imgs[++cnt]);
+                    if (cnt < imgs1.size()- 1) {
+                        img1.setImageResource(imgs1.get(++cnt));
                     }
-                    if (text < title.length - 1) {
-                        tex.setText(title[++text]);
+                    if (text < title1.size() - 1) {
+                        tex.setText(title1.get(++text));
                     }
-                    if (text1 < singer.length - 1) {
-                        tex1.setText(singer[++text1]);
+                    if (text1 < singer1.size() - 1) {
+                        tex1.setText(singer1.get(++text1));
                     }
-                    if (text2 < lyrics.length - 1) {
-                        tex2.setText(lyrics[++text2]);
+                    if (text2 < lyrics1.size() - 1) {
+                        tex2.setText(lyrics1.get(++text2));
                     }
 
-                    mediaPlayer = MediaPlayer.create(getApplicationContext(), array[index]);
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
                     mediaPlayer.start();
 
                 } else {
@@ -116,23 +144,28 @@ public class StreamingMain extends Activity {
             public void onClick(View v) {
                 if (mediaPlayer.isPlaying()) {
                     mediaPlayer.stop();
+                    mediaPlayer.reset();
                     //index-=1;
                     if (index > 0) {
-                        mediaPlayer.setAudioSessionId(array[--index]);
+                        try {
+                            mediaPlayer.setDataSource(getApplicationContext(),parse(fileUri.get(--index)));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                     if (cnt > 0) {
-                        img1.setImageResource(imgs[--cnt]);
+                        img1.setImageResource(imgs1.get(--cnt));
                     }
                     if (text > 0) {
-                        tex.setText(title[--text]);
+                        tex.setText(title1.get(--text));
                     }
                     if (text1 > 0) {
-                        tex1.setText(singer[--text1]);
+                        tex1.setText(singer1.get(--text1));
                     }
                     if (text2 > 0) {
-                        tex2.setText(lyrics[--text2]);
+                        tex2.setText(lyrics1.get(--text2));
                     }
-                    mediaPlayer = MediaPlayer.create(getApplicationContext(), array[index]);
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
                     mediaPlayer.start();
                 } else {
                     Toast.makeText(getApplicationContext(), "재생중이 아닙니다", Toast.LENGTH_LONG).show();
@@ -173,7 +206,6 @@ public class StreamingMain extends Activity {
                     mediaPlayer.seekTo(progress);
             }
         });
-
     }
 
     public void button(View v) {
@@ -194,7 +226,6 @@ public class StreamingMain extends Activity {
     public void Thread() {
         Runnable task = new Runnable() {
             public void run() {
-
                 while (mediaPlayer.isPlaying()) {
                     try {
                         Thread.sleep(1000);
@@ -215,6 +246,9 @@ public class StreamingMain extends Activity {
         btn_mini_playList = findViewById(R.id.mini_playlist_btn);
         btn_mini_home = findViewById(R.id.mini_home_btn);
         btn_stream_lyrics = (Button)findViewById(R.id.strem_song);
+        btn_pre = (Button) findViewById(R.id.strem_before);
+        btn_next = (Button) findViewById(R.id.strem_nex);
+        TAG = "MainActivity";
 
     }
 
@@ -231,12 +265,10 @@ public class StreamingMain extends Activity {
                         Intent intent_mini_playlist_btn = new Intent(getApplicationContext(), StreamingSongList.class);
                         startActivity(intent_mini_playlist_btn);
                         break;
-
                     case R.id.strem_song:
                         Intent intent_stream_lyrics = new Intent(getApplicationContext(), StreamingSongLyrics.class);
                         startActivity(intent_stream_lyrics);
                         break;
-
                     default:
                         break;
                 }
@@ -249,10 +281,85 @@ public class StreamingMain extends Activity {
 
     }
 
+    public void getMusicData(){
+        musicList = new ArrayList<>();
+
+        String[] columns = new String[] {"_idPlayList", "singer", "album", "title"};
+
+        Cursor cursor = musicDBManager.query(columns, null, null, null, null, null);
+
+        if(cursor != null){
+            while(cursor.moveToNext()){
+                if (cursor.getString(1).equals("NCT127")) {
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.boy1_kickit, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    playlistInfoArrayList.add(currentData);
+                } else if (cursor.getString(3).equals("이제 나만 믿어요")){
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.boy2_music1, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    playlistInfoArrayList.add(currentData);
+                } else if (cursor.getString(3).equals("상사화")) {
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.lovecall_r, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    playlistInfoArrayList.add(currentData);
+                } else if ((cursor.getString(3).equals("바램"))|| (cursor.getString(3).equals("어느 60대 노부부이야기"))) {
+                    Playlist_Info currentData = new Playlist_Info(R.drawable.mr_trot_r, cursor.getString(3), cursor.getString(1), cursor.getInt(0));
+                    playlistInfoArrayList.add(currentData);
+                }
+            }
+        }
+    }
+
+    private void songNCTData(){
+        service.getNCTSongData().enqueue(new Callback<List<SongModel>>() {
+            @Override
+            public void onResponse(Call<List<SongModel>> call, Response<List<SongModel>> response) {
+                if (response.isSuccessful()) {
+                    Log.d(TAG, "responseNCT is success");
+                    List<SongModel> songModel = response.body();
+                    if (songModel != null) {
+                        for (int i = 0; i < songModel.size(); i++){
+                            albumlistInfoArrayList.add(new Albumlist_Info(songModel.get(i).getIdSSong(), songModel.get(i).getSSongName(), songModel.get(i).getSSongFile(), songModel.get(i).getSSongLyric()));
+                        }
+                        setData();
+                        Log.d("mainUri", String.valueOf(fileUri.size()));
+                        Log.d("mainPlay", String.valueOf(playlistInfoArrayList.size()));
+                        Log.d("mainAlbum", String.valueOf(albumlistInfoArrayList.size()));
+
+                    } else {
+                        Log.d(TAG, "NameSinger is null");
+                    }
+                } else {
+                    int statusCode  = response.code();
+                    Log.d(TAG, String.valueOf(statusCode));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<SongModel>> call, Throwable t) {
+                Log.d(TAG, "error loading from API" + t);
+            }
+        });
+    }
+
+
+    public void setData() {
+        for (int i = 0; i < playlistInfoArrayList.size() ; i++){
+            for (int j = 0; j < albumlistInfoArrayList.size() ; j++){
+                if (albumlistInfoArrayList.get(j).song.equals(playlistInfoArrayList.get(i).song)){
+                    fileUri.add(url + albumlistInfoArrayList.get(j).file);
+                    lyrics1.add(albumlistInfoArrayList.get(j).lyric);
+                }
+            }
+            if (playlistInfoArrayList.get(i).singer.equals("NCT127")){
+                imgs1.add(R.drawable.boy1_kickit);
+            } else if (playlistInfoArrayList.get(i).song.equals("이제 나만 믿어요")){
+                imgs1.add(R.drawable.boy2_music1);
+            } else if (playlistInfoArrayList.get(i).song.equals("상사화")){
+                imgs1.add(R.drawable.lovecall_r);
+            } else if (playlistInfoArrayList.get(i).song.equals("바램") || playlistInfoArrayList.get(i).song.equals("어느 60대 노부부이야기")){
+                imgs1.add(R.drawable.mr_trot_r);
+            }
+            title1.add(playlistInfoArrayList.get(i).song);
+            singer1.add(playlistInfoArrayList.get(i).singer);
+        }
+    }
+
 }
-
-
-
-
-
-
