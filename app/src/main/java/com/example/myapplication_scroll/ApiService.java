@@ -19,7 +19,7 @@ public interface ApiService {
     Call<AlbumModel> getNCTAlbumData();
 
     @GET("/music/song/5")
-    Call<SongModel> getYEONGSongData();
+    Call<List<SongModel>> getYEONGSongData();
 
     @GET("/music/song/6")
     Call<List<SongModel>> getNCTSongData();

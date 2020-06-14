@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -95,15 +97,15 @@ public class AlbumYEONGActivity extends AppCompatActivity {
     }
 
     private void songData(){
-        service.getYEONGSongData().enqueue(new Callback<SongModel>() {
+        service.getYEONGSongData().enqueue(new Callback<List<SongModel>>(){
             @Override
-            public void onResponse(Call<SongModel> call, Response<SongModel> response) {
+            public void onResponse(Call<List<SongModel>> call, Response<List<SongModel>> response) {
                 if (response.isSuccessful()) {
                     Log.d(TAG, "response is success");
-                    SongModel songModel = response.body();
+                    List<SongModel> songModel = response.body();
                     if (songModel != null) {
-                        textSongT_me.setText(songModel.getSSongName());
-                        textSongIndex.setText(songModel.getIdSSong());
+                        textSongT_me.setText(songModel.get(0).getSSongName());
+                        textSongIndex.setText(songModel.get(0).getIdSSong());
                     } else {
                         Log.d(TAG, "NameSinger is null");
                     }
@@ -114,9 +116,10 @@ public class AlbumYEONGActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<SongModel> call, Throwable t) {
+            public void onFailure(Call<List<SongModel>> call, Throwable t) {
                 Log.d(TAG, "error loading from API" + t);
             }
         });
+
     }
 }

@@ -152,7 +152,7 @@ public class AlbumNCTActivity extends AppCompatActivity {
                     List<SongModel> songModel = response.body();
                     if (songModel != null) {
                         for (int i = 0; i < songModel.size(); i++){
-                            albumlistInfoArrayList.add(new Albumlist_Info(songModel.get(i).getIdSSong(), songModel.get(i).getSSongName()));
+                            albumlistInfoArrayList.add(new Albumlist_Info(songModel.get(i).getIdSSong(), songModel.get(i).getSSongName(), songModel.get(i).getSSongFile(), songModel.get(i).getSSongLyric()));
                         }
                         albumlistadapter = new Albumlist_adapter(albumlistInfoArrayList);
 
