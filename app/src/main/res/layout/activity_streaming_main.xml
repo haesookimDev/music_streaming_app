@@ -9,11 +9,6 @@
     android:background="@drawable/artboard">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fadeScrollbars="true"
-        android:fillViewport="true">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -278,7 +273,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </RelativeLayout>
         </RelativeLayout>
-    </ScrollView>
+
     <RelativeLayout
         android:id="@+id/long_lyrics"
         android:layout_width="394.0dp"
