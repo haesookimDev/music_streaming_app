@@ -98,147 +98,163 @@ public class StreamingMain extends Activity {
         this.InitializeView();
         this.SetListener();
         MediaPlayer();
-        tex.setText(playlistInfoArrayList.get(text).song);
-        tex1.setText(playlistInfoArrayList.get(text1).singer);
+        if(playlistInfoArrayList.size() > 0) {
+            tex.setText(playlistInfoArrayList.get(text).song);
+            tex1.setText(playlistInfoArrayList.get(text1).singer);
+            img1.setImageResource(playlistInfoArrayList.get(cnt).drawableId);
+        }
     }
 
     public void MediaPlayer() {
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), parse("https://music-db.s3-ap-northeast-2.amazonaws.com/music/Kick_It.mp3"));
+        if (playlistInfoArrayList.size() > 0) {
+            mediaPlayer = MediaPlayer.create(getApplicationContext(), parse("https://music-db.s3-ap-northeast-2.amazonaws.com/music/Kick_It.mp3"));
 
-        btn_next.setOnClickListener(v -> {
-            if (mediaPlayer.isPlaying()) {
-                mediaPlayer.stop();
-                mediaPlayer.reset();
-                //index+=1;
-                if (index < fileUri.size() - 1) {
-                    try {
-                        mediaPlayer.setDataSource(String.valueOf(parse(fileUri.get(++index))));
-                    } catch (IOException e) {
-                        e.printStackTrace();
+            btn_next.setOnClickListener(v -> {
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                    mediaPlayer.reset();
+                    //index+=1;
+                    if (index < fileUri.size() - 1) {
+                        try {
+                            mediaPlayer.setDataSource(String.valueOf(parse(fileUri.get(++index))));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
-                }
-                if (cnt < imgs1.size()- 1) {
-                    img1.setImageResource(imgs1.get(++cnt));
-                }
-                if (text < title1.size() - 1) {
-                    tex.setText(title1.get(++text));
-                    song.setText(title1.get(text));
-                }
-                if (text1 < singer1.size() - 1) {
-                    tex1.setText(singer1.get(++text1));
-                    singer.setText(singer1.get(text1));
-                }
-                if (text2 < lyrics1.size() - 1) {
-                    tex2.setText(lyrics1.get(++text2));
-                    lyrics.setText(lyrics1.get(text2));
-                }
-
-                mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
-                mediaPlayer.start();
-
-            } else {
-                LayoutInflater inflater = getLayoutInflater();
-                View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
-                TextView t_title = layout.findViewById(R.id.text);
-                t_title.setText("재생중이 아닙니다!");
-                Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
-                toast.setDuration(Toast.LENGTH_LONG);
-                toast.setView(layout);
-                toast.show();
-            }
-
-        });
-
-        btn_pre.setOnClickListener( v -> {
-
-            if (mediaPlayer.isPlaying()) {
-                mediaPlayer.stop();
-                mediaPlayer.reset();
-                //index-=1;
-                if (index > 0) {
-                    try {
-                        mediaPlayer.setDataSource(getApplicationContext(),parse(fileUri.get(--index)));
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                    if (cnt < imgs1.size()- 1) {
+                        img1.setImageResource(imgs1.get(++cnt));
                     }
+                    if (text < title1.size() - 1) {
+                        tex.setText(title1.get(++text));
+                        song.setText(title1.get(text));
+                    }
+                    if (text1 < singer1.size() - 1) {
+                        tex1.setText(singer1.get(++text1));
+                        singer.setText(singer1.get(text1));
+                    }
+                    if (text2 < lyrics1.size() - 1) {
+                        tex2.setText(lyrics1.get(++text2));
+                        lyrics.setText(lyrics1.get(text2));
+                    }
+
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
+                    mediaPlayer.start();
+
+                } else {
+                    LayoutInflater inflater = getLayoutInflater();
+                    View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
+                    TextView t_title = layout.findViewById(R.id.text);
+                    t_title.setText("재생중이 아닙니다!");
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.setView(layout);
+                    toast.show();
                 }
-                if (cnt > 0) {
-                    img1.setImageResource(imgs1.get(--cnt));
+
+            });
+
+            btn_pre.setOnClickListener( v -> {
+
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                    mediaPlayer.reset();
+                    //index-=1;
+                    if (index > 0) {
+                        try {
+                            mediaPlayer.setDataSource(getApplicationContext(),parse(fileUri.get(--index)));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    if (cnt > 0) {
+                        img1.setImageResource(imgs1.get(--cnt));
+                    }
+                    if (text > 0) {
+                        tex.setText(title1.get(--text));
+                        song.setText(title1.get(text));
+                    }
+                    if (text1 > 0) {
+                        tex1.setText(singer1.get(--text1));
+                        singer.setText(singer1.get(text1));
+                    }
+                    if (text2 > 0) {
+                        tex2.setText(lyrics1.get(--text2));
+                        lyrics.setText(lyrics1.get(text2));
+                    }
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
+                    mediaPlayer.start();
+                } else {
+                    LayoutInflater inflater = getLayoutInflater();
+                    View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
+                    TextView t_title = layout.findViewById(R.id.text);
+                    t_title.setText("재생중이 아닙니다!");
+                    Toast toast = new Toast(getApplicationContext());
+                    toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+                    toast.setDuration(Toast.LENGTH_LONG);
+                    toast.setView(layout);
+                    toast.show();
                 }
-                if (text > 0) {
-                    tex.setText(title1.get(--text));
-                    song.setText(title1.get(text));
+
+            });
+            img1 = findViewById(R.id.strem_album_um);
+            tex = findViewById(R.id.text9);
+            tex1 = findViewById(R.id.text8);
+            tex2 = findViewById(R.id.strem_song);
+
+            mediaPlayer.setLooping(true);
+
+            btn_stream_play_stop1 = findViewById(R.id.stream_play_stop1);
+            seekbar = findViewById(R.id.seekBar1);
+
+            seekbar.setMax(mediaPlayer.getDuration());
+
+            seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
                 }
-                if (text1 > 0) {
-                    tex1.setText(singer1.get(--text1));
-                    singer.setText(singer1.get(text1));
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
                 }
-                if (text2 > 0) {
-                    tex2.setText(lyrics1.get(--text2));
-                    lyrics.setText(lyrics1.get(text2));
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress,
+                                              boolean fromUser) {
+
+                    if (fromUser)
+                        mediaPlayer.seekTo(progress);
                 }
-                mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
-                mediaPlayer.start();
-            } else {
-                LayoutInflater inflater = getLayoutInflater();
-                View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
-                TextView t_title = layout.findViewById(R.id.text);
-                t_title.setText("재생중이 아닙니다!");
-                Toast toast = new Toast(getApplicationContext());
-                toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
-                toast.setDuration(Toast.LENGTH_LONG);
-                toast.setView(layout);
-                toast.show();
-            }
-
-        });
-        img1 = findViewById(R.id.strem_album_um);
-        tex = findViewById(R.id.text9);
-        tex1 = findViewById(R.id.text8);
-        tex2 = findViewById(R.id.strem_song);
-
-        mediaPlayer.setLooping(true);
-
-        btn_stream_play_stop1 = findViewById(R.id.stream_play_stop1);
-        seekbar = findViewById(R.id.seekBar1);
-
-        seekbar.setMax(mediaPlayer.getDuration());
-
-        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress,
-                                          boolean fromUser) {
-
-                if (fromUser)
-                    mediaPlayer.seekTo(progress);
-            }
-        });
+            });
+        }
     }
 
     public void button(View v) {
-
-        if (mediaPlayer.isPlaying()) {
-
-            mediaPlayer.pause();
-            btn_stream_play_stop1.setText(R.string.stream_play);
-            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorstop));
+        if (playlistInfoArrayList.size() > 0) {
+            if (mediaPlayer.isPlaying()) {
+                mediaPlayer.pause();
+                btn_stream_play_stop1.setText(R.string.stream_play);
+                btn_stream_play_stop1.setTextColor(Color.parseColor(strColorstop));
+            } else {
+                mediaPlayer.start();
+                btn_stream_play_stop1.setText(R.string.stream_stop);
+                btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
+                tex2.setText(lyrics1.get(text2));
+                Thread();
+            }
         } else {
-            mediaPlayer.start();
-            btn_stream_play_stop1.setText(R.string.stream_stop);
-            btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
-            tex2.setText(lyrics1.get(text2));
-            Thread();
+            LayoutInflater inflater = getLayoutInflater();
+            View layout = inflater.inflate(R.layout.activity_toast,findViewById(R.id.toast_frame));
+            TextView t_title = layout.findViewById(R.id.text);
+            t_title.setText("노래가 없습니다!");
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.TOP|Gravity.CENTER_HORIZONTAL, 0,325);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
         }
+
     }
 
 
@@ -287,6 +303,11 @@ public class StreamingMain extends Activity {
                     break;
                 case R.id.strem_song:
                     btn_long_lyrics.setVisibility(View.VISIBLE);
+                    if (playlistInfoArrayList.size() > 0) {
+                        song.setText(title1.get(text));
+                        singer.setText(singer1.get(text1));
+                        lyrics.setText(lyrics1.get(text2));
+                    }
                     break;
                 default:
                     break;
