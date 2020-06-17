@@ -12,7 +12,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
@@ -39,6 +38,9 @@ public class StreamingMain extends Activity {
 
     Button btn_mini_playList;
     Button btn_mini_home;
+    TextView lyrics;
+    TextView singer;
+    TextView song;
 
     Button btn_stream_play_stop1;
     SeekBar seekbar;
@@ -103,7 +105,6 @@ public class StreamingMain extends Activity {
     public void MediaPlayer() {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), parse("https://music-db.s3-ap-northeast-2.amazonaws.com/music/Kick_It.mp3"));
 
-
         btn_next.setOnClickListener(v -> {
             if (mediaPlayer.isPlaying()) {
                 mediaPlayer.stop();
@@ -121,12 +122,15 @@ public class StreamingMain extends Activity {
                 }
                 if (text < title1.size() - 1) {
                     tex.setText(title1.get(++text));
+                    song.setText(title1.get(text));
                 }
                 if (text1 < singer1.size() - 1) {
                     tex1.setText(singer1.get(++text1));
+                    singer.setText(singer1.get(text1));
                 }
                 if (text2 < lyrics1.size() - 1) {
                     tex2.setText(lyrics1.get(++text2));
+                    lyrics.setText(lyrics1.get(text2));
                 }
 
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
@@ -164,12 +168,15 @@ public class StreamingMain extends Activity {
                 }
                 if (text > 0) {
                     tex.setText(title1.get(--text));
+                    song.setText(title1.get(text));
                 }
                 if (text1 > 0) {
                     tex1.setText(singer1.get(--text1));
+                    singer.setText(singer1.get(text1));
                 }
                 if (text2 > 0) {
                     tex2.setText(lyrics1.get(--text2));
+                    lyrics.setText(lyrics1.get(text2));
                 }
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), parse(fileUri.get(index)));
                 mediaPlayer.start();
@@ -229,6 +236,7 @@ public class StreamingMain extends Activity {
             mediaPlayer.start();
             btn_stream_play_stop1.setText(R.string.stream_stop);
             btn_stream_play_stop1.setTextColor(Color.parseColor(strColorplay));
+            tex2.setText(lyrics1.get(text2));
             Thread();
         }
     }
@@ -259,6 +267,9 @@ public class StreamingMain extends Activity {
         btn_pre = findViewById(R.id.strem_before);
         btn_next = findViewById(R.id.strem_nex);
         btn_long_lyrics = (RelativeLayout) findViewById(R.id.long_lyrics);
+        lyrics = findViewById(R.id.lyrics);
+        singer = findViewById(R.id.singer);
+        song = findViewById(R.id.song);
         TAG = "MainActivity";
 
     }

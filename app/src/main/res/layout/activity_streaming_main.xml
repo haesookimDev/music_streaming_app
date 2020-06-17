@@ -30,10 +30,12 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="27.5dp"
                     android:gravity="center_horizontal|top"
-                    android:text="@string/strem_song"
+                    android:text="가사"
                     android:fontFamily="@font/bmeuljirottf"
                     android:textColor="@color/color_ff000000"
                     android:textSize="25sp"
+                    android:maxLines="8"
+                    android:ellipsize="end"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     android:background="@drawable/button_no_color_layer"/>
@@ -295,9 +297,10 @@
 
                 <TextView
                     android:id="@+id/lyrics"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal|top"
+                    android:textAlignment="center"
                     android:text="@string/lovesong_lyrics"
                     android:fontFamily="@font/bmeuljirottf"
                     android:textColor="@color/color_ff000000"
@@ -367,16 +370,16 @@
                 android:layout_marginTop="118.5dp"/>
             <TextView
                 android:id="@+id/song"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nct_love_song"
                 android:fontFamily="@font/bmeuljirottf"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
+                android:textAlignment="center"
                 android:textColor="@color/color_ff000000"
                 android:textSize="30sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginStart="64.5dp"
                 android:layout_marginTop="76.5dp"/>
         </RelativeLayout>
     </RelativeLayout>
